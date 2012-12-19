@@ -164,6 +164,11 @@ use cforce_mod
       if (mytid==0)  write(6,*)"End mpi_comm_rank"
       call mpi_comm_size (mpi_comm_ocn, nproc, ierr)
       write(6,*) "MYTID=",mytid,"Number of Processors is",nproc
+!YU
+
+      my_task = mytid
+      master_task = 0
+!YU
 
 
    ! lihuimin 2012.6.14, initial indices
@@ -207,6 +212,9 @@ use cforce_mod
 !     PARAMETERS RELATED TO LATITUDES (J)
 !---------------------------------------------------------------------
     LOGMSG()
+!  call init_domain_blocks
+!  call init_grid1
+!  call init_domain_distribution(KMT_G)
       CALL GRIDS
       if (mytid == 0) then
       write(111,*)"OK------4"

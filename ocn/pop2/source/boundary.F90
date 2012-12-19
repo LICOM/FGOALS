@@ -36,6 +36,10 @@ use dyn_mod, only : buffer
          end if
       end do
 !
+      if (mytid == 0 ) then
+          write(117,*) "OK------1"
+          close(117)
+      end if
       if (mytid == 0) then
           i_start(1)= i_global(1)
           j_start(1)= j_global(1)
@@ -49,6 +53,10 @@ use dyn_mod, only : buffer
           call mpi_send(j_start(mytid+1),1,mpi_integer,0,tag_1d,mpi_comm_ocn,ierr)
           call mpi_send(i_start(mytid+1),1,mpi_integer,0,tag_2d,mpi_comm_ocn,ierr)
        end if
+      if (mytid == 0 ) then
+          write(117,*) "OK------2"
+          close(117)
+      end if
 !
      
       if (iy==(ny_proc-1)) then
@@ -75,6 +83,10 @@ use dyn_mod, only : buffer
       end if
       call global_distribute(buffer,viv(1,1,k))
       end do
+      if (mytid == 0 ) then
+          write(117,*) "OK------3"
+          close(117)
+      end if
 !
       deallocate (buffer)
 

@@ -279,7 +279,15 @@ use msg_mod, only: tag_1d,tag_2d,tag_3d,tag_4d,nproc,status,mpi_comm_ocn
 !
 !
 !     call mpi_barrier(mpi_comm_ocn,ierr)
+      if (mytid ==0 ) then
+         write(116,*) "OK-----1"
+         close(116)
+      end if
       call boundary
+      if (mytid ==0 ) then
+         write(116,*) "OK-----2"
+         close(116)
+      end if
       do k=1,km
       call global_distribute(vit_global(1,1,k),vit(1,1,k))
 !          do j=1,jmt
@@ -293,6 +301,10 @@ use msg_mod, only: tag_1d,tag_2d,tag_3d,tag_4d,nproc,status,mpi_comm_ocn
       call mpi_bcast(basin,imt_global*jmt_global,mpi_integer,0,mpi_comm_ocn,ierr)
       call mpi_bcast(dyr_global,jmt_global,MPI_PR,0,mpi_comm_ocn,ierr)
       call mpi_bcast(zkp,km+1,MPI_PR,0,mpi_comm_ocn,ierr)
+      if (mytid ==0 ) then
+         write(116,*) "OK-----3"
+         close(116)
+      end if
 !LPF 20120823
 #ifdef BACKMX
       call mpi_bcast(ahv_back,jmt_global,MPI_PR,0,mpi_comm_ocn,ierr)
@@ -431,6 +443,10 @@ use msg_mod, only: tag_1d,tag_2d,tag_3d,tag_4d,nproc,status,mpi_comm_ocn
 !     DZP    D(ZKP)
 !     ODZP   1/DZP
 !     ODZT   1/DZT
+      if (mytid ==0 ) then
+         write(116,*) "OK-----4"
+         close(116)
+      end if
 
 #if (defined NETCDF) || (defined ALL)
       lev1=zkp
@@ -783,9 +799,17 @@ use msg_mod, only: tag_1d,tag_2d,tag_3d,tag_4d,nproc,status,mpi_comm_ocn
          END DO
       END DO
 !
+      if (mytid ==0 ) then
+         write(116,*) "OK-----5"
+         close(116)
+      end if
       call mpi_bcast(asea,1,MPI_PR,0,mpi_comm_ocn,ierr)
       call mpi_bcast(vsea,1,MPI_PR,0,mpi_comm_ocn,ierr)
         deallocate ( vit_global )
+      if (mytid ==0 ) then
+         write(116,*) "OK-----6"
+         close(116)
+      end if
 !LPF 20120728
 !
 

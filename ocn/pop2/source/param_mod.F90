@@ -47,6 +47,7 @@ use precision_mod
       integer,parameter:: ntra=2    ! Number of Tracers
       integer:: i,j,k,m,n,ierr, mytid
       integer::jj_start,jj_end ! No Overlaped j ,North to South
+      integer:: my_task, master_task
 
       real(r8) :: dlam   ! Zonal grid distance in degree
       real(r8) :: am_tro ! Horizontal viscosity in the tropics.
