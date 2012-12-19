@@ -1,0 +1,102 @@
+Test naming conventions:
+
+Test names are:
+
+xxnmi
+
+Where: xx is the two-letter test type 
+       sm=smoke, br=branch, er=exact restart, bl=base-line comparision,
+       cb=configure-build, rp=reproducibility, op=OpenMP threading for tools
+
+n is the configuration type:
+
+1 -- unused
+2 -- unused
+3 -- unused
+4 -- unused
+5 -- unused
+6 -- mkgriddata
+7 -- mksurfdata
+8 -- interpinic
+9 -- tools scripts
+0 -- unused
+A -- Standard default RTM off
+B -- Standard default with SNICAR_FRC on
+C -- Standard default
+D -- Pergro
+E -- numpft=4, VOC, RTM
+F -- numpft=17, VOC, RTM
+G -- numpft=17, no-VOC
+H -- numpft=17, CN
+J -- numpft=4, CASA
+K -- numpft=10, CNDV
+L -- Standard default
+M -- ncl scripts (such as ndepregrid)
+N -- MEXICOCITY no-RTM
+O -- VANCOUVER no-RTM
+P -- numpft=17, CN, NOFIRE
+Q -- numpft=17, CN no-RTM
+R -- numpft=17, CN, C13
+S -- Standard default, with glc_mec=10
+T -- numpft=21, CN, CROP
+U -- numpft=21, CNDV, CROP
+V -- numpft=21, CN, CROP RTM off
+
+m is the resolution
+
+1 -- 48x96
+2 -- 48x96 debug mode
+3 -- 64x128 with 360x720 fine mesh
+4 -- 1.9x2.5 with transient 1850-2000
+5 -- 10x15
+6 -- 1.9x2.5
+7 -- 1x1 brazil
+8 -- 5x5 amazon
+9 -- 4x5
+0 -- 0.47x0.63
+A -- 1x1 Camden NJ         (Urban test)
+B -- 1x1 Mexicocity Mexico (Urban test)
+C -- 1x1 Vancouver Canada  (Urban test)
+D -- 2.65x3.33
+E -- 1x1 urbanc_alpha      (Urban CLM1PT_URBANC test)
+F -- 1.9x2.5 with 0.47x0.63 fine mesh
+G -- 1.9x2.5 with 0.23x0.31 fine mesh
+H -- 1.9x2.5 with 0.9x1.25  fine mesh
+I -- T62
+J -- 0.9x1.25
+K -- 1.9x2.5 with single point mode
+L -- 10x15   with single point mode
+M -- 2.5x3.33
+N -- 1.9x2.5 with transient 1850-2100 for rcp=8.5
+n -- 1.9x2.5 with transient 1850-2100 for rcp=8.5 and glacier-MEC on
+O -- 10x15 with drydep
+o -- 10x15 with irrig on
+P -- 1.9x2.5 with drydep
+p -- 1.9x2.5 with irrig on
+Q -- 1x1 brazil with drydep
+R -- 1.9x2.5 with transient 1850-2100 for rcp=4.5
+S -- with CLM_USRDAT_NAME=13x12pt_f19_alaskaUSA 
+T -- 1x1 numaIA with crop on
+U -- 1x1 smallvilleIA with crop on
+V -- 4x5 with drydep
+W -- 10x15   with transient 1850-2100 for rcp=6
+w -- 1.9x2.5 with transient 1850-2100 for rcp=6 and glacier-MEC on
+X -- 10x15   with transient 1850-2100 for rcp=4.5
+x -- 48x96   with transient 1850-2100 for rcp=4.5 and glacier-MEC on
+Y -- 10x15   with transient 1850-2100 for rcp=2.6
+y -- 1.9x2.5 with transient 1850-2100 for rcp=2.6 and glacier-MEC on
+Z -- 10x15 with crop on
+
+i is the specific test (usually this implies...)
+
+1 -- hybrid
+2 -- mpi-only
+3 -- OpenMP only
+4 -- serial
+5 -- hybrid second test      (without DEBUG compiler mode on)
+6 -- mpi-only second test    (without DEBUG compiler mode on)
+7 -- OpenMP only second test (without DEBUG compiler mode on)
+8 -- hybrid third test       (without DEBUG compiler mode on)
+9 -- OpenMP only third test  (without DEBUG compiler mode on)
+
+

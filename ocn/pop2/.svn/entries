@@ -1,0 +1,89 @@
+10
+
+dir
+36
+https://svn-ccsm-release.cgd.ucar.edu/model_versions/cesm1_0_3/models/ocn/pop2
+https://svn-ccsm-release.cgd.ucar.edu
+
+
+
+2011-06-10T18:18:09.176859Z
+35
+fischer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6ec7379f-1bbc-4938-b9b9-58fa9e6a5fe1
+
+build
+dir
+
+serial
+dir
+
+test
+dir
+
+source
+dir
+
+bld
+dir
+
+doc
+dir
+
+mpi
+dir
+
+ChangeLog
+file
+
+
+
+
+2011-08-05T03:02:37.597730Z
+e55619fc7b3cf98542a6512d76eb99c6
+2011-06-10T18:18:09.176859Z
+35
+fischer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5461
+
+input_templates
+dir
+
+drivers
+dir
+

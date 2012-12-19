@@ -1,0 +1,219 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#--------------------------
+#  Set model domain and data defaults
+#--------------------------
+
+set mod_dompath = \$DIN_LOC_ROOT/ocn/docn7
+set mod_domfile = unknown
+set dat_datpath = \$DIN_LOC_ROOT/ocn/docn7/SSTDATA
+set dat_datfile = unknown
+
+if ($mod_domfile == "unknown") then
+set DOMAIN_MODE = default
+if ($OCN_GRID == 'gx1v6'    ) set mod_domfile = domain.ocn.gx1v6.090206.nc
+if ($OCN_GRID == 'gx3v7'    ) set mod_domfile = domain.ocn.gx3v7.090903.nc
+if ($OCN_GRID == 'gx3v5'    ) set mod_domfile = domain.ocn.gx3v5.071210.nc
+if ($OCN_GRID == 'tx0.1v2'  ) set mod_domfile = domain.ocn.tx0.1v2_090218.nc
+if ($OCN_GRID == 'tx1v1'    ) set mod_domfile = domain.ocn.tx1v1.090122.nc
+if ($OCN_GRID == 'wr50a'    ) set mod_domfile = domain.ocn.wr50a.090309.nc
+if ($OCN_GRID == 'ar9v1'    ) set mod_domfile = domain.ocn.ar9v1.090521.nc
+if ($OCN_GRID == 'ar9v2'    ) set mod_domfile = domain.ocn.ar9v2.090614.nc
+if ($OCN_GRID == 'ar9v4'    ) set mod_domfile = domain.ocn.ar9v4.100920.nc
+endif
+
+if ($mod_domfile == "unknown") then
+set DOMAIN_MODE = cam
+if ($OCN_GRID == '8x16'     ) set mod_domfile = domain.camocn.8x16_USGS_070807.nc
+if ($OCN_GRID == '48x96'    ) set mod_domfile = domain.camocn.48x96_gx3v7_100114.nc
+if ($OCN_GRID == '64x128'   ) set mod_domfile = domain.camocn.64x128_USGS_070807.nc
+if ($OCN_GRID == '128x256'  ) set mod_domfile = domain.camocn.128x256_USGS_070807.nc
+if ($OCN_GRID == '512x1024' ) set mod_domfile = domain.camocn.512x1024_USGS_080530.nc
+if ($OCN_GRID == '10x15'    ) set mod_domfile = domain.camocn.10x15_USGS_070807.nc
+if ($OCN_GRID == '4x5'      ) set mod_domfile = domain.camocn.4x5_gx3v7_100120.nc
+if ($OCN_GRID == '2.5x3.33' ) set mod_domfile = domain.camocn.fv2.5x3.33_gx3v7_110223.nc
+if ($OCN_GRID == '1.9x2.5'  ) set mod_domfile = domain.camocn.1.9x2.5_gx1v6_090403.nc
+if ($OCN_GRID == '0.9x1.25' ) set mod_domfile = domain.camocn.0.9x1.25_gx1v6_090403.nc
+if ($OCN_GRID == '0.47x0.63') set mod_domfile = domain.camocn.0.47x0.63_gx1v6_090408.nc
+if ($OCN_GRID == '0.23x0.31') set mod_domfile = domain.camocn.0.23x0.31_gx1v6_101108.nc
+endif
+
+if ($DOMAIN_MODE == "default") set mod_dompath = \$DIN_LOC_ROOT/ocn/docn7
+if ($DOMAIN_MODE == "cam"    ) set mod_dompath = \$DIN_LOC_ROOT/atm/cam/ocnfrac
+
+if ($mod_domfile == "unknown") then
+   echo "ERROR: unsupported grid = $GRID"
+   exit -1
+endif
+
+#--------------------------
+#  Set forcing data
+#--------------------------
+
+if ($DOCN_MODE == "prescribed") then
+
+  if ($DOCN_SSTDATA_FILENAME != 'UNSET' && $DOCN_SSTDATA_YEAR_START != '-999' && $DOCN_SSTDATA_YEAR_END != '-999' ) then
+
+    set DATAMODE    = SSTDATA
+    set STREAM      = CAMDATA
+    set year_align  = $DOCN_SSTDATA_YEAR_START
+    set year_start  = $DOCN_SSTDATA_YEAR_START
+    set year_end    = $DOCN_SSTDATA_YEAR_END
+    set dat_dompath = $mod_dompath
+    set dat_domfile = $mod_domfile
+    set dat_datpath = $DOCN_SSTDATA_FILENAME; set dat_datpath = $dat_datpath:h
+    set dat_datfile = $DOCN_SSTDATA_FILENAME; set dat_datfile = $dat_datfile:t
+    if ($dat_datpath == $dat_datfile) then
+       set dat_datpath = "./"
+    endif
+    if ($dat_datpath =~ $DIN_LOC_ROOT*) then
+       set num = `echo $DIN_LOC_ROOT | wc -c `
+       set dd = `echo $dat_datpath | cut -c $num-`
+       if ($dd =~ /*) set dd = `echo $dd | cut -c 2-`
+       set dat_datpath = \$DIN_LOC_ROOT/$dd
+    endif
+
+  else if ($DOMAIN_MODE == 'cam') then
+
+    set DATAMODE    = SSTDATA
+    set STREAM      = CAMDATA
+    set year_align  = 1
+    set year_start  = 0
+    set year_end    = 0
+    set dat_dompath = $mod_dompath
+    set dat_domfile = $mod_domfile
+    set dat_datpath = \$DIN_LOC_ROOT/ocn/docn7/SSTDATA
+    if ($OCN_GRID == '8x16'     ) set dat_datfile = sst_HadOIBl_bc_8x16_clim_c050526.nc
+    if ($OCN_GRID == '48x96'    ) set dat_datfile = sst_HadOIBl_bc_48x96_clim_c050526.nc 
+    if ($OCN_GRID == '64x128'   ) set dat_datfile = sst_HadOIBl_bc_64x128_clim_c050526.nc
+    if ($OCN_GRID == '128x256'  ) set dat_datfile = sst_HadOIBl_bc_128x256_clim_c050526.nc
+    if ($OCN_GRID == '512x1024' ) set dat_datfile = sst_HadOIBl_bc_512x1024_clim_c070927.nc
+    if ($OCN_GRID == '10x15'    ) set dat_datfile = sst_HadOIBl_bc_10x15_clim_c050526.nc
+    if ($OCN_GRID == '4x5'      ) set dat_datfile = sst_HadOIBl_bc_4x5_clim_c061031.nc
+    if ($OCN_GRID == '1.9x2.5'  ) set dat_datfile = sst_HadOIBl_bc_1.9x2.5_clim_c061031.nc
+    if ($OCN_GRID == '0.9x1.25' ) set dat_datfile = sst_HadOIBl_bc_0.9x1.25_clim_c040926.nc
+    if ($OCN_GRID == '0.47x0.63') set dat_datfile = sst_HadOIBl_bc_0.47x0.63_clim_c061106.nc
+    if ($OCN_GRID == '0.23x0.31') set dat_datfile = sst_HadOIBl_bc_0.23x0.31_clim_c061106.nc
+
+  else if ($DOMAIN_MODE == 'default') then
+
+    set DATAMODE   = SSTDATA
+    set STREAM     = HURRELL
+    set year_align = 1
+    set year_start = 1
+    set year_end   = 1
+    set dat_dompath = \$DIN_LOC_ROOT/ocn/docn7/SSTDATA
+    set dat_domfile = hurrell_sst_ifrac.1x1.050606.nc
+    set dat_datpath = $dat_dompath
+    set dat_datfile = $dat_domfile
+ 
+  endif 
+
+else if ($DOCN_MODE == 'som') then
+
+  set DATAMODE   = SOM
+  set STREAM     = SOM
+  set year_align = 1
+  set year_start = 1
+  set year_end   = 1
+  set dat_datpath = \$DIN_LOC_ROOT/ocn/docn7/SOM
+  set dat_datfile = pop_frc.1x1d.090130.nc
+  if ($OCN_GRID == 'gx1v5') set dat_datfile = pop_frc.gx1v5.070511.nc
+  if ($OCN_GRID == 'gx3v5') set dat_datfile = pop_frc.gx3v5.051129.nc
+  set dat_dompath = $dat_datpath
+  set dat_domfile = $dat_datfile     
+
+else 
+
+  echo "ERROR: unrecognized DOCN_MODE = $DOCN_MODE 
+  exit -1
+
+endif
+
+set STREAM1TXT = "docn.stream.txt"
+
+cat >! $CASEBUILD/docn.buildnml.csh << EOF
+#! /bin/csh -f 
+
+set exedir = \$RUNDIR; cd \$exedir
+
+set mod_dompath = ${mod_dompath}
+set mod_domfile = ${mod_domfile}
+set dat_dompath = ${dat_dompath}
+set dat_domfile = ${dat_domfile}
+set dat_datpath = ${dat_datpath}
+set dat_datfile = ${dat_datfile}
+
+set DOMAINFILE = \${mod_dompath}/\${mod_domfile}
+set DATAMODE   = $DATAMODE
+set year_align = $year_align
+set year_start = $year_start
+set year_end   = $year_end
+set STREAM     = $STREAM
+set STREAM1TXT = $STREAM1TXT
+
+#--- create namelist files ---
+cat >! docn_in << EOF1
+  &docn_nml
+     ocn_in = 'docn_ocn_in'
+     decomp = '1d'
+  /
+EOF1
+
+cat >! docn_ocn_in << EOF1
+ &shr_strdata_nml
+   dataMode       = '\$DATAMODE'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '\$STREAM1TXT \$year_align \$year_start \$year_end ',
+                    'null' ,
+                    'null' 
+   vectors        = 'null'
+  /
+EOF1
+
+EOF
+
+# streams file
+
+cat >> $CASEBUILD/docn.buildnml.csh << EOF1
+
+cat >! \$STREAM1TXT << EOF
+EOF1
+
+$UTILROOT/Tools/build_streams -t $CASETOOLS/Templates/docn.template.streams.xml -s $STREAM -dp \$dat_dompath -do \$dat_domfile -p \$dat_datpath -filename \$dat_datfile >> $CASEBUILD/docn.buildnml.csh || exit 3
+
+cat >> $CASEBUILD/docn.buildnml.csh << EOF1
+
+EOF
+
+echo DOMAINFILE = \${DOMAINFILE} >! \$CASEBUILD/docn.input_data_list
+\$UTILROOT/Tools/listfilesin_streams -input_data_list -t \$STREAM1TXT >> \$CASEBUILD/docn.input_data_list
+
+EOF1
+
+
+#------ buildexe --------
+
+cat >! $CASEBUILD/docn.buildexe.csh << EOF
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/ocn/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+# Build the library
+
+\cat >! Filepath << EOF1
+\$CASEROOT/SourceMods/src.docn
+\$CODEROOT/ocn/docn
+\$CODEROOT/ocn/docn/cpl_\$comp
+EOF1
+
+gmake complib -j \$GMAKE_J MODEL=docn COMPLIB=\$LIBROOT/libocn.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF
+
+#==============================================================================

@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main
+END
+organicFileMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/organicFileMod.F90
+END
+spmdGathScatMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/spmdGathScatMod.F90
+END
+clm_varcon.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_varcon.F90
+END
+clm_varpar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_varpar.F90
+END
+CNiniTimeVar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/CNiniTimeVar.F90
+END
+abortutils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/abortutils.F90
+END
+dynlandMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/dynlandMod.F90
+END
+accumulMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/accumulMod.F90
+END
+decompInitMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/decompInitMod.F90
+END
+getdatetime.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/getdatetime.F90
+END
+clm_initializeMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_initializeMod.F90
+END
+subgridRestMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/subgridRestMod.F90
+END
+clm_glclnd.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_glclnd.F90
+END
+accFldsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/accFldsMod.F90
+END
+subgridMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/subgridMod.F90
+END
+fileutils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/fileutils.F90
+END
+clmtypeInitMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clmtypeInitMod.F90
+END
+ndepStreamMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/ndepStreamMod.F90
+END
+pftdynMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/pftdynMod.F90
+END
+iniTimeConst.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/iniTimeConst.F90
+END
+histFileMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/histFileMod.F90
+END
+pft2colMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/pft2colMod.F90
+END
+clm_atmlnd.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_atmlnd.F90
+END
+clm_varsur.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_varsur.F90
+END
+restFileMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/restFileMod.F90
+END
+controlMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/controlMod.F90
+END
+initSurfAlbMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/initSurfAlbMod.F90
+END
+clm_time_manager.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_time_manager.F90
+END
+filterMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/filterMod.F90
+END
+clm_driver.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_driver.F90
+END
+clm_varctl.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_varctl.F90
+END
+clm_varorb.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_varorb.F90
+END
+subgridAveMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/subgridAveMod.F90
+END
+initGridCellsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/initGridCellsMod.F90
+END
+CASAiniTimeVarMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/CASAiniTimeVarMod.F90
+END
+CNiniSpecial.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/CNiniSpecial.F90
+END
+pftvarcon.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/pftvarcon.F90
+END
+ncdio_pio.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/ncdio_pio.F90
+END
+spmdMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/spmdMod.F90
+END
+surfrdMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/surfrdMod.F90
+END
+domainMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/domainMod.F90
+END
+decompMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/decompMod.F90
+END
+inicPerpMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/inicPerpMod.F90
+END
+nanMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/nanMod.F90
+END
+clmtype.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clmtype.F90
+END
+clm_mct_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/clm_mct_mod.F90
+END
+downscaleMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/downscaleMod.F90
+END
+histFldsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/histFldsMod.F90
+END
+mkarbinitMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/main/mkarbinitMod.F90
+END

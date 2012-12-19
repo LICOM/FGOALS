@@ -1,0 +1,37 @@
+10
+
+dir
+36
+https://svn-ccsm-release.cgd.ucar.edu/model_versions/cesm1_0_3/models/ocn/xocn
+https://svn-ccsm-release.cgd.ucar.edu
+
+
+
+2011-06-10T18:18:09.176859Z
+35
+fischer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6ec7379f-1bbc-4938-b9b9-58fa9e6a5fe1
+
+bld
+dir
+
+cpl_mct
+dir
+
+cpl_esmf
+dir
+

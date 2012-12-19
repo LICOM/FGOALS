@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic
+END
+clmi.BCN.1949-01-01_10x15_USGS_simyr1850_c100322.nc
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/clmi.BCN.1949-01-01_10x15_USGS_simyr1850_c100322.nc
+END
+interpinic.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/interpinic.F90
+END
+interpinic.runoptions
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/interpinic.runoptions
+END
+shr_sys_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/shr_sys_mod.F90
+END
+fmain.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/fmain.F90
+END
+shr_log_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/shr_log_mod.F90
+END
+Mkdepends
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/Mkdepends
+END
+Srcfiles
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/Srcfiles
+END
+runinit_ibm.csh
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/runinit_ibm.csh
+END
+Filepath
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/Filepath
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/README
+END
+shr_kind_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/shr_kind_mod.F90
+END
+shr_const_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/interpinic/shr_const_mod.F90
+END

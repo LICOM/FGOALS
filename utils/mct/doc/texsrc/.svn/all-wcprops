@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/texsrc
+END
+SRCS_tex.mk
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/texsrc/SRCS_tex.mk
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/texsrc/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/texsrc/Makefile
+END

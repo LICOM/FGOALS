@@ -1,0 +1,31 @@
+vo    => voc                    is on
+nv    => voc                    is off
+r     => rtm                    is on
+nr    => rtm                    is off
+per   => pergro                 is on
+sc    => standalone clm         is on
+van   => VANCOUVER              is on
+mex   => MEXICOCITY             is on
+mec10 => Glacier multiple elev classes = 10, green-land 20km mask
+snf   => snicar_frc             is on
+
+_cn   => bgc is in cn   mode
+_cndv => bgc is in cndv mode
+_cnc13=> bgc is in cn   mode with C13 on as well
+_cnnf => bgc is in cn   mode with NOFIRE turned on as well
+_casa => bgc is in casa mode
+_cncrp=> bgc is in cn   model with crop on
+
+_dh   => debug on, hybrid   on
+_dm   => debug on, mpi only on 
+_do   => debug on, omp only on
+_do   => debug on, serial mode (neither mpi nor omp)
+
+_h    => debug off, hybrid   on
+_m    => debug off, mpi only on
+_o    => debug off, omp only on
+_s    => debug off, serial mode (neither mpi nor omp)
+
+tools__ds => options for tools, debug on, serial mode
+tools__do => options for tools, debug on, omp only on
+tools__o  => options for tools, debug off, omp only on

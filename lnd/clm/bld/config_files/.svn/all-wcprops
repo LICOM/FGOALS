@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/config_files
+END
+config_definition.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/config_files/config_definition.xsl
+END
+config_sys_defaults.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/config_files/config_sys_defaults.xml
+END
+config_defaults.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/config_files/config_defaults.xml
+END
+config_definition.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/config_files/config_definition.xml
+END

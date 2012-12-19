@@ -1,0 +1,153 @@
+<streamstemplate>
+  <general_comment>
+      streams template for docn in CCSM4
+  </general_comment>
+<!----------------------------------------------------------------------------->
+<stream datasource="CAMDATA">
+   <comment>
+      Stream description file for generic SST/ifrac data on the CAM grid
+   </comment>
+   <dataSource>
+      Generic data source for CAMDATA
+   </dataSource>
+   <domainInfo>
+      <variableNames>
+         time time
+         xc   lon
+         yc   lat
+         area area
+         mask mask
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+         %f
+      </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+         SST_cpl    t
+      </variableNames>
+      <filePath>
+         %dp
+      </filePath>
+      <fileNames>
+         %df
+      </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+<stream datasource="HURRELL">
+   <comment>
+      Stream description file for Hurrell SST/ifrac data
+   </comment>
+   <dataSource>
+      Hurrell
+   </dataSource>
+   <domainInfo>
+      <variableNames>
+         time time
+         lon  lon
+         lat  lat
+         area area
+         mask mask
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+         %f
+      </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+         sst    t
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+         %f
+      </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+<stream datasource="HADLEY">
+   <comment>
+      Stream description file for Hadley SST/ifrac data
+   </comment>
+   <dataSource>
+      Hurrell
+   </dataSource>
+   <domainInfo>
+      <variableNames>
+         time time
+         lon  lon
+         lat  lat
+         area area
+         mask mask
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+         %f
+      </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+         SST_cpl    t
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+         %f
+      </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+<stream datasource="SOM">
+   <comment>
+      Dx7 stream description file
+   </comment>
+   <dataSource>
+      Generic datasource for SOM
+   </dataSource>
+   <domainInfo>
+      <variableNames>
+         time time
+         xc   lon
+         yc   lat
+         area area
+         mask mask
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+	 %f
+      </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+          T     t
+          S     s
+          U     u
+          V     v
+          dhdx  dhdx
+          dhdy  dhdy
+          hblt  h
+          qdp   qbot
+      </variableNames>
+      <filePath>
+         %p
+      </filePath>
+      <fileNames>
+         %f
+      </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+</streamstemplate>

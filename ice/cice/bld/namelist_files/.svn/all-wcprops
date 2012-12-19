@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/bld/namelist_files
+END
+namelist_definition.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/bld/namelist_files/namelist_definition.xml
+END
+namelist_defaults_cice.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/bld/namelist_files/namelist_defaults_cice.xml
+END

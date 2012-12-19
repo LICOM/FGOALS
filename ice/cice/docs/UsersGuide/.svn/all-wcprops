@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide
+END
+ice_setup.tex
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_setup.tex
+END
+ice_nml_example.tex
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_nml_example.tex
+END
+ice_history.tex
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_history.tex
+END
+master_list.bib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/master_list.bib
+END
+ice_what_is_cice4.tex
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_what_is_cice4.tex
+END
+README_USR
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/README_USR
+END
+ice_usrdoc.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_usrdoc.pdf
+END
+supertabular.sty
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/supertabular.sty
+END
+ice_stdout.tex
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_stdout.tex
+END
+cicedoc.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/cicedoc.pdf
+END
+ice_restart.tex
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_restart.tex
+END
+jas.bst
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/jas.bst
+END
+ice_input_data.tex
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_input_data.tex
+END
+ice_troubleshoot.tex
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_troubleshoot.tex
+END
+ice_runtypes.tex
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_runtypes.tex
+END
+ice_change_ncat.tex
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_change_ncat.tex
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/index.html
+END
+ice_nml_var.tex
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_nml_var.tex
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/Makefile
+END
+natbib.sty
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/natbib.sty
+END
+ice_build.tex
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_build.tex
+END
+ice_usrdoc.tex
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/UsersGuide/ice_usrdoc.tex
+END

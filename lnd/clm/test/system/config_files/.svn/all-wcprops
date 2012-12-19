@@ -1,0 +1,731 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files
+END
+4p_vorsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vorsc_dm
+END
+_nrsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrsc_dh
+END
+17p_scnv_dm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_dm
+END
+17p_cnexitspinupsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnexitspinupsc_dh
+END
+4p_vorsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vorsc_do
+END
+tools__do
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/tools__do
+END
+17p_scnv_do
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_do
+END
+17p_nrsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_nrsc_ds
+END
+21p_cndvcrpsc_m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_m
+END
+17p_cndvsc_m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_m
+END
+_scnv_dh
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_scnv_dh
+END
+_nrsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrsc_dm
+END
+17p_cndvsc_o
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_o
+END
+21p_cndvcrpsc_o
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_o
+END
+4p_vorsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vorsc_ds
+END
+tools__ds
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/tools__ds
+END
+17p_scnv_ds
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_ds
+END
+17p_cnexitspinupsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnexitspinupsc_dm
+END
+4p_nrcasasc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_nrcasasc_ds
+END
+_nrsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrsc_do
+END
+_persc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_persc_dh
+END
+17p_cnexitspinupsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnexitspinupsc_do
+END
+17p_cndvsc_s
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_s
+END
+21p_cndvcrpsc_s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_s
+END
+17p_vorsc_h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_h
+END
+_nrsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrsc_ds
+END
+_scnv_do
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_scnv_do
+END
+_persc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_persc_dm
+END
+_persc_do
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_persc_do
+END
+17p_vorsc_m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_m
+END
+17p_nrcnsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_nrcnsc_do
+END
+17p_vorsc_o
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_o
+END
+_persc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_persc_ds
+END
+17p_nrcnsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_nrcnsc_ds
+END
+_nrmexsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrmexsc_ds
+END
+_mec10sc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_dh
+END
+17p_sc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_dh
+END
+_nrcnsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrcnsc_do
+END
+_mec10sc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_dm
+END
+4p_casasc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_dh
+END
+_nrcnsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrcnsc_ds
+END
+17p_scnv_m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_m
+END
+17p_sc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_dm
+END
+_mec10sc_do
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_do
+END
+17p_scnv_o
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_o
+END
+17p_sc_do
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_do
+END
+_sc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_dh
+END
+4p_casasc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_dm
+END
+_mec10sc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_ds
+END
+17p_scnv_s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_s
+END
+17p_sc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_ds
+END
+4p_casasc_do
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_do
+END
+21p_cncrpsc_h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_h
+END
+17p_cnsc_h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnsc_h
+END
+_sc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_dm
+END
+4p_casasc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_ds
+END
+_nrsc_s
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrsc_s
+END
+_sc_do
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_do
+END
+21p_cncrpsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_dh
+END
+17p_cnsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnsc_dh
+END
+21p_cncrpsc_m
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_m
+END
+17p_cnsc_m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnsc_m
+END
+_sc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_ds
+END
+21p_cncrpsc_o
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_o
+END
+17p_cnsc_o
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnsc_o
+END
+21p_cncrpsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_dm
+END
+17p_cnsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnsc_dm
+END
+21p_cncrpsc_s
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_s
+END
+21p_cncrpsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_do
+END
+17p_cnc13sc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnc13sc_dh
+END
+17p_cnsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnsc_do
+END
+_nrvansc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_nrvansc_ds
+END
+21p_cncrpsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cncrpsc_ds
+END
+17p_sc_h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_h
+END
+17p_cnc13sc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnc13sc_dm
+END
+17p_cnc13sc_do
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnc13sc_do
+END
+4p_vorsc_h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vorsc_h
+END
+4p_casasc_h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_h
+END
+17p_sc_m
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_m
+END
+17p_sc_o
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_sc_o
+END
+_sc_h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_h
+END
+17p_cnnfsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnnfsc_dh
+END
+4p_casasc_m
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_m
+END
+4p_vorsc_o
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vorsc_o
+END
+tools__o
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/tools__o
+END
+4p_casasc_o
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_casasc_o
+END
+_sc_m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_m
+END
+17p_cnnfsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnnfsc_dm
+END
+tools__s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/tools__s
+END
+21p_cndvcrpsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_dh
+END
+17p_cndvsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_dh
+END
+_sc_o
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_o
+END
+17p_cnnfsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnnfsc_do
+END
+_sc_s
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_sc_s
+END
+21p_cndvcrpsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_dm
+END
+17p_cndvsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_dm
+END
+21p_cndvcrpsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_do
+END
+17p_cndvsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_do
+END
+17p_cnadspinupsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnadspinupsc_dh
+END
+21p_cndvcrpsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_ds
+END
+17p_vorsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_dh
+END
+21p_nrcncrpsc_s
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_nrcncrpsc_s
+END
+17p_cnadspinupsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnadspinupsc_dm
+END
+17p_vorsc_dm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_dm
+END
+17p_cnadspinupsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cnadspinupsc_do
+END
+21p_nrcncrpsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_nrcncrpsc_ds
+END
+17p_vorsc_do
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_do
+END
+17p_vorsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_vorsc_ds
+END
+17p_nrscnv_ds
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_nrscnv_ds
+END
+_scsnf_dh
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_scsnf_dh
+END
+_scsnf_dm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_scsnf_dm
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/README
+END
+_scsnf_do
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_scsnf_do
+END
+_mec10sc_h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_h
+END
+4p_vonrsc_ds
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vonrsc_ds
+END
+_mec10sc_m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_m
+END
+_mec10sc_o
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/_mec10sc_o
+END
+4p_vorsc_dh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/4p_vorsc_dh
+END
+17p_scnv_dh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_scnv_dh
+END
+21p_cndvcrpsc_h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/21p_cndvcrpsc_h
+END
+17p_cndvsc_h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/config_files/17p_cndvsc_h
+END

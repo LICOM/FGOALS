@@ -1,0 +1,44 @@
+===============================================================
+Originator: tcraig
+Date: Oct 18, 2010
+Model: esmf_wrf_timemgr
+Version: esmf_wrf_timemgr_101018
+One-line Summary: merge racm03_esmf_wrf_timemgr_090402 to trunk
+
+- fix circular logic related to defaultCal.
+- make more routines public.
+- add some methods.
+- add WRFADDITION interfaces for wrf.  these are
+  modifications of some of the current interfaces for 
+  use in WRF.  These need to be reconciled to be used
+  with the ESMF library.
+- also add support for d_ in ESMF_TimeIntervalSet for CAM.
+
+M      ESMF_TimeMgr.inc
+M      ESMF_TimeMod.F90
+M      ESMF_TimeIntervalMod.F90
+M      ESMF_CalendarMod.F90
+M      ESMF_Stubs.F90
+	
+===============================================================
+Originator: tcraig
+Date: Apr 2, 2009
+Model: esmf_wrf_timemgr
+Version: esmf_wrf_timemgr_090402
+One-line Summary:  Add alarmcount to ESMF_ClockGet interface
+
+Required to support alarms properly in ccsm4
+Also add ChangeLog
+
+A      ChangeLog
+M      ESMF_ClockMod.F90
+	
+===============================================================
+
+Originator: 
+Date: 
+Model: esmf_wrf_timemgr
+Version: esmf_wrf_timemgr_080717
+One-line Summary:  
+
+===============================================================

@@ -1,0 +1,520 @@
+Known Bugs in CLM4.0    		                          Jun/07/2011
+
+====================================================================================
+Bug Number: 1354
+I1850SPINUPCN compset points to a transient case rather than a fixed 1850 case
+
+When the I1850SPINUPCN compset is run the case that is used is:
+
+DATM_CPL_CASE="b40.20th.track1.1deg.012"
+
+which is a transient case rather than a fixed 1850 case.
+
+====================================================================================
+Bug Number: 1348
+Restart test with crop on shows differences in landmask field
+
+The following test is failing on edinburgh with the lahey compiler with
+clm4_0_32.
+
+006 erTZ4 TER.sh 21p_cncrpsc_ds clm_stdIgnYr^nl_crop 20020401:3600 10x15 USGS
+-3+-7 cold ........FAIL! rc= 13
+
+
+The difference is in landmask field where some values are set to 1.95379e+09
+looks like over ocean.
+
+====================================================================================
+Bug Number: 1345
+Irrigation dataset is upside down! 
+
+The irrigation dataset used to create surface datasets by mksurfdata is upside
+down (latitude goes from 90 to -90 rather) relative to other files used to
+create surface datasets.
+
+The filename is:
+
+     $CSMDATA/lnd/clm2/rawdata/mksrf_irrig_2160x4320_simyr2000.c090320.nc
+
+This is the same problem as in the VOC dataset in bug number 1044 below.
+
+Even though the file looks incorrect the datasets it creates are fine.
+
+====================================================================================
+Bug Number: 1340
+Hanging problem with simulations on bluefire
+
+Randomly some people have experienced simulations hanging on bluefire and taking
+an extremely long time to finish (even finish initialization).
+
+Mariana said this problem has to do with an MPI library issue on bluefire.
+Other people have run into the same sort of trouble and a fix is coming in. A
+fix is on bluefire, and Jim Edwards has done a bunch of testing with it.
+
+I have confirmed that the upcoming update to the aix poe software will resolve
+this problem, in the meantime the user can add
+
+setenv MP_SHMCC_EXCLUDE_LIST        All
+
+to the environment via file  env_machine_specific file or otherwise
+
+====================================================================================
+Bug Number: 1339
+Limit on number of files when running with 155 years of MOAR data
+
+In order to run with 155 years of MOAR data the file limit in shr_stream needs
+to increase from 1000 to 2000 (technically 1860 would be sufficient, but might
+as well bump it to 2000).
+
+Index: shr_stream_mod.F90
+===================================================================
+--- shr_stream_mod.F90    (revision 28396)
++++ shr_stream_mod.F90    (working copy)
+@@ -101,7 +101,7 @@
+    end type shr_stream_fileType
+
+    !--- hard-coded array dims ~ could allocate these at run time ---
+-   integer(SHR_KIND_IN),parameter :: nFileMax = 1000  ! max number of files
++   integer(SHR_KIND_IN),parameter :: nFileMax = 2000  ! max number of files
+
+    type shr_stream_streamType
+       !private                                    ! no public access to internal components
+
+We didn't put this change in as it causes a compiler error on bluefire for AIX
+when compiling the dlnd component...
+
+/ptmp/mvertens/SMS.f45_g37.A.bluefire.rel06_d/lnd/obj/Depends
+mpxlf90_r -c -I. -I/usr/include -I/usr/local/include -I/usr/local/include -I.
+-I/ptmp/mvertens/SMS.f45_g37.A.bluefire.rel06_d/SourceMods/src.dlnd
+-I/glade/proj3/cseg/people/mver
+tens/src/cesm/cesm1_0_rel06/models/lnd/dlnd
+-I/glade/proj3/cseg/people/mvertens/src/cesm/cesm1_0_rel06/models/lnd/dlnd/cpl_mct
+-I/ptmp/mvertens/SMS.f45_g37.A.bluefire.rel06_d/li
+b/include  -WF,-DMCT_INTERFACE -WF,-DHAVE_MPI -WF,-DAIX -WF,-DSEQ_ -WF,-DFORTRAN_SAME
+-q64 -g -qfullpath -qmaxmem=-1 -qarch=auto -qsigtrap=xl__trcedump  -qsclk=micro -O2
+-qstri
+ct -Q -qsuffix=f=f90:cpp=F90
+/glade/proj3/cseg/people/mvertens/src/cesm/cesm1_0_rel06/models/lnd/dlnd/dlnd_comp_mod.F90
+touch /ptmp/mvertens/SMS.f45_g37.A.bluefire.rel06_d/lnd/obj/Filepath
+    1517-009: (U) Error in compiler runtime system; compilation ended.
+xlf90_r: 1501-230 (S) Internal compiler error; please contact your Service
+Representative. For more information visit:
+http://www.ibm.com/support/docview.wss?uid=swg21110810
+1501-511  Compilation failed for file dlnd_comp_mod.F90.
+gmake: *** [dlnd_comp_mod.o] Error 40
+
+====================================================================================
+Bug Number: 1326
+Running with both crop AND irrigation fail with a balance check error
+
+Running tests that have both crop AND irrigation fail with a balance check
+error. This is for starting up with arbitrary initial conditions and running
+with either CN and/or CNDV.
+
+====================================================================================
+Bug Number: 1325
+Writing out GDDHARV cause abort when written out to history file
+
+The variables: GDDHARV cause the model to abort when
+adding it to the history file and DEBUG mode is on. It aborts in one of the
+pft averaging functions in subgridAveMod with a multiply by a NaN. This is on
+bluefire. The variables are initialized to spval, so I'm not sure why this
+happens.
+
+Here's what the abort looks like...
+
+(seq_mct_drv) : Model initialization complete
+
+
+  Signal received: SIGTRAP - Trace trap
+    Signal generated for floating-point exception:
+      FP invalid operation
+
+  Instruction that generated the exception:
+    fmul fr02,fr01,fr02
+    Source Operand values:
+      fr01 =                   NaNS
+      fr02 =   1.00000000000000e+00
+
+  Traceback:
+    Offset 0x00002104 in procedure __subgridavemod_NMOD_p2g_1d, near line 796
+in file /fis/cgd/home/erik/clm_cropbr/models/lnd/clm/src/main/subgridAveMod.F90
+    Offset 0x00000540 in procedure
+*__subgridavemod_NMOD_p2g_1d_stub_in___histfilemod_NMOD_hist_update_hbuf_field_1d
+    Offset 0x00000670 in procedure
+__histfilemod_NMOD_hist_update_hbuf_field_1d, near line 1172 in file
+/fis/cgd/home/erik/clm_cropbr/models/lnd/clm/src/main/histFileMod.F90
+    Offset 0x000000fc in procedure __histfilemod_NMOD_hist_update_hbuf@OL@1
+    Location 0x09000000015f2d4c
+    Location 0x09000000015eb758
+    Offset 0x000000dc in procedure _pthread_body
+    --- End of call chain ---
+
+====================================================================================
+Bug Number: 1310
+Some indices are different for differing number of threads
+
+Some of the 1d indices are different on the history files when differing number of
+threads is used.
+
+034 erL83 TER.sh _nrsc_do clm_std^nl_urb 20020115:3600 5x5_amazon navy -5+-5
+arb_ic .............FAIL! rc= 13
+
+Everything's bit-for-bit up to...
+
+CLM_compare.sh: comparing clmrun.clm2.h1.2002-01-20-00000.nc
+                with     
+/ptmp/erik/test-driver.888958/TSM._nrsc_do.clm_std^nl_urb.20020115:3600.5x5_amazon.navy.-10.arb_ic/clmrun.clm2.h1.2002
+-01-20-00000.nc
+CLM_compare.sh: files are NOT b4b
+
+ RMS land1d_g         7
+ RMS cols1d_g         7
+ RMS cols1d_l         8
+ RMS pfts1d_g         7
+ RMS pfts1d_l         8
+ RMS pfts1d_c        12
+
+We got around this by removing these fields from the history files.
+
+====================================================================================
+Bug Number: 1310
+Problem creating T31 rcp pftdyn files
+
+I'm having problems building the T31 rcp pftdyn files.
+
+Rcp2.6 worked OK, rcp4.5 gives the following (even for OMP_NUM_THREADS=1).
+
+ read_domain compute lat[ns],lon[we] from edge[nesw]
+ celledge, using celledge_regional
+ read_domain compute cellarea with edge[nesw]
+ cellarea, using cellarea_global
+ AREAINI warning: conservation check not valid for
+    input  grid of  720  x  360
+    output grid of  96  x  48
+ AREAINI warning: conservation check not valid for
+    input  grid of  720  x  360
+    output grid of  96  x  48
+ domain_clean: cleaning  720 360
+ Successfully made harvest and grazing
+
+ input pft dynamic dataset is 
+/cgd/tss/pftlandusedyn.0.5x0.5.minicam.simyr2005-2100.c100121/mksrf_landuse_minicam2054_c100121.nc
+year is  2054
+ Attempting to make PFTs .....
+
+ read_domain read lon and lat dims
+ read_domain initialized domain
+ read_domain read LONGXY and LATIXY fields
+ read_domain read EDGE[NESW]
+ read_domain read LANDMASK
+ read_domain compute lat[ns],lon[we] from edge[nesw]
+ celledge, using celledge_regional
+ read_domain compute cellarea with edge[nesw]
+ cellarea, using cellarea_global
+ERROR in mksurfdata: 134
+
+rcp 6 dies with...
+
+    output grid of  96  x  48
+ domain_clean: cleaning  720 360
+ Successfully made harvest and grazing
+
+ input pft dynamic dataset is 
+/cgd/tss/pftlandusedyn.0.5x0.5.simyr1850-2005.c090630/mksrf_landuse_rc1989_c090630.nc
+year is  1989
+ Attempting to make PFTs .....
+
+ read_domain read lon and lat dims
+ read_domain initialized domain
+ read_domain read LONGXY and LATIXY fields
+ read_domain read EDGE[NESW]
+ read_domain read LANDMASK
+ read_domain compute lat[ns],lon[we] from edge[nesw]
+ celledge, using celledge_regional
+ read_domain compute cellarea with edge[nesw]
+ cellarea, using cellarea_global
+ERROR in mksurfdata: 134
+
+using 1 thread rcp8.5 dies with...
+
+
+ input pft dynamic dataset is 
+/cgd/tss/pftlandusedyn.0.5x0.5.message.simyr2005-2100.c100121/mksrf_landuse_message2020_c100121.nc
+year is  2020
+ Attempting to make PFTs .....
+
+ read_domain read lon and lat dims
+ read_domain initialized domain
+ read_domain read LONGXY and LATIXY fields
+ read_domain read EDGE[NESW]
+ read_domain read LANDMASK
+ read_domain compute lat[ns],lon[we] from edge[nesw]
+ celledge, using celledge_regional
+ read_domain compute cellarea with edge[nesw]
+ cellarea, using cellarea_global
+ERROR in mksurfdata: 134
+
+
+====================================================================================
+Bug Number: 1289
+Problem reading in single-point CO2 stream file on franklin
+
+We verified this is a problem on franklin, but NOT other machines such as bluefire
+for example.
+
+Zack Subin
+
+Reports on the following problem on Franklin. The problem is a subscript out of
+range in a MCT subroutine being used by PIO. Hence why I've added Jim E. and
+Rob J. to the list of people.
+
+He's the running the following case documented in the CLM Users Guide.
+
+http://www.cesm.ucar.edu/models/cesm1.0/clm/models/lnd/clm/doc/UsersGuide/x2920.html#AEN2948
+
+I think the thing that's unique here is that the CO2 file only has one
+datapoint. There might be an assumption that you are reading more datapoints
+and something isn't dimensioned right in MCT, PIO or in datm? Not sure which...
+
+I ran the same case on bluefire and it runs both with DEBUG on and off (as I
+say below). But, possibly bluefire is more forgiving on this subscript overflow
+than Franklin. Since Franklin is a pretty standard machine it would probably
+show up on other platforms as well.
+
+Here's Zack's message, with my previous message to him to give me some data to
+file the bug report with.
+
+I'm running I_1850-2000_CN, 1.9x2.5 deg, on Franklin with clm4_0_24.  It
+is out of the box with the instructions for passing CO2 except for the
+location of the forcing files and the initial conditions file, and the
+number of tasks in drv_in:ccsm_pes: *_ntasks.
+
+The end of the standard output log reads:
+0: Subscript out of range for array compbuf (rearrange.F90: 300)
+   subscript=1, lower bound=1, upper bound=0, dimension=1
+
+The end of the cpl.log reads:
+(seq_mct_drv) : Initialize each component: atm, lnd, ocn, and ice
+(seq_mct_drv) : Initialize atm component
+
+The end of the datm.log reads:
+(shr_dmodel_readLBUB) reading file:
+/global/homes/z/zmsubin/Scratch/clmdata/fco2_datm_1765-2007_c100309.nc  
+  85
+
+There is no lnd.log.  It does not produce a core file.
+
+When I run with DEBUG off it runs normally, and the PCO2 is identical to
+what I get from a run in clm4_0_16 except that the point at (1, 1) has a
+nonzero PCO2 whereas it is 0 in clm4_0_16.
+
+When I follow your instructions for setting the number of atm pio tasks
+to 1, it still has the same error.
+
+--Zack
+
+I was able to replicate this problem on lynx:
+
+/glade/proj2/fis/cgd/home/erik/clm4_0_24/scripts/DATM_CO2_TSERIES
+
+ cat /ptmp/erik/DATM_CO2_TSERIES/run/ccsm.log.110225-170538
+
+ock size conversion in bytes is          4086.02
+8 MB memory   alloc in MB is             8.00
+8 MB memory dealloc in MB is             0.00     
+Memory block size conversion in bytes is          4086.02
+8 MB memory   alloc in MB is             8.00     
+8 MB memory dealloc in MB is             0.00
+8 MB memory dealloc in MB is             0.00
+Memory block size conversion in bytes is          4086.02
+Memory block size conversion in bytes is          4086.02
+.
+.
+.
+.
+0: Subscript out of range for array compbuf (rearrange.F90: 300)
+    subscript=1, lower bound=1, upper bound=0, dimension=1
+0: Subscript out of range for array compbuf (rearrange.F90: 300)
+    subscript=1, lower bound=1, upper bound=0, dimension=1
+[NID 00073] 2011-02-25 17:06:52 Apid 136614: initiated application termination
+Application 136614 exit codes: 127
+Application 136614 exit signals: Killed
+Application 136614 resources: utime 0, stime 0
+
+atm.log file ends with...
+
+(shr_dmodel_readLBUB) reading file:
+/glade/proj2/fis/cgd/cseg/csm/inputdata/atm/datm7/CO2/fco2_datm_1765-2007_c100614.nc
+     85
+
+====================================================================================
+Bug Number: 1282
+Trouble running datm8 to the last time-step for datasets with missing data
+
+The urban single-point sites all have only a portion of a complete year of atm
+forcing data. Hence, all of them abort with a dtlimit error when you try to run
+until the last time-step. This is because it reads in the data for the next
+time-step (thinking it needs to do a time-interpolation) and finds the
+difference in time-step is large (since it's over the part of the year with
+missing data). This is for the 1x1_mexicocityMEX, 1x1_vancouverCAN, and
+1x1_urbanc_alpha sites, but would be the case for other datasets with missing
+time-periods.
+
+The fix is to change the datm namelist to add settings for tintalgo and dtlimit
+in the datm namelist as follows...
+
+ &shr_strdata_nml
+.
+.
+.
+   tintalgo       = 'nearest','linear'
+   dtlimit        = 25000.,1.5
+  /
+
+Thus it will use the nearest point in time, and won't die with a dtlimit error,
+as we are setting the dtlimit to a very high value.
+
+====================================================================================
+Bug Number: 1251
+PTCLM testcases aborts in I_QIAN case...
+
+On yong with intel, the testcases.csh aborts on this case...
+
+./PTCLM.py -d /Users/erik/inputdata -m generic_darwin_intel -s US-Ha1 -c I
+--rmold --caseidprefix=myPTCLMtests --owritesrfaer --run_units=ndays --run_n=5
+--aerdepgrid --ndepgrid --useQIAN --QIAN_tower_yrs
+
+It aborts with a seg-fault...
+
+-----------------------------------
+
+NODE#  NAME
+(    0)  yong.local
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+
+
+This is after completing 24 timesteps in the land model (half-hour time-step).
+
+====================================================================================
+Bug Number: 1164
+Restart trouble for CNC13 with INTEL, PGI and LAHEY compilers
+
+017 erR53 TER.sh 17p_cnc13sc_do clm_std^nl_urb 20020115:NONE:1800 10x15
+USGS@1850 10+38 cold ....FAIL! rc= 13
+
+Answers differ and gradually diverge in time. This could be a restart issue or a
+multi-processing or threading issue.
+
+====================================================================================
+Bug Number: 1163
+CN finidat files have a bunch of fields with NaN's on it.
+
+For example on:
+
+$CSMDATA/ccsm4_init/I2000CN_f09_g16_c100503/0001-01-01/ \
+I2000CN_f09_g16_c100503.clm2.r.0001-01-01-00000.nc
+
+the fields: mlaidiff, flx_absdv, flx_absdn, flx_absiv, flx_absin, and
+qflx_snofrz_lyr all have NaN's, with mlaidiff being completely full of NaN's
+(since mlaidiff is only defined for CLMSP or if drydep is on).
+
+====================================================================================
+Bug Number: 1127
+interpinic not tested for CNDV, yet; expected not to work 
+
+Interpinic has not worked for the old dgvm since probably before clm3.5.
+Interpinic has not been tested, yet, for CNDV. Therefore, we assume that it
+does not work.
+
+====================================================================================
+Bug Number: 1124
+Reported energy for grid-cell is not quite right for pftdyn
+
+The amount of water is conserved correctly in pftdyn mode, but the energy isn't
+reported quite accurately.
+
+====================================================================================
+Bug Number: 1101
+suplnitro=ALL mode is over-productive
+
+suplnitro=ALL mode is over-productive. This is because it provides unlimited
+Nitrogen. Fixing it requires using fnitr from the pft-physiology file, a different 
+pft-physiology file with fnitr scaled appropriately and some code modifications 
+to get this all to work.
+
+====================================================================================
+Bug Number: 1063
+Problems restarting for CESM spinup data mode
+
+Exact restarts for the 1850 CN spinup compset fail on bluefire...
+
+ERS.f09_g16.I1850SPINUPCN.bluefire
+
+also the ERB test fails, and the ERB_D test fails with optimization set to
+zero.
+
+(note ERS for the I1850CN compset passes, it's just the SPINUP case that fails)
+
+In the coupler log file there's a single field that is different...
+
+The good thing is that it's a single field from the land model that's causing
+trouble...
+
+Comparing initial log file with second log file
+Error:
+/ptmp/erik/ERS.f09_g16.I1850SPINUPCN.bluefire.124426/run/cpl.log.091029-130401
+and
+/ptmp/erik/ERS.f09_g16.I1850SPINUPCN.bluefire.124426/run/cpl.log.091029-130648
+are different.
+>comm_diag xxx sorr   1 4.5555498624818352000E+16 recv lnd Sl_t
+
+<comm_diag xxx sorr   1 4.5555508855413304000E+16 recv lnd Sl_t
+
+
+But, there are many clm history fields that are different.
+
+====================================================================================
+Bug Number: 1044
+VOC input raw data file has reverse coordinates and hence upside down LANDMASK
+
+The file
+
+$CSMDATA/lnd/clm2/rawdata/mksrf_vocef.c060502.nc
+
+produces reasonable results for VOC emission fields on surfdata files. But, the
+LANDMASK when viewed with ncview is upside down and shifted from what's
+expected. I think this is because the latitude coordinates are reversed from
+the other files (N to S instead of S to N).
+
+====================================================================================
+Bug Number: 717
+Problem with lt_archiving for too-many files
+
+We've been running into a bunch of problems with the lt_archiving when
+using CLM. He can get 30 years in a 6 hour wall-clock cycle -- which means
+over a thousand files -- where lt_archive.sh pukes.
+
+Making it robust -- regardless of the number of files would be one first step.
+The next problem he has is that running over just 10 years -- the job resubmits
+itself before the lt_archive script is done. Then the scripts conflict and he
+ends up having to run the archiving by hand. It would also help if it were
+easier to submit the lt_archive.sh script as well.
+
+====================================================================================
+Bug number: 669
+Y10K problem for clm
+
+CESM can't use negative years or years > 9999. Having dates of Y10K or more
+is sometimes useful for paleo simulations.
+For clm to get past the Y10K barrier -- it needs the subroutines
+
+set_hist_filename
+restFile_filename
+set_dgvm_filename
+
+changed to allow 5 or 6 digit years rather than just 4-digit ones.
+
+scripts, drv, and csm_share also have problems with Y10K as well.
+
+====================================================================================

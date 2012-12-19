@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata
+END
+mkvarctl.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkvarctl.F90
+END
+mkvarpar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkvarpar.F90
+END
+mkgriddata.namelist
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkgriddata.namelist
+END
+clm_varpar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/clm_varpar.F90
+END
+clm_varctl.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/clm_varctl.F90
+END
+shr_sys_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/shr_sys_mod.F90
+END
+ncdio.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/ncdio.F90
+END
+shr_log_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/shr_log_mod.F90
+END
+mkgriddata.singlept
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkgriddata.singlept
+END
+mkgriddata.cesm_dom
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkgriddata.cesm_dom
+END
+Filepath
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/Filepath
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/README
+END
+shr_kind_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/shr_kind_mod.F90
+END
+shr_const_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/shr_const_mod.F90
+END
+mkgriddata.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkgriddata.F90
+END
+domainMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/domainMod.F90
+END
+areaMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/areaMod.F90
+END
+mkgriddata.regional
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkgriddata.regional
+END
+creategridMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/creategridMod.F90
+END
+mkvarsur.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/mkvarsur.F90
+END
+nanMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/nanMod.F90
+END
+Srcfiles
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/Srcfiles
+END
+Mkdepends
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/Mkdepends
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkgriddata/Makefile
+END

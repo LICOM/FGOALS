@@ -1,0 +1,4 @@
+-mode clm_stndln
+-glc_nec 10
+-use_mpiserial -smp
+-s

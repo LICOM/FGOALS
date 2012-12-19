@@ -1,0 +1,172 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#------------------------------------------------------------------------------
+#  determine input data files and resolution dependent variables            
+#------------------------------------------------------------------------------
+
+set DOMAINFILE = unknown
+if ($ICE_GRID == 'gx1v6'  ) set DOMAINFILE = domain.ocn.gx1v6.090206.nc
+if ($ICE_GRID == 'gx3v7'  ) set DOMAINFILE = domain.ocn.gx3v7.090903.nc 
+if ($ICE_GRID == 'gx3v5'  ) set DOMAINFILE = domain.ocn.gx3v5.071210.nc 
+if ($ICE_GRID == 'tx0.1v2') set DOMAINFILE = domain.ocn.tx0.1v2_090218.nc
+if ($ICE_GRID == 'tx1v1'  ) set DOMAINFILE = domain.ocn.tx1v1.090122.nc
+if ($ICE_GRID == 'wr50a'  ) set DOMAINFILE = domain.ocn.wr50a.090309.nc
+if ($ICE_GRID == 'ar9v1'  ) set DOMAINFILE = domain.ocn.ar9v1.090521.nc
+if ($ICE_GRID == 'ar9v2'  ) set DOMAINFILE = domain.ocn.ar9v2.090614.nc
+if ($DOMAINFILE == "unknown") then
+   echo "ERROR: unsupported grid = $GRID"
+   exit -1
+endif
+
+#==============================================================================
+# Create resolved prestage data script
+#==============================================================================
+
+cat >! $CASEBUILD/dice.buildnml.csh << EOF
+#! /bin/csh -f 
+#==============================================================================
+# CCSM dice: build namelist and prestage data
+#==============================================================================
+
+set exedir = \$RUNDIR; cd \$exedir
+
+#------------------------------------------------------------------------------
+# specify input data files
+#------------------------------------------------------------------------------
+# If the user changes any input datasets - be sure they have unique filenames.  
+# Do not duplicate existing input file names.
+#------------------------------------------------------------------------------
+
+set DOMAINFILE = \$DIN_LOC_ROOT/ice/dice7/$DOMAINFILE
+echo DOMAINFILE = \$DOMAINFILE >! \$CASEBUILD/dice.input_data_list
+
+EOF
+
+#-------------------------------------------------------------------
+if ($DICE_MODE == "ssmi" ) then
+#-------------------------------------------------------------------
+
+cat >> $CASEBUILD/dice.buildnml.csh << EOF 
+
+set STREAM1TXT = "ssmi_ifrac.clim.x0.5.txt"
+
+set FLUXQACC = ".true."
+
+set year_align = 1
+set year_start = 1
+set year_end   = 1
+
+cat >! dice_ice_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'SSTDATA'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '\$STREAM1TXT \$year_align \$year_start \$year_end '
+   vectors        = 'null'
+  /
+EOF1
+
+cat >! \$STREAM1TXT << EOF1
+EOF
+
+$UTILROOT/Tools/build_streams -t dice.template.streams.xml -s SSMI >> $CASEBUILD/dice.buildnml.csh || exit 3
+cat >> $CASEBUILD/dice.buildnml.csh <<EOF
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/dice.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t \$STREAM1TXT >> \$CASEBUILD/dice.input_data_list
+
+EOF
+
+#-------------------------------------------------------------------
+else if ($DICE_MODE == "ssmi_iaf" ) then
+#-------------------------------------------------------------------
+
+cat >> $CASEBUILD/dice.buildnml.csh << EOF 
+
+set STREAM1TXT = "ssmi_ifrac.iaf.x0.5.txt"
+
+set FLUXQACC = ".true."
+
+set year_align = 1
+set year_start = 1948
+set year_end   = 2004
+
+cat >! dice_ice_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'SSTDATA'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '\$STREAM1TXT \$year_align \$year_start \$year_end '
+   vectors        = 'null'
+  /
+EOF1
+
+cat >! \$STREAM1TXT << EOF1
+EOF
+
+$UTILROOT/Tools/build_streams -t dice.template.streams.xml -s SSMI_IAF >> $CASEBUILD/dice.buildnml.csh || exit 3
+cat >> $CASEBUILD/dice.buildnml.csh <<EOF
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/dice.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t \$STREAM1TXT >> \$CASEBUILD/dice.input_data_list
+
+EOF
+
+#----- unknown mode -----------------------------------------------------------
+else 
+  echo "ERROR: unrecognized DICE_MODE = \$DICE_MODE 
+  exit -1
+endif
+
+#==============================================================================
+# Create other resolved namelist
+#==============================================================================
+
+cat >> $CASEBUILD/dice.buildnml.csh << EOF
+cat >! dice_in << EOF1
+  &dice_nml
+    ice_in = 'dice_ice_in'
+    decomp = '1d'
+    flux_Qacc     = \$FLUXQACC
+  /
+EOF1
+EOF
+
+#==============================================================================
+#  Create script to build executable
+#==============================================================================
+
+cat >! $CASEBUILD/dice.buildexe.csh << EOF
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/ice/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+#------------------------------------------------------------------------------
+# Build the library
+#------------------------------------------------------------------------------
+
+\cat >! Filepath << EOF1
+\$CASEROOT/SourceMods/src.dice
+\$CODEROOT/ice/dice
+\$CODEROOT/ice/dice/cpl_\$comp
+EOF1
+endif
+
+gmake complib -j \$GMAKE_J MODEL=dice COMPLIB=\$LIBROOT/libice.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF
+
+#==============================================================================
+# end of script
+#==============================================================================

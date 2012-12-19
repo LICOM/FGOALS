@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/dlnd
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/dlnd/ChangeLog
+END
+dlnd_comp_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/dlnd/dlnd_comp_mod.F90
+END

@@ -1,0 +1,72 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#-------------------------------------------------------------------------------
+# setup
+#-------------------------------------------------------------------------------
+
+if ($?ROF_NX) then
+  # ROF_NX and ROF_NY exist
+else
+  set ROF_NX = 720
+  set ROF_NY = 360
+endif
+
+set NX  = $LND_NX
+set NY  = $LND_NY
+set NXR = $ROF_NX
+set NYR = $ROF_NY
+if ($LND_GRID == $OCN_GRID) then
+  set NXR = $LND_NX
+  set NYR = $LND_NY
+endif
+
+# ---------------------------------------------------------------------------
+#  Create resolved namelist 
+# ---------------------------------------------------------------------------
+
+cat >! $CASEBUILD/xlnd.buildnml.csh << EOF1
+#! /bin/csh -f 
+
+set exedir = \$RUNDIR; cd \$exedir
+
+cat >! xlnd_in << EOF
+$NX                  !  i-direction global dimension
+$NY                  !  j-direction global dimension
+11                   !  decomp_type  1=1d-by-lat, 2=1d-by-lon, 3=2d, 4=2d evensquare, 11=segmented
+0                    !  num of pes for i (type 3 only)
+0                    !  length of segments (type 4 only)
+$NXR                 !  i-direction global dimension - runoff
+$NYR                 !  j-direction global dimension - runoff
+11                   !  decomp_type  1=1d-by-lat, 2=1d-by-lon, 3=2d, 4=2d even square, 11=segmented - runoff
+0                    !  num of pes for i (type 3 only) - runoff
+0                    !  length of segments (type 4 only) - runoff
+EOF
+
+EOF1
+
+# ---------------------------------------------------------------------------
+#  Create script to build dead model
+# ---------------------------------------------------------------------------
+
+cat >! $CASEBUILD/xlnd.buildexe.csh << EOF2
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/lnd/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+#------------------------------------------------------------------------------
+# Build the library
+#------------------------------------------------------------------------------
+cat >! Filepath << EOF
+\$CASEROOT/SourceMods/src.xlnd
+\$CODEROOT/lnd/xlnd
+\$CODEROOT/lnd/xlnd/cpl_\$comp
+EOF
+
+gmake complib -j \$GMAKE_J MODEL=xlnd COMPLIB=\$LIBROOT/liblnd.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF2

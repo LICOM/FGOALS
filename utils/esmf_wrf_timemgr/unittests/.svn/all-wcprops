@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests
+END
+Depends
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/Depends
+END
+ESMF.inc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/ESMF.inc
+END
+Test1.out.correct.noleap
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/Test1.out.correct.noleap
+END
+testall.csh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/testall.csh
+END
+Test1.out.correct
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/Test1.out.correct
+END
+standard.sed
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/standard.sed
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/Makefile
+END
+Test1.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/esmf_wrf_timemgr/unittests/Test1.F90
+END

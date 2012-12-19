@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi
+END
+broadcast.F90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/broadcast.F90
+END
+POP_RedistributeMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/POP_RedistributeMod.F90
+END
+communicate.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/communicate.F90
+END
+POP_CommMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/POP_CommMod.F90
+END
+check_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/check_mod.F90
+END
+POP_ReductionsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/POP_ReductionsMod.F90
+END
+gather_scatter.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/gather_scatter.F90
+END
+global_reductions.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/global_reductions.F90
+END
+POP_BroadcastMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/POP_BroadcastMod.F90
+END
+POP_HaloMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/pop2/mpi/POP_HaloMod.F90
+END

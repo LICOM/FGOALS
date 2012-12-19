@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain
+END
+mkdatadomain.namelist
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/mkdatadomain.namelist
+END
+addglobal.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/addglobal.F90
+END
+create_domain.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/create_domain.F90
+END
+Mkdepends
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/Mkdepends
+END
+Srcfiles
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/Srcfiles
+END
+Filepath
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/Filepath
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/README
+END
+shr_kind_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/shr_kind_mod.F90
+END
+shr_const_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/mkdatadomain/shr_const_mod.F90
+END

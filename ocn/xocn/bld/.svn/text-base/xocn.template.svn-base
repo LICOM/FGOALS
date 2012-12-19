@@ -1,0 +1,60 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#-------------------------------------------------------------------------------
+# setup
+#-------------------------------------------------------------------------------
+
+set NX = $OCN_NX
+set NY = $OCN_NY
+
+# ---------------------------------------------------------------------------
+#  Create resolved namelist 
+# ---------------------------------------------------------------------------
+
+cat >! $CASEBUILD/xocn.buildnml.csh << EOF1
+#! /bin/csh -f 
+
+ #******************************************************************#
+ # If the user changes any input datasets - be sure to give it a    #
+ # unique filename. Do not duplicate any existing input files       #
+ #******************************************************************#
+
+set exedir = \$RUNDIR; cd \$exedir
+
+cat >! xocn_in << EOF
+$NX                  !  i-direction global dimension
+$NY                  !  j-direction global dimension
+4                    !  decomp_type  1=1d-by-lat, 2=1d-by-lon, 3=2d, 4=2d evensquare, 11=segmented
+0                    !  num of pes for i (type 3 only)
+0                    !  length of segments (type 4 only)
+EOF
+
+EOF1
+
+# ---------------------------------------------------------------------------
+#  Create script to build dead model
+# ---------------------------------------------------------------------------
+
+cat >! $CASEBUILD/xocn.buildexe.csh << EOF2
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/ocn/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+#------------------------------------------------------------------------------
+# Build the library
+#------------------------------------------------------------------------------
+cat >! Filepath << EOF
+\$CASEROOT/SourceMods/src.xocn
+\$CODEROOT/ocn/xocn
+\$CODEROOT/ocn/xocn/cpl_\$comp
+EOF
+
+gmake complib -j \$GMAKE_J MODEL=xocn COMPLIB=\$LIBROOT/libocn.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF2
+

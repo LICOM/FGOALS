@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc
+END
+pop_frc_mlt.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/pop_frc_mlt.ncl
+END
+read_from_mss_month.csh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/read_from_mss_month.csh
+END
+SOM.doc
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/SOM.doc
+END
+pop_frc.csh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/pop_frc.csh
+END
+SOM.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/SOM.pdf
+END
+pop_frc_mlann.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/pop_frc_mlann.ncl
+END
+pop_interp.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/pop_interp.ncl
+END
+read_from_mss.csh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/read_from_mss.csh
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/docn/tools/pop_som_frc/README
+END

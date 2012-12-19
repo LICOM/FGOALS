@@ -1,0 +1,5 @@
+-mode clm_stndln
+-nouse_mpiserial 
+-maxpft 4
+-bgc casa
+-s

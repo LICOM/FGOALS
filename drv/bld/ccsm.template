@@ -1,0 +1,27 @@
+#! /bin/csh -f
+
+#--------------------------------------------------------------------
+# get env variables associated with this case
+#--------------------------------------------------------------------
+if !(-d $CASEBUILD)  mkdir $CASEBUILD
+
+cat >! $CASEBUILD/ccsm.buildexe.csh << EOF2
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/ccsm/obj; cd \$objdir
+
+echo -------------------------------------------------------------------------
+echo " Building a single executable version of CCSM "
+echo -------------------------------------------------------------------------
+
+\cat >! Filepath << EOF
+\$CASEROOT/SourceMods/src.drv
+\$CODEROOT/drv/driver
+EOF
+
+gmake exec_se -j \$GMAKE_J EXEC_SE=\$RUNDIR/ccsm.exe MODEL=driver MACFILE=\$CASEROOT/Macros.\$MACH -f \$CASETOOLS/Makefile || exit 2
+
+EOF2
+
+exit 0
+

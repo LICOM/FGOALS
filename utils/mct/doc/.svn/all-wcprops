@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc
+END
+coupler.bib
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/coupler.bib
+END
+.cvsignore
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/.cvsignore
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/README
+END
+mct_APIs.tex
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/doc/mct_APIs.tex
+END

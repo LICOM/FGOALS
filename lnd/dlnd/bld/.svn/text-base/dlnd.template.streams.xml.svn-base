@@ -1,0 +1,169 @@
+<streamstemplate>
+  <general_comment>
+      streams template for dlnd in CCSM4
+   </general_comment>
+<!----------------------------------------------------------------------------->
+<stream datasource="RUNOFF.RX1">
+   <comment>
+      Stream description file for Dai-Trenberth 1 degree runoff
+   </comment>
+   <dataSource>
+      NCAR OCE
+      </dataSource>
+   <domainInfo>
+      <variableNames>
+         time          time
+         xc            lon
+         yc            lat
+         area          area
+         mask          mask
+      </variableNames>
+      <filePath>
+         $DIN_LOC_ROOT/lnd/dlnd7/RX1
+      </filePath>
+      <fileNames> runoff.daitren.annual.090225.nc </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+         runoff roff
+      </variableNames>
+      <filePath>
+         $DIN_LOC_ROOT/lnd/dlnd7/RX1
+      </filePath>
+      <fileNames> runoff.daitren.annual.090225.nc </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+<stream datasource="RUNOFF.CPLHIST.B14b">
+   <comment>
+   Stream description file for cpl7 runoff history data
+   </comment>
+   <dataSource>
+      cpl7
+   </dataSource>
+   <domainInfo>
+      <variableNames>
+         time                 time
+         domr_lon    lon
+         domr_lat    lat
+         domr_area   area
+         domr_mask   mask
+      </variableNames>
+      <filePath>
+         $DIN_LOC_ROOT/lnd/dlnd7/CPLHIST
+      </filePath>
+      <fileNames>
+         B14b.cpl.hr2xacc.0001-01-02.nc
+      </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+         r2xacc_Forr_roff      roff
+         r2xacc_Forr_ioff      ioff
+      </variableNames>
+      <tInterpAlgo>
+         upper
+      </tInterpAlgo>
+      <filePath>
+         $DIN_LOC_ROOT/lnd/dlnd7/CPLHIST
+      </filePath>
+      <fileNames>
+         B14b.cpl.hr2xacc.0001-01-02.nc
+         B14b.cpl.hr2xacc.0001-01-03.nc
+         B14b.cpl.hr2xacc.0001-01-04.nc
+         B14b.cpl.hr2xacc.0001-01-05.nc
+         B14b.cpl.hr2xacc.0001-01-06.nc
+         B14b.cpl.hr2xacc.0001-01-07.nc
+         B14b.cpl.hr2xacc.0001-01-08.nc
+         B14b.cpl.hr2xacc.0001-01-09.nc
+         B14b.cpl.hr2xacc.0001-01-10.nc
+         B14b.cpl.hr2xacc.0001-01-11.nc
+         B14b.cpl.hr2xacc.0001-01-12.nc
+         B14b.cpl.hr2xacc.0001-01-13.nc
+         B14b.cpl.hr2xacc.0001-01-14.nc
+         B14b.cpl.hr2xacc.0001-01-15.nc
+         B14b.cpl.hr2xacc.0001-01-16.nc
+         B14b.cpl.hr2xacc.0001-01-17.nc
+         B14b.cpl.hr2xacc.0001-01-18.nc
+         B14b.cpl.hr2xacc.0001-01-19.nc
+         B14b.cpl.hr2xacc.0001-01-20.nc
+      </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+<stream datasource="LND.CPLHIST.B14b">
+   <comment>
+   Stream description file for cpl7 lnd history data
+   </comment>
+   <dataSource>
+      cpl7
+   </dataSource>
+   <domainInfo>
+      <variableNames>
+         time  time
+         xc    lon
+         yc    lat
+         area  area
+         mask  mask
+      </variableNames>
+      <filePath>
+         $DIN_LOC_ROOT/lnd/dlnd7
+      </filePath>
+      <fileNames>
+         domain.lnd.4x5_gx3v5.060404.nc
+      </fileNames>
+   </domainInfo>
+   <fieldInfo>
+      <variableNames>
+         l2x_Sl_t           t
+         l2x_Sl_tref        tref
+         l2x_Sl_qref        qref
+         l2x_Sl_avsdr       avsdr
+         l2x_Sl_anidr       anidr
+         l2x_Sl_avsdf       avsdf
+         l2x_Sl_anidf       anidf
+         l2x_Sl_snowh       snowh
+         l2x_Sl_landfrac    lfrac
+         l2x_Sl_fv          fv
+         l2x_Sl_ram1        ram1
+         l2x_Fall_taux      taux
+         l2x_Fall_tauy      tauy
+         l2x_Fall_lat       lat
+         l2x_Fall_sen       sen
+         l2x_Fall_lwup      lwup
+         l2x_Fall_evap      evap
+         l2x_Fall_swnet     swnet
+         l2x_Fall_flxdst1   flxdst1
+         l2x_Fall_flxdst2   flxdst2
+         l2x_Fall_flxdst3   flxdst3
+         l2x_Fall_flxdst4   flxdst4
+      </variableNames>
+      <filePath>
+         $DIN_LOC_ROOT/lnd/dlnd7/CPLHIST
+      </filePath>
+      <fileNames>
+         B14b.cpl.hl2x.0001-01-01.nc
+         B14b.cpl.hl2x.0001-01-02.nc
+         B14b.cpl.hl2x.0001-01-03.nc
+         B14b.cpl.hl2x.0001-01-04.nc
+         B14b.cpl.hl2x.0001-01-05.nc
+         B14b.cpl.hl2x.0001-01-06.nc
+         B14b.cpl.hl2x.0001-01-07.nc
+         B14b.cpl.hl2x.0001-01-08.nc
+         B14b.cpl.hl2x.0001-01-09.nc
+         B14b.cpl.hl2x.0001-01-10.nc
+         B14b.cpl.hl2x.0001-01-11.nc
+         B14b.cpl.hl2x.0001-01-12.nc
+         B14b.cpl.hl2x.0001-01-13.nc
+         B14b.cpl.hl2x.0001-01-14.nc
+         B14b.cpl.hl2x.0001-01-15.nc
+         B14b.cpl.hl2x.0001-01-16.nc
+         B14b.cpl.hl2x.0001-01-17.nc
+         B14b.cpl.hl2x.0001-01-18.nc
+         B14b.cpl.hl2x.0001-01-19.nc
+         B14b.cpl.hl2x.0001-01-20.nc
+      </fileNames>
+   </fieldInfo>
+</stream>
+<!----------------------------------------------------------------------------->
+</streamstemplate>

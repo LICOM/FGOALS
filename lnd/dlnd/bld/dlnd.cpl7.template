@@ -1,0 +1,291 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#------------------------------------------------------------------------------
+#  determine input data files and resolution dependent variables            
+#------------------------------------------------------------------------------
+
+set nml_in = 'dlnd_in'
+set lnd_in = 'dlnd_lnd_in'
+set rof_in = 'dlnd_rof_in'
+set sno_in = 'dlnd_sno_in'
+
+set DOMAINFILE = unset
+
+if ( $GRID =~ 4x5_gx3v5        ) set DOMAINFILE = domain.lnd.4x5_gx3v5.060404.nc
+if ( $GRID =~ 4x5_gx3v7        ) set DOMAINFILE = domain.lnd.fv4x5_gx3v7.091218.nc
+if ( $GRID =~ 1.9x2.5_gx1v6    ) set DOMAINFILE = domain.lnd.fv1.9x2.5_gx1v6.090206.nc
+if ( $GRID =~ 1.9x2.5_tx1v1    ) set DOMAINFILE = domain.lnd.fv1.9x2.5_tx1v1_090713.nc
+if ( $GRID =~ 0.9x1.25_gx1v6   ) set DOMAINFILE = domain.lnd.fv0.9x1.25_gx1v6.090309.nc
+if ( $GRID =~ 0.9x1.25_tx0.1v2 ) set DOMAINFILE = domain.lnd.fv0.9x1.25_tx0.1v2_070928.nc
+if ( $GRID =~ 0.47x0.63_gx1v6  ) set DOMAINFILE = domain.lnd.fv0.47x0.63_gx1v6.090407.nc
+if ( $GRID =~ 0.47x0.63_tx0.1v2) set DOMAINFILE = domain.lnd.fv0.47x0.63_tx0.1v2_070929.nc
+if ( $GRID =~ 0.23x0.31_gx1v6  ) set DOMAINFILE = domain.lnd.fv0.23x0.31_gx1v6.100517.nc
+if ( $GRID =~ 0.23x0.31_tx0.1v2) set DOMAINFILE = domain.lnd.fv0.23x0.31_tx0.1v2_070929.nc
+
+if ( $GRID =~ T31_gx3v5        ) set DOMAINFILE = domain.lnd.T31_gx3v5.090206.nc
+if ( $GRID =~ T31_gx3v7        ) set DOMAINFILE = domain.lnd.T31_gx3v7.090928.nc
+if ( $GRID =~ T62_gx1v6        ) set DOMAINFILE = domain.lnd.T62_gx1v6.090320.nc
+if ( $GRID =~ T62_gx3v5        ) set DOMAINFILE = domain.lnd.T62_gx3v5.051111.nc
+if ( $GRID =~ T62_gx3v7        ) set DOMAINFILE = domain.lnd.T62_gx3v7.090911.nc
+if ( $GRID =~ T62_tx1v1        ) set DOMAINFILE = domain.lnd.T62_tx1v1.090122.nc
+if ( $GRID =~ T62_tx0.1v2      ) set DOMAINFILE = domain.lnd.T62_tx0.1v2_090623.nc
+
+if ( $GRID =~ wr50a_wr50a      ) set DOMAINFILE = domain.lnd.wr50a_wr50a.090310.nc
+if ( $GRID =~ ar9v1_ar9v1      ) set DOMAINFILE = domain.lnd.ar9v1_ar9v1.090521.nc
+if ( $GRID =~ ar9v2_ar9v2      ) set DOMAINFILE = domain.lnd.ar9v2_ar9v2.090521.nc
+if ( $GRID =~ wr50a_ar9v2      ) set DOMAINFILE = domain.lnd.wr50a_ar9v2.090614.nc
+if ( $GRID =~ wr50a_ar9v4      ) set DOMAINFILE = domain.lnd.wr50a_ar9v4.100920.nc
+
+if ( $DOMAINFILE == "unset") then
+   echo "ERROR: unsupported grid = $GRID"
+   exit -1
+endif
+
+#==============================================================================
+# Create resolved prestage data script
+#==============================================================================
+
+cat >! $CASEBUILD/dlnd.buildnml.csh << EOF
+#! /bin/csh -f 
+#==============================================================================
+# CCSM dlnd: build namelist and prestage data
+#==============================================================================
+
+set exedir = \$RUNDIR; cd \$exedir
+
+#------------------------------------------------------------------------------
+# specify input data files
+#------------------------------------------------------------------------------
+# If the user changes any input datasets - be sure they have unique filenames.  
+# Do not duplicate existing input file names.
+#------------------------------------------------------------------------------
+
+set DOMAINFILE = \$DIN_LOC_ROOT/lnd/dlnd7/$DOMAINFILE
+echo DOMAINFILE = \$DOMAINFILE >! \$CASEBUILD/dlnd.input_data_list
+set DTLIMIT = 1.5
+
+EOF
+
+#-----------------------------------------------------------------------------------
+# Land Non-Runoff
+#-----------------------------------------------------------------------------------
+
+#--- cplhist mode -------------------------------------------------------------
+if ($DLND_MODE == "CPLHIST" ) then
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+#----- define land data stream -----
+
+set DATAMODE = CPLHIST
+set VECTOR1  = "taux:tauy"
+
+##echo DLNDMODE = \$DATAMODE
+
+set year_align = 1
+set year_start = 1
+set year_end   = 1
+set STREAM1TXT = B14b.cpl7.stream.txt
+set STREAM1    = "\$STREAM1TXT \$year_align \$year_start \$year_end "
+set STREAM2    = "null"
+set STREAM3    = "null"
+set DTLIMIT = 1.0e6
+
+cat >! \$STREAM1TXT << EOF1
+EOF
+
+$UTILROOT/Tools/build_streams -t dlnd.template.streams.xml -s LND.CPLHIST.B14b >> $CASEBUILD/dlnd.buildnml.csh || exit 3
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t \$STREAM1TXT >> \$CASEBUILD/dlnd.input_data_list
+
+EOF
+
+#----- null  mode -----------------------------------------------------------
+else if ($DLND_MODE == "NULL" ) then
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+set DATAMODE = "null"
+set STREAM1  = "null "
+set STREAM2  = "null "
+set STREAM3  = "null "
+set VECTOR1  = "null "
+
+EOF
+
+#----- unknown mode -----------------------------------------------------------
+else
+   echo "ERROR: unrecognized DLND_MODE = $DLND_MODE"
+   exit -1
+endif
+
+#-----------------------------------------------------------------------------------
+# Land Runoff
+#-----------------------------------------------------------------------------------
+
+#--- cplhist mode -------------------------------------------------------------
+if ($DLND_RUNOFF_MODE  == "CPLHIST" ) then
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+#----- define runoff stream -----
+
+##echo RUNOFF_DLNDMODE = 05DEGREE
+
+set year_align = 1
+set year_start = 1
+set year_end   = 1
+set STREAMRTXT = B14b.cpl7.streamr.txt
+set STREAMR    = "\$STREAMRTXT \$year_align \$year_start \$year_end "
+
+cat >! \$STREAMRTXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams -t dlnd.template.streams.xml -s RUNOFF.CPLHIST.B14b >> $CASEBUILD/dlnd.buildnml.csh || exit 3
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t \$STREAMRTXT >> \$CASEBUILD/dlnd.input_data_list
+
+EOF
+
+#--- RX1 --------------------------------------------------------------------
+else if ($DLND_RUNOFF_MODE  == "RX1" ) then
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+#----- define runoff stream -----
+
+set year_align = 1
+set year_start = 1  
+set year_end   = 1  
+set STREAMRTXT = "runoff.1x1.stream.txt"
+set STREAMR    = "\$STREAMRTXT \$year_align \$year_start \$year_end "
+
+cat >! \$STREAMRTXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams -t dlnd.template.streams.xml -s RUNOFF.RX1  >> $CASEBUILD/dlnd.buildnml.csh || exit 3
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t \$STREAMRTXT >> \$CASEBUILD/dlnd.input_data_list
+
+EOF
+
+#--- null mode -----------------------------------------------------------------
+else if ($DLND_RUNOFF_MODE  == "NULL" ) then
+
+cat >> $CASEBUILD/dlnd.buildnml.csh <<EOF
+
+set STREAMR    = "null"
+
+EOF
+
+#----- unknown mode -----------------------------------------------------------
+else
+   echo "ERROR: unrecognized DLND_RUNOFF_MODE = $DLND_RUNOFF_MODE"
+   exit -1
+endif
+
+#==============================================================================
+# Create resolved namelist
+#==============================================================================
+
+cat >> $CASEBUILD/dlnd.buildnml.csh << EOF
+
+#------------------------------------------------------------------------------
+# Create resolved namelist
+#------------------------------------------------------------------------------
+
+#--- create namelist files ---
+
+cat >! ${nml_in} << EOF1
+ &dlnd_nml
+   lnd_in = '${lnd_in}'
+   rof_in = '${rof_in}'
+   sno_in = '${sno_in}'
+   decomp = '1d'
+ /
+EOF1
+
+cat >! ${lnd_in} << EOF1
+ &shr_strdata_nml
+   dataMode       = '\$DLND_MODE'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '\$STREAM1' ,
+                    '\$STREAM2' ,
+                    '\$STREAM3' 
+   vectors        = '\$VECTOR1'
+   dtlimit        = \$DTLIMIT
+  /
+EOF1
+
+cat >! ${rof_in} << EOF1
+ &shr_strdata_nml
+   dataMode       = '\$DLND_RUNOFF_MODE'
+   domainFile     = 'null'
+   streams        = '\$STREAMR' ,
+                    'null' ,
+                    'null' 
+   tintalgo       = 'upper',
+                    'null' ,
+                    'null' 
+  /
+EOF1
+
+cat >! ${sno_in} << EOF1
+ &shr_strdata_nml
+   dataMode       = 'NULL'
+   domainFile     = 'null'
+   streams        = 'null' ,
+                    'null' ,
+                    'null' 
+  /
+EOF1
+
+EOF
+
+#==============================================================================
+#  Create script to build executable
+#==============================================================================
+
+cat >! $CASEBUILD/dlnd.buildexe.csh << EOF
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/lnd/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+#------------------------------------------------------------------------------
+# Build the library
+#------------------------------------------------------------------------------
+
+\cat >! Filepath << EOF1
+\$CASEROOT/SourceMods/src.dlnd
+\$CODEROOT/lnd/dlnd
+\$CODEROOT/lnd/dlnd/cpl_\$comp
+EOF1
+
+gmake complib -j \$GMAKE_J MODEL=dlnd COMPLIB=\$LIBROOT/liblnd.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF
+
+#==============================================================================
+# end of script
+#==============================================================================

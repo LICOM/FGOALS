@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO
+END
+README.cismIO
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/README.cismIO
+END
+glide_lithot_vars.def
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/glide_lithot_vars.def
+END
+glint_mbal_vars.def
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/glint_mbal_vars.def
+END
+glint_vars.def
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/glint_vars.def
+END
+ncdf_template.F90.in
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/ncdf_template.F90.in
+END
+glide_vars.def
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/glide_vars.def
+END
+generate_ncvars.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/glc/cism/bld/cismIO/generate_ncvars.py
+END

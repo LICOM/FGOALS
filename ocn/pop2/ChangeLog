@@ -1,0 +1,119 @@
+===============================================================================
+Tag Creator: njn01
+Tag Date:    27 May 2011
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_3_n02_ccsm_pop_2_1_20110527
+Tag Summary: Correction to io_netCDF.F90 bugfix to allow for backwards compatability
+             of netCDF restart files.
+Files Modified: 
+M            28439   source/io_netcdf.F90
+
+Difference:
+       case('conventions','Conventions','CONVENTIONS')
+ 
+          data_file%conventions = char_blank
+-         iostat = pio_inq_att(data_file%File, PIO_GLOBAL,  'Conventions', &
++         iostat = pio_inq_att(data_file%File, PIO_GLOBAL,  trim(att_name), &
+                                 xtype, nsize)
+          if (iostat == pio_noerr) then
+             if (nsize <= len(data_file%conventions)) then
+-               iostat = pio_get_att(data_file%File, PIO_GLOBAL, 'Conventions', &
++               iostat = pio_get_att(data_file%File, PIO_GLOBAL, trim(att_name), &
+                                       data_file%conventions(1:nsize))
+
+===============================================================================
+Tag Creator: njn01
+Tag Date:    19 May 2011
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_3_n01_ccsm_pop_2_1_20110510
+Tag Summary: Same as cesm1_0_rel06_ccsm_pop_2_1_20110510, but with new naming convention
+Files Modified:
+===============================================================================
+Tag Creator: njn01
+Tag Date:    18 May 2011
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_rel06_ccsm_pop_2_1_20110510
+Tag Summary: Upate to ccsm_pop_2_1_20110510
+Files Modified:
+M            28438   source/overflows.F90
+M            28438   source/sw_absorption.F90
+M            28438   source/initial.F90
+M            28438   source/time_management.F90
+M            28438   source/surface_hgt.F90
+D            28438   source/spacecurve_mod.F90
+M            28438   source/diagnostics.F90
+M            28438   source/step_mod.F90
+M            28438   source/hmix_del2.F90
+M            28438   source/hmix_del4.F90
+M            28438   source/io_pio.F90
+M            28438   source/forcing.F90
+M            28438   source/io_types.F90
+M            28438   source/vmix_kpp.F90
+M            28438   source/budget_diagnostics.F90
+M            28438   source/iage_mod.F90
+M            28438   source/advection.F90
+M            28438   source/vertical_mix.F90
+M            28438   source/cfc_mod.F90
+M            28438   source/io_netcdf.F90
+M            28438   source/mix_submeso.F90
+M            28438   source/cfc11_mod.F90
+M            28438   source/passive_tracers.F90
+M            28438   source/POP_DistributionMod.F90
+M            28438   source/forcing_coupled.F90
+M            28438   source/ecosys_mod.F90
+M            28438   source/horizontal_mix.F90
+M            28438   source/co2calc.F90
+A                0   source/POP_SpaceCurveMod.F90
+M            28438   source/distribution.F90
+M            28438   source/hmix_gm.F90
+M            28438   source/tavg.F90
+M            28438   source/barotropic.F90
+M            28438   source/baroclinic.F90
+M            28438   source/io_ccsm.F90
+M            28438   source/state_mod.F90
+M            28438   bld/pop2.cpl7.template
+M            28438   ChangeLog
+M            28438   input_templates/pop2_in_build.csh
+M            28438   input_templates/gx1v6_tavg_contents
+M            28438   input_templates/gx3v7_tavg_contents
+A                0   drivers/cpl_share
+A                0   drivers/cpl_share/POP_CplIndices.F90
+M            28438   drivers/cpl_mct/ocn_comp_mct.F90
+M            28438   drivers/cpl_esmf/ocn_comp_esmf.F90
+M            28438   drivers/cpl_esmf/ocn_comp_mct.F90
+Status against revision:  28438
+===============================================================================
+Tag Creator: njn01
+Tag Date:    13 August 2010
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_rel04_ccsm_pop_2_1_20100614a
+Tag Summary: Apply the correction to ecosys_mod.F90 so that the units reported in the
+             pop2 tavg output files for DON_prod are now correct 
+
+===============================================================================
+Tag Creator: njn01
+Tag Date:    18 June 2010
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_rel03_ccsm_pop_2_1_20100614a
+Tag Summary: Modify ChangeLog and remove stand-alone pop references, testing dirs, and
+             old documentation
+
+===============================================================================
+Tag Creator: njn01
+Tag Date:    18 June 2010
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_rel02_ccsm_pop_2_1_20100614a
+Tag Summary: Modify ChangeLog and remove deprecated- and testing-resolution files
+
+===============================================================================
+Tag Creator: njn01
+Tag Date:    18 June 2010
+Tag Name:    pop2/branch_tags/cesm1_0_rel_tags/cesm1_0_rel01_ccsm_pop_2_1_20100614a
+Tag Summary: Direct copy onto the branch 
+
+===============================================================================
+Branch Creator: njn01
+Branch Date:    18 June 2010
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+Branch Name: $SVN/pop2/branches/cesm1_0_rel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Tag Summary:  This branch was populated with the pop2 tag used in the creation of
+              the cesm1_0_beta05 tag
+
+
+===============================================================================
+             

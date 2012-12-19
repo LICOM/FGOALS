@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/xocn/cpl_esmf
+END
+ocn_comp_esmf.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/xocn/cpl_esmf/ocn_comp_esmf.F90
+END
+ocn_comp_mct.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/ocn/xocn/cpl_esmf/ocn_comp_mct.F90
+END

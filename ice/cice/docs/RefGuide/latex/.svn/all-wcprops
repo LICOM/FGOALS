@@ -1,0 +1,845 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex
+END
+ice__orbital_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__orbital_8F90.tex
+END
+interfaceice__global__reductions_1_1global__sum__prod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__global__reductions_1_1global__sum__prod.tex
+END
+namespaceice__age.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__age.tex
+END
+ice__init_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__init_8F90.tex
+END
+ice__timers_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__timers_8F90.tex
+END
+CICE__InitMod_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/CICE__InitMod_8F90.tex
+END
+namespaceice__comp__mct.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__comp__mct.tex
+END
+CICE__RunMod_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/CICE__RunMod_8F90.tex
+END
+namespaceice__fileunits.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__fileunits.tex
+END
+ice__restoring_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__restoring_8F90.tex
+END
+namespaceice__kinds__mod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__kinds__mod.tex
+END
+namespaceCICE__InitMod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceCICE__InitMod.tex
+END
+namespaceice__transport__driver.tex
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__transport__driver.tex
+END
+ice__transport__remap_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__transport__remap_8F90.tex
+END
+ice__itd_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__itd_8F90.tex
+END
+ice__prescaero__mod_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__prescaero__mod_8F90.tex
+END
+CICE_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/CICE_8F90.tex
+END
+namespaceice__probability.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__probability.tex
+END
+typeice__history__fields_1_1ice__hist__field.tex
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/typeice__history__fields_1_1ice__hist__field.tex
+END
+namespaceice__forcing.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__forcing.tex
+END
+ice__global__reductions_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__global__reductions_8F90.tex
+END
+interfaceice__global__reductions_1_1global__minval.tex
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__global__reductions_1_1global__minval.tex
+END
+ice__aerosol_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__aerosol_8F90.tex
+END
+namespaceice__gather__scatter.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__gather__scatter.tex
+END
+doxygen.sty
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/doxygen.sty
+END
+namespaceice__dyn__evp.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__dyn__evp.tex
+END
+namespaceice__communicate.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__communicate.tex
+END
+namespaceice__history__write.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__history__write.tex
+END
+ice__meltpond_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__meltpond_8F90.tex
+END
+namespaceice__blocks.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__blocks.tex
+END
+ice__restart_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__restart_8F90.tex
+END
+ice__history__fields_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__history__fields_8F90.tex
+END
+annotated.tex
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/annotated.tex
+END
+namespaceice__boundary.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__boundary.tex
+END
+namespaceice__ocean.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__ocean.tex
+END
+ice__dyn__evp_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__dyn__evp_8F90.tex
+END
+namespaceice__lvl.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__lvl.tex
+END
+interfaceice__restart_1_1restartfile.tex
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__restart_1_1restartfile.tex
+END
+ice__domain_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__domain_8F90.tex
+END
+ice__diagnostics_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__diagnostics_8F90.tex
+END
+typeice__spacecurve_1_1factor__t.tex
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/typeice__spacecurve_1_1factor__t.tex
+END
+namespaceice__therm__vertical.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__therm__vertical.tex
+END
+ice__flux_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__flux_8F90.tex
+END
+ice__FY_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__FY_8F90.tex
+END
+ice__boundary_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__boundary_8F90.tex
+END
+ice__read__write_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__read__write_8F90.tex
+END
+interfaceice__restart_1_1dumpfile.tex
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__restart_1_1dumpfile.tex
+END
+ice__forcing_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__forcing_8F90.tex
+END
+ice__pio_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__pio_8F90.tex
+END
+typeice__timers_1_1timer__data.tex
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/typeice__timers_1_1timer__data.tex
+END
+namespaceice__scam.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__scam.tex
+END
+mpi_2ice__communicate_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/mpi_2ice__communicate_8F90.tex
+END
+ice__history_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__history_8F90.tex
+END
+interfaceice__pio_1_1ice__pio__initdecomp.tex
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__pio_1_1ice__pio__initdecomp.tex
+END
+namespaceice__global__reductions.tex
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__global__reductions.tex
+END
+namespaceice__probability__tools.tex
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__probability__tools.tex
+END
+ice__transport__driver_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__transport__driver_8F90.tex
+END
+namespaceice__init.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__init.tex
+END
+namespaceice__domain.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__domain.tex
+END
+interfaceice__gather__scatter_1_1scatter__global.tex
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__gather__scatter_1_1scatter__global.tex
+END
+ice__therm__itd_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__therm__itd_8F90.tex
+END
+namespaceice__step__mod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__step__mod.tex
+END
+namespaceice__exit.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__exit.tex
+END
+ice__probability_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__probability_8F90.tex
+END
+namespaceice__constants.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__constants.tex
+END
+typeice__blocks_1_1block.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/typeice__blocks_1_1block.tex
+END
+ice__grid_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__grid_8F90.tex
+END
+ice__ocean_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__ocean_8F90.tex
+END
+namespaceice__transport__remap.tex
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__transport__remap.tex
+END
+namespaceice__read__write.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__read__write.tex
+END
+ice__therm__vertical_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__therm__vertical_8F90.tex
+END
+ice__calendar_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__calendar_8F90.tex
+END
+ice__constants_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__constants_8F90.tex
+END
+interfaceice__global__reductions_1_1global__sum.tex
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__global__reductions_1_1global__sum.tex
+END
+namespaceice__mechred.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__mechred.tex
+END
+namespaceice__diagnostics.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__diagnostics.tex
+END
+ice__shortwave_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__shortwave_8F90.tex
+END
+ice__work_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__work_8F90.tex
+END
+namespaceice__FY.tex
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__FY.tex
+END
+namespaceice__state.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__state.tex
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/Makefile
+END
+namespaceice__work.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__work.tex
+END
+interfaceice__boundary_1_1ice__HaloExtrapolate.tex
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__boundary_1_1ice__HaloExtrapolate.tex
+END
+namespaceice__grid.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__grid.tex
+END
+namespaceice__history__fields.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__history__fields.tex
+END
+interfaceice__broadcast_1_1broadcast__array.tex
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__broadcast_1_1broadcast__array.tex
+END
+namespaceice__pio.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__pio.tex
+END
+ice__domain__size_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__domain__size_8F90.tex
+END
+ice__comp__mct_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__comp__mct_8F90.tex
+END
+ice__atmo_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__atmo_8F90.tex
+END
+ice__spacecurve_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__spacecurve_8F90.tex
+END
+ice__broadcast_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__broadcast_8F90.tex
+END
+interfaceice__blocks_1_1PrintTrouble.tex
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__blocks_1_1PrintTrouble.tex
+END
+namespaceice__orbital.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__orbital.tex
+END
+namespaceice__spacecurve.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__spacecurve.tex
+END
+interfaceice__read__write_1_1ice__read__global__nc.tex
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__read__write_1_1ice__read__global__nc.tex
+END
+ice__step__mod_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__step__mod_8F90.tex
+END
+namespaceice__timers.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__timers.tex
+END
+namespaceice__calendar.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__calendar.tex
+END
+ice__state_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__state_8F90.tex
+END
+refman.tex
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/refman.tex
+END
+namespaceice__therm__itd.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__therm__itd.tex
+END
+namespaceice__itd.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__itd.tex
+END
+namespaceice__shortwave.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__shortwave.tex
+END
+namespaceice__meltpond.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__meltpond.tex
+END
+ice__lvl_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__lvl_8F90.tex
+END
+ice__gather__scatter_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__gather__scatter_8F90.tex
+END
+ice__probability__tools_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__probability__tools_8F90.tex
+END
+interfaceice__gather__scatter_1_1gatherArray.tex
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__gather__scatter_1_1gatherArray.tex
+END
+ice__kinds__mod_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__kinds__mod_8F90.tex
+END
+ice__mechred_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__mechred_8F90.tex
+END
+namespaceice__broadcast.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__broadcast.tex
+END
+ice__exit_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__exit_8F90.tex
+END
+namespaceice__aerosol.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__aerosol.tex
+END
+ice__blocks_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__blocks_8F90.tex
+END
+namespaceCICE__RunMod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceCICE__RunMod.tex
+END
+ice__prescribed__mod_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__prescribed__mod_8F90.tex
+END
+interfaceice__gather__scatter_1_1gather__global.tex
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__gather__scatter_1_1gather__global.tex
+END
+namespaceice__flux.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__flux.tex
+END
+drivers_2cpl__share_2ice__communicate_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/drivers_2cpl__share_2ice__communicate_8F90.tex
+END
+namespaceice__distribution.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__distribution.tex
+END
+namespaceice__restart.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__restart.tex
+END
+ice__age_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__age_8F90.tex
+END
+interfaceice__global__reductions_1_1global__maxval.tex
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__global__reductions_1_1global__maxval.tex
+END
+ice__fileunits_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__fileunits_8F90.tex
+END
+typeice__boundary_1_1ice__halo.tex
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/typeice__boundary_1_1ice__halo.tex
+END
+namespaceice__domain__size.tex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__domain__size.tex
+END
+namespaceice__atmo.tex
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__atmo.tex
+END
+namespaceice__history.tex
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__history.tex
+END
+ice__history__write_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__history__write_8F90.tex
+END
+files.tex
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/files.tex
+END
+ice__distribution_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__distribution_8F90.tex
+END
+namespaceice__restoring.tex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__restoring.tex
+END
+ice__scam_8F90.tex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/ice__scam_8F90.tex
+END
+typeice__distribution_1_1distrb.tex
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/typeice__distribution_1_1distrb.tex
+END
+interfaceice__broadcast_1_1broadcast__scalar.tex
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__broadcast_1_1broadcast__scalar.tex
+END
+interfaceice__boundary_1_1ice__HaloUpdate.tex
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/interfaceice__boundary_1_1ice__HaloUpdate.tex
+END
+namespaceice__prescribed__mod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__prescribed__mod.tex
+END
+namespaceice__prescaero__mod.tex
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaceice__prescaero__mod.tex
+END
+namespaces.tex
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/RefGuide/latex/namespaces.tex
+END

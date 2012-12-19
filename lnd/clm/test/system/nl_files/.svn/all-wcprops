@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files
+END
+nl_per
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_per
+END
+clm_std
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_std
+END
+clm_ndepdyn
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_ndepdyn
+END
+clm_transient_rcp2.6
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_rcp2.6
+END
+clm_transient_rcp4.5
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_rcp4.5
+END
+clm_pftdyn
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_pftdyn
+END
+getregional
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/getregional
+END
+mksrfdt_10x15_irr_1850
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/mksrfdt_10x15_irr_1850
+END
+clm_transient_rcp8.5
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_rcp8.5
+END
+clm_per0
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_per0
+END
+mksrfdt_1x1_brazil_1850-2000
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/mksrfdt_1x1_brazil_1850-2000
+END
+nl_ptsmode_ocn
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_ptsmode_ocn
+END
+clm_spin
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_spin
+END
+nl_urb_br
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_urb_br
+END
+clm_transient_glcMEC_rcp6
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_glcMEC_rcp6
+END
+clm_urb1pt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_urb1pt
+END
+mksrfdt_1x1_vancouverCAN_2000
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/mksrfdt_1x1_vancouverCAN_2000
+END
+nl_crcrop
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_crcrop
+END
+clm_per
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_per
+END
+nl_urb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_urb
+END
+clm_drydep
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_drydep
+END
+mksrfdt_1x1_brazil_1850
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/mksrfdt_1x1_brazil_1850
+END
+nl_std
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_std
+END
+clm_glcmec
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_glcmec
+END
+nl_crop
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_crop
+END
+clm_transient_rcp6
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_rcp6
+END
+nl_cn_conly
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_cn_conly
+END
+clm_usrdat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_usrdat
+END
+mksrfdt_1x1_numaIA_mp20irrcr_2000
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/mksrfdt_1x1_numaIA_mp20irrcr_2000
+END
+clm_stdIgnYr
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_stdIgnYr
+END
+clm_transient_20thC
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_20thC
+END
+nl_ptsmode
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_ptsmode
+END
+clm_transient_glcMEC_rcp2.6
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_glcMEC_rcp2.6
+END
+nl_lfiles
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/nl_lfiles
+END
+clm_irrig
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_irrig
+END
+clm_transient_glcMEC_rcp4.5
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_glcMEC_rcp4.5
+END
+clm_transient_glcMEC_rcp8.5
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/test/system/nl_files/clm_transient_glcMEC_rcp8.5
+END

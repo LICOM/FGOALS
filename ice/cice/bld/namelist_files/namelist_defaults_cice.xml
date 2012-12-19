@@ -1,0 +1,482 @@
+<?xml version="1.0"?>
+
+<namelist_defaults>
+
+<!--------------------------->
+<!-- setup_nml settings ----->
+<!--------------------------->
+
+<ice_ic>'default'</ice_ic>
+
+<dt> 3600 </dt> 
+
+<xndt_dyn                    > 1.0 </xndt_dyn>
+<xndt_dyn hgrid="tx0.1v2"    > 3.0 </xndt_dyn>
+
+<!--------------------------->
+<!-- grid_nml settings ------>
+<!--------------------------->
+
+<grid_type hgrid="512x1024"  >'latlon'       </grid_type> 
+<grid_type hgrid="128x256"   >'latlon'       </grid_type> 
+<grid_type hgrid="64x128"    >'latlon'       </grid_type> 
+<grid_type hgrid="48x96"     >'latlon'       </grid_type> 
+<grid_type hgrid="32x64"     >'latlon'       </grid_type>
+<grid_type hgrid="8x16"      >'latlon'       </grid_type>
+<grid_type hgrid="4x5"       >'latlon'       </grid_type> 
+<grid_type hgrid="10x15"     >'latlon'       </grid_type> 
+<grid_type hgrid="2.5x3.33"  >'latlon'       </grid_type>
+<grid_type hgrid="1.9x2.5"   >'latlon'       </grid_type> 
+<grid_type hgrid="2x2.5"     >'latlon'       </grid_type> 
+<grid_type hgrid="0.9x1.25"  >'latlon'       </grid_type> 
+<grid_type hgrid="0.47x0.63" >'latlon'       </grid_type> 
+<grid_type hgrid="0.23x0.31" >'latlon'       </grid_type> 
+<grid_type hgrid="tx0.1v2"   >'tripole'      </grid_type> 
+<grid_type hgrid="tx1v1"     >'tripole'      </grid_type> 
+<grid_type                   >'displaced_pole'</grid_type> 
+
+<grid_format hgrid="512x1024"  >'nc' </grid_format> 
+<grid_format hgrid="128x256"   >'nc' </grid_format> 
+<grid_format hgrid="64x128"    >'nc' </grid_format> 
+<grid_format hgrid="48x96"     >'nc' </grid_format> 
+<grid_format hgrid="32x64"     >'nc' </grid_format>
+<grid_format hgrid="8x16"      >'nc' </grid_format>
+<grid_format hgrid="4x5"       >'nc' </grid_format> 
+<grid_format hgrid="10x15"     >'nc' </grid_format> 
+<grid_format hgrid="2.5x3.33"  >'nc' </grid_format>
+<grid_format hgrid="1.9x2.5"   >'nc' </grid_format> 
+<grid_format hgrid="0.9x1.25"  >'nc' </grid_format> 
+<grid_format hgrid="0.47x0.63" >'nc' </grid_format> 
+<grid_format hgrid="0.23x0.31" >'nc' </grid_format> 
+<grid_format hgrid="tx0.1v2"   >'bin'</grid_format> 
+<grid_format hgrid="tx1v1"     >'bin'</grid_format> 
+<grid_format                   >'bin'</grid_format> 
+
+<grid_file hgrid="512x1024"   >'atm/cam/ocnfrac/domain.camocn.512x1024_USGS_080530.nc'   </grid_file> 
+<grid_file hgrid="128x256"   >'atm/cam/ocnfrac/domain.camocn.128x256_USGS_070807.nc'   </grid_file> 
+<grid_file hgrid="64x128"    >'atm/cam/ocnfrac/domain.camocn.64x128_USGS_070807.nc'    </grid_file> 
+<grid_file hgrid="48x96"     >'atm/cam/ocnfrac/domain.camocn.48x96_gx3v7_100114.nc'    </grid_file> 
+<grid_file hgrid="32x64"     >'atm/cam/ocnfrac/domain.camocn.32x64_USGS_070807.nc'     </grid_file>
+<grid_file hgrid="8x16"      >'atm/cam/ocnfrac/domain.camocn.8x16_USGS_070807.nc       </grid_file>
+<grid_file hgrid="4x5"       >'atm/cam/ocnfrac/domain.camocn.4x5_gx3v7_100120.nc'      </grid_file> 
+<grid_file hgrid="10x15"     >'atm/cam/ocnfrac/domain.camocn.10x15_USGS_070807.nc'     </grid_file> 
+<grid_file hgrid="2.5x3.33"  >'atm/cam/ocnfrac/domain.camocn.fv2.5x3.33_gx3v7_110223.nc' </grid_file>
+<grid_file hgrid="1.9x2.5"   >'atm/cam/ocnfrac/domain.camocn.1.9x2.5_gx1v6_090403.nc'  </grid_file> 
+<grid_file hgrid="0.9x1.25"  >'atm/cam/ocnfrac/domain.camocn.0.9x1.25_gx1v6_090403.nc' </grid_file> 
+<grid_file hgrid="0.47x0.63" >'atm/cam/ocnfrac/domain.camocn.0.47x0.63_gx1v6_090408.nc'</grid_file> 
+<grid_file hgrid="0.23x0.31" >'atm/cam/ocnfrac/domain.camocn.0.23x0.31_gx1v6_101108.nc'</grid_file> 
+
+<grid_file hgrid="gx1v6"     >'ocn/pop/gx1v6/grid/horiz_grid_20010402.ieeer8'</grid_file> 
+<grid_file hgrid="gx1v5"     >'ocn/pop/gx1v5/grid/horiz_grid_20010402.ieeer8'</grid_file> 
+<grid_file hgrid="gx3v5"     >'ocn/pop/gx3v5/grid/horiz_grid_20030806.ieeer8'</grid_file> 
+<grid_file hgrid="gx3v7"     >'ocn/pop/gx3v7/grid/horiz_grid_20030806.ieeer8'</grid_file> 
+<grid_file hgrid="tx0.1v2"   >'ocn/pop/tx0.1v2/grid/horiz_grid_200709.ieeer8'</grid_file> 
+<grid_file hgrid="tx1v1"     >'ocn/pop/tx1v1/grid/horiz_grid_20050510.ieeer8'</grid_file>
+
+<kmt_file hgrid="512x1024"   >'atm/cam/ocnfrac/domain.camocn.512x1024_USGS_080530.nc'   </kmt_file> 
+<kmt_file hgrid="128x256"   >'atm/cam/ocnfrac/domain.camocn.128x256_USGS_070807.nc'   </kmt_file> 
+<kmt_file hgrid="64x128"    >'atm/cam/ocnfrac/domain.camocn.64x128_USGS_070807.nc'    </kmt_file> 
+<kmt_file hgrid="48x96"     >'atm/cam/ocnfrac/domain.camocn.48x96_gx3v7_100114.nc'    </kmt_file> 
+<kmt_file hgrid="32x64"     >'atm/cam/ocnfrac/domain.camocn.32x64_USGS_070807.nc'     </kmt_file>
+<kmt_file hgrid="8x16"      >'atm/cam/ocnfrac/domain.camocn.8x16_USGS_070807.nc       </kmt_file>
+<kmt_file hgrid="4x5"       >'atm/cam/ocnfrac/domain.camocn.4x5_gx3v7_100120.nc'      </kmt_file> 
+<kmt_file hgrid="10x15"     >'atm/cam/ocnfrac/domain.camocn.10x15_USGS_070807.nc'     </kmt_file> 
+<kmt_file hgrid="2.5x3.33"  >'atm/cam/ocnfrac/domain.camocn.fv2.5x3.33_gx3v7_110223.nc' </kmt_file>
+<kmt_file hgrid="1.9x2.5"   >'atm/cam/ocnfrac/domain.camocn.1.9x2.5_gx1v6_090403.nc'  </kmt_file> 
+<kmt_file hgrid="0.9x1.25"  >'atm/cam/ocnfrac/domain.camocn.0.9x1.25_gx1v6_090403.nc' </kmt_file> 
+<kmt_file hgrid="0.47x0.63" >'atm/cam/ocnfrac/domain.camocn.0.47x0.63_gx1v6_090408.nc'</kmt_file> 
+<kmt_file hgrid="0.23x0.31" >'atm/cam/ocnfrac/domain.camocn.0.23x0.31_gx1v6_101108.nc'</kmt_file> 
+
+<kmt_file hgrid="gx1v6"     >'ocn/pop/gx1v6/grid/topography_20090204.ieeei4'</kmt_file> 
+<kmt_file hgrid="gx1v5"     >'ocn/pop/gx1v5/grid/topography_20061229.ieeei4'</kmt_file> 
+<kmt_file hgrid="gx3v5"     >'ocn/pop/gx3v5/grid/topography_20040323.ieeei4'</kmt_file> 
+<kmt_file hgrid="gx3v7"     >'ocn/pop/gx3v7/grid/topography_20100105.ieeei4'</kmt_file> 
+<kmt_file hgrid="tx0.1v2"   >'ocn/pop/tx0.1v2/grid/topography_200709.ieeei4'</kmt_file> 
+<kmt_file hgrid="tx1v1"     >'ocn/pop/tx1v1/grid/topography_20050510.ieeei4'</kmt_file>
+
+<kcatbound> 0 </kcatbound>
+
+<!--------------------------->
+<!-- ice_nml settings ------->
+<!--------------------------->
+
+<ndte> 120 </ndte> 
+
+<!--- ice albedos --->
+
+<albicev  hgrid="gx3v5" >0.68</albicev> 
+<albicev                >0.75</albicev> 
+<albicei  hgrid="gx3v5" >0.30</albicei> 
+<albicei                >0.45</albicei> 
+<albsnowv hgrid="gx3v5" >0.91</albsnowv> 
+<albsnowv               >0.98</albsnowv> 
+<albsnowi hgrid="gx3v5" >0.63</albsnowi> 
+<albsnowi               >0.73</albsnowi> 
+
+<albicev  hgrid="gx3v7" >0.68</albicev> 
+<albicev                >0.75</albicev> 
+<albicei  hgrid="gx3v7" >0.30</albicei> 
+<albicei                >0.45</albicei> 
+<albsnowv hgrid="gx3v7" >0.91</albsnowv> 
+<albsnowv               >0.98</albsnowv> 
+<albsnowi hgrid="gx3v7" >0.63</albsnowi> 
+<albsnowi               >0.73</albsnowi> 
+
+<albedo_type>'default'</albedo_type>
+
+<!--- parameterization information --->
+
+<kitd  cice_mode='prescribed'  > 0 </kitd> 
+<kitd  cice_mode='thermo_only' > 0 </kitd> 
+<kitd                          > 1 </kitd> 
+
+<kdyn  cice_mode='prescribed'  > 0 </kdyn> 
+<kdyn  cice_mode='thermo_only' > 0 </kdyn> 
+<kdyn                          > 1 </kdyn> 
+
+<kstrength  cice_mode='prescribed'  > 0 </kstrength> 
+<kstrength  cice_mode='thermo_only' > 0 </kstrength> 
+<kstrength                          > 1 </kstrength> 
+
+<krdg_partic>1</krdg_partic>
+<krdg_redist>1</krdg_redist>
+
+<evp_damping>.false.</evp_damping> 
+
+<shortwave                 >'dEdd'</shortwave>
+<shortwave hgrid="tx0.1v2" >'default'</shortwave>
+
+<dT_mlt_in              > 1.50 </dT_mlt_in>
+<dT_mlt_in cam5='.true.'> 1.00 </dT_mlt_in>
+<dT_mlt_in hgrid='gx3v7'> 2.00 </dT_mlt_in>
+
+<rsnw_melt_in              > 1500. </rsnw_melt_in>
+<rsnw_melt_in cam5='.true.'> 1000. </rsnw_melt_in>
+<rsnw_melt_in hgrid='gx3v7'> 2000. </rsnw_melt_in>
+
+<R_snw              >  1.50 </R_snw>
+<R_snw cam5='.true.'>  1.75 </R_snw>
+<R_snw hgrid='gx3v7'> -2.00 </R_snw>
+
+<advection>'remap'</advection>
+
+<!--------------------------->
+<!-- ice_nml settings ------->
+<!--------------------------->
+
+<!--- history information --->
+
+<histfreq    >'m','x','x','x','x' </histfreq> 
+<histfreq_n  >1,1,1,1,1           </histfreq_n>
+<hist_avg    >.true.  </hist_avg> 
+
+<!--- diagnostic information --->
+
+<diagfreq> 24   </diagfreq>
+
+<!--- restart information --->
+<pointer_file>rpointer.ice</pointer_file>
+
+<!--- 64 bit offset --->
+<lcdf64>.true. </lcdf64>
+
+<!--------------------------->
+<!-- Tracer namelist- --->
+<!--------------------------->
+
+<tr_iage> .true. </tr_iage>
+<tr_iage cice_mode='prescribed'> .false. </tr_iage>
+
+<tr_FY> .true. </tr_FY>
+<tr_FY cice_mode='prescribed'> .false. </tr_FY>
+
+<tr_pond> .true. </tr_pond>
+<tr_pond hgrid='tx0.1v2' > .false. </tr_pond>
+
+<tr_aero> .true. </tr_aero>
+
+<!--------------------------->
+<!-- Domain namelist- --->
+<!--------------------------->
+
+<distribution_type                       >'cartesian' </distribution_type>
+<distribution_type hgrid='tx0.1v2'       >'spacecurve'</distribution_type>
+<distribution_type cice_mode='prescribed'>'roundrobin'</distribution_type>
+<distribution_wght                    >'block'     </distribution_wght>
+<distribution_wght_file               >'unknown_file'</distribution_wght_file>
+<processor_shape                      >'square-pop' </processor_shape>
+
+<distribution_wght distribution_type='spacecurve'>'erfc'</distribution_wght>
+<distribution_wght hgrid='tx0.1v2' distribution_type='spacecurve'>'file'</distribution_wght>
+<distribution_wght_file hgrid='tx0.1v2' distribution_wght='file'>'ice/cice/ice_present.0002.tx0.1v2.081119.nc'</distribution_wght_file>
+
+<ew_boundary_type>'cyclic'</ew_boundary_type>
+
+<ns_boundary_type hgrid ='tx0.1v2' >'tripole'</ns_boundary_type>
+<ns_boundary_type hgrid ='tx1v1'   >'tripole'</ns_boundary_type>
+<ns_boundary_type                  >'open'   </ns_boundary_type>
+
+<!--------------------------->
+<!-- Prescribed namelist- --->
+<!--------------------------->
+
+<stream_domfilename hgrid="8x16"  >'ocn/docn7/SSTDATA/sst_HadOIBl_bc_8x16_clim_c050526.nc'</stream_domfilename>
+<stream_fldfilename hgrid="8x16"  >'ocn/docn7/SSTDATA/sst_HadOIBl_bc_8x16_clim_c050526.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="8x16"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="8x16"  > 0 </stream_year_first>
+<stream_year_last   hgrid="8x16"  > 0 </stream_year_last>
+<model_year_align   hgrid="8x16"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="48x96"  >'ocn/docn7/SSTDATA/sst_HadOIBl_bc_48x96_clim_c050526.nc'</stream_domfilename>
+<stream_fldfilename hgrid="48x96"  >'ocn/docn7/SSTDATA/sst_HadOIBl_bc_48x96_clim_c050526.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="48x96"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="48x96"  > 0 </stream_year_first>
+<stream_year_last   hgrid="48x96"  > 0 </stream_year_last>
+<model_year_align   hgrid="48x96"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="64x128"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_64x128_clim_c050526.nc'</stream_domfilename>
+<stream_fldfilename hgrid="64x128"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_64x128_clim_c050526.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="64x128"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="64x128"  > 0 </stream_year_first>
+<stream_year_last   hgrid="64x128"  > 0 </stream_year_last>
+<model_year_align   hgrid="64x128"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="128x256"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_128x256_clim_c050526.nc'</stream_domfilename>
+<stream_fldfilename hgrid="128x256"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_128x256_clim_c050526.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="128x256"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="128x256"  > 0 </stream_year_first>
+<stream_year_last   hgrid="128x256"  > 0 </stream_year_last>
+<model_year_align   hgrid="128x256"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="512x1024"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_512x1024_clim_c070927.nc'</stream_domfilename>
+<stream_fldfilename hgrid="512x1024"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_512x1024_clim_c070927.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="512x1024"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="512x1024"  > 0 </stream_year_first>
+<stream_year_last   hgrid="512x1024"  > 0 </stream_year_last>
+<model_year_align   hgrid="512x1024"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="10x15"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_10x15_clim_c050526.nc'</stream_domfilename>
+<stream_fldfilename hgrid="10x15"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_10x15_clim_c050526.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="10x15"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="10x15"  > 0 </stream_year_first>
+<stream_year_last   hgrid="10x15"  > 0 </stream_year_last>
+<model_year_align   hgrid="10x15"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="4x5"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_4x5_clim_c061031.nc'</stream_domfilename>
+<stream_fldfilename hgrid="4x5"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_4x5_clim_c061031.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="4x5"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="4x5"  > 0 </stream_year_first>
+<stream_year_last   hgrid="4x5"  > 0 </stream_year_last>
+<model_year_align   hgrid="4x5"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="2.5x3.33" > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_2.5x3.33_clim_pi_c091020.nc'</stream_domfilename>
+<stream_fldfilename hgrid="2.5x3.33" > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_2.5x3.33_clim_pi_c091020.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="2.5x3.33" > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="2.5x3.33" > 0 </stream_year_first>
+<stream_year_last   hgrid="2.5x3.33" > 0 </stream_year_last>
+<model_year_align   hgrid="2.5x3.33" > 1 </model_year_align>
+
+<stream_domfilename hgrid="1.9x2.5"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_1.9x2.5_clim_c061031.nc'</stream_domfilename>
+<stream_fldfilename hgrid="1.9x2.5"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_1.9x2.5_clim_c061031.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="1.9x2.5"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="1.9x2.5"  > 0 </stream_year_first>
+<stream_year_last   hgrid="1.9x2.5"  > 0 </stream_year_last>
+<model_year_align   hgrid="1.9x2.5"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="0.9x1.25"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_0.9x1.25_clim_c040926.nc'</stream_domfilename>
+<stream_fldfilename hgrid="0.9x1.25"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_0.9x1.25_clim_c040926.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="0.9x1.25"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="0.9x1.25"  > 0 </stream_year_first>
+<stream_year_last   hgrid="0.9x1.25"  > 0 </stream_year_last>
+<model_year_align   hgrid="0.9x1.25"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="0.47x0.63"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_0.47x0.63_clim_c061106.nc'</stream_domfilename>
+<stream_fldfilename hgrid="0.47x0.63"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_0.47x0.63_clim_c061106.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="0.47x0.63"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="0.47x0.63"  > 0 </stream_year_first>
+<stream_year_last   hgrid="0.47x0.63"  > 0 </stream_year_last>
+<model_year_align   hgrid="0.47x0.63"  > 1 </model_year_align>
+
+<stream_domfilename hgrid="0.23x0.31"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_0.23x0.31_clim_c061106.nc'</stream_domfilename>
+<stream_fldfilename hgrid="0.23x0.31"  > 'ocn/docn7/SSTDATA/sst_HadOIBl_bc_0.23x0.31_clim_c061106.nc'</stream_fldfilename>
+<stream_fldvarname  hgrid="0.23x0.31"  > 'ice_cov' </stream_fldvarname>
+<stream_year_first  hgrid="0.23x0.31"  > 0 </stream_year_first>
+<stream_year_last   hgrid="0.23x0.31"  > 0 </stream_year_last>
+<model_year_align   hgrid="0.23x0.31"  > 1 </model_year_align>
+
+<stream_domfilename > 'ocn/docn7/SSTDATA/hurrell_sst_ifrac.1x1.050606.nc'</stream_domfilename>
+<stream_fldfilename > 'ocn/docn7/SSTDATA/hurrell_sst_ifrac.1x1.050606.nc'</stream_fldfilename>
+<stream_fldvarname  > 'ifrac' </stream_fldvarname>
+<stream_year_first  > 1  </stream_year_first>
+<stream_year_last   > 1  </stream_year_last>
+<model_year_align   > 1  </model_year_align>
+
+<stream_domfilename  > "unset"</stream_domfilename>
+<stream_fldfilename  > "unset"</stream_fldfilename>
+<stream_fldvarname   > "unset"</stream_fldvarname>
+<stream_year_first   > -999   </stream_year_first>
+<stream_year_last    > -999   </stream_year_last>
+<model_year_align    > -999   </model_year_align>
+
+<stream_domtvarname  > "time" </stream_domtvarname>
+<stream_domxvarname  > "lon"  </stream_domxvarname>
+<stream_domyvarname  > "lat"  </stream_domyvarname>
+<stream_domareaname  > "area" </stream_domareaname>
+<stream_dommaskname  > "mask" </stream_dommaskname>
+
+<!--------------------------->
+<!-- Output history fields -->
+<!--------------------------->
+
+<f_sst                       >'xxxxx'</f_sst>  
+<f_sst cice_mode='prescribed'>'xxxxx'</f_sst> 
+
+<f_sss                       >'xxxxx'</f_sss>  
+<f_sss cice_mode='prescribed'>'xxxxx'</f_sss> 
+
+<f_uocn                       >'xxxxx'</f_uocn>  
+<f_uocn cice_mode='prescribed'>'xxxxx'</f_uocn> 
+
+<f_vocn                       >'xxxxx'</f_vocn>  
+<f_vocn cice_mode='prescribed'>'xxxxx'</f_vocn> 
+
+<f_frzmlt                       >'xxxxx'</f_frzmlt
+<f_frzmlt cice_mode='prescribed'>'xxxxx'</f_frzmlt
+
+<f_strtltx                       >'xxxxx'</f_strtltx>  
+<f_strtltx cice_mode='prescribed'>'xxxxx'</f_strtltx>  
+
+<f_strtlty                       >'xxxxx'</f_strtlty>  
+<f_strtlty cice_mode='prescribed'>'xxxxx'</f_strtlty>  
+
+<f_mlt_onset                       >'xxxxx'</f_mlt_onset>  
+<f_mlt_onset cice_mode='prescribed'>'xxxxx'</f_mlt_onset> 
+
+<f_frz_onset                       >'xxxxx'</f_frz_onset>  
+<f_frz_onset cice_mode='prescribed'>'xxxxx'</f_frz_onset> 
+
+<f_icepresent                       >'mxxxx'</f_icepresent>  
+<f_icepresent cice_mode='prescribed'>'mxxxx'</f_icepresent> 
+
+<f_aicen                       >'mxxxx' </f_aicen>  
+<f_aicen cice_mode='prescribed'>'xxxxx'</f_aicen> 
+
+<f_vicen                       >'mxxxx' </f_vicen>  
+<f_vicen cice_mode='prescribed'>'xxxxx'</f_vicen> 
+
+<f_fsalt                       >'mxxxx' </f_fsalt>  
+<f_fsalt cice_mode='prescribed'>'xxxxx'</f_fsalt> 
+
+<f_fsalt_ai                       >'mxxxx' </f_fsalt_ai>  
+<f_fsalt_ai cice_mode='prescribed'>'xxxxx'</f_fsalt_ai> 
+
+<f_fresh                       >'mxxxx' </f_fresh>  
+<f_fresh cice_mode='prescribed'>'xxxxx'</f_fresh> 
+
+<f_fresh_ai                       >'mxxxx' </f_fresh_ai>  
+<f_fresh_ai cice_mode='prescribed'>'xxxxx'</f_fresh_ai> 
+
+<f_fhocn                       >'mxxxx' </f_fhocn>  
+<f_fhocn cice_mode='prescribed'>'xxxxx'</f_fhocn> 
+
+<f_fhocn_ai                       >'mxxxx' </f_fhocn_ai>  
+<f_fhocn_ai cice_mode='prescribed'>'xxxxx'</f_fhocn_ai> 
+
+<f_dvidtt                       >'mxxxx' </f_dvidtt>  
+<f_dvidtt cice_mode='prescribed'>'xxxxx'</f_dvidtt> 
+
+<f_dvidtd                       >'mxxxx' </f_dvidtd>  
+<f_dvidtd cice_mode='prescribed'>'xxxxx'</f_dvidtd> 
+
+<f_daidtt                       >'mxxxx' </f_daidtt>  
+<f_daidtt cice_mode='prescribed'>'xxxxx'</f_daidtt> 
+
+<f_daidtd                       >'mxxxx' </f_daidtd>  
+<f_daidtd cice_mode='prescribed'>'xxxxx'</f_daidtd> 
+
+<f_sig1                       >'mxxxx' </f_sig1>  
+<f_sig1 cice_mode='prescribed'>'xxxxx'</f_sig1> 
+
+<f_sig2                       >'mxxxx' </f_sig2>  
+<f_sig2 cice_mode='prescribed'>'xxxxx'</f_sig2> 
+
+<f_sig2                       >'mxxxx' </f_sig2>  
+<f_sig2 cice_mode='prescribed'>'xxxxx'</f_sig2> 
+
+<f_strairx                       >'mxxxx' </f_strairx>  
+<f_strairx cice_mode='prescribed'>'xxxxx'</f_strairx> 
+
+<f_strairy                       >'mxxxx' </f_strairy>  
+<f_strairy cice_mode='prescribed'>'xxxxx'</f_strairy> 
+
+<f_strcorx                       >'mxxxx' </f_strcorx>  
+<f_strcorx cice_mode='prescribed'>'xxxxx'</f_strcorx> 
+
+<f_strcory                       >'mxxxx' </f_strcory>  
+<f_strcory cice_mode='prescribed'>'xxxxx'</f_strcory> 
+
+<f_strocnx                       >'mxxxx' </f_strocnx>  
+<f_strocnx cice_mode='prescribed'>'xxxxx'</f_strocnx> 
+
+<f_strocny                       >'mxxxx' </f_strocny>  
+<f_strocny cice_mode='prescribed'>'xxxxx'</f_strocny> 
+
+<f_strintx                       >'mxxxx' </f_strintx>  
+<f_strintx cice_mode='prescribed'>'xxxxx'</f_strintx> 
+
+<f_strinty                       >'mxxxx' </f_strinty>  
+<f_strinty cice_mode='prescribed'>'xxxxx'</f_strinty> 
+
+<f_strength                       >'mxxxx' </f_strength>  
+<f_strength cice_mode='prescribed'>'xxxxx'</f_strength> 
+
+<f_opening                       >'mxxxx' </f_opening>  
+<f_opening cice_mode='prescribed'>'xxxxx'</f_opening> 
+
+<f_divu                       >'mxxxx' </f_divu>  
+<f_divu cice_mode='prescribed'>'xxxxx'</f_divu> 
+
+<f_shear                       >'mxxxx' </f_shear>  
+<f_shear cice_mode='prescribed'>'xxxxx'</f_shear> 
+
+<f_congel                       >'mxxxx' </f_congel>  
+<f_congel cice_mode='prescribed'>'xxxxx'</f_congel> 
+
+<f_snoice                       >'mxxxx' </f_snoice>  
+<f_snoice cice_mode='prescribed'>'xxxxx'</f_snoice> 
+
+<f_meltt                       >'mxxxx' </f_meltt>  
+<f_meltt cice_mode='prescribed'>'xxxxx'</f_meltt> 
+
+<f_meltb                       >'mxxxx' </f_meltb>  
+<f_meltb cice_mode='prescribed'>'xxxxx'</f_meltb> 
+
+<f_meltl                       >'mxxxx' </f_meltl>  
+<f_meltl cice_mode='prescribed'>'xxxxx'</f_meltl> 
+
+<f_uvel                       >'mxxxx' </f_uvel>  
+<f_uvel cice_mode='prescribed'>'xxxxx'</f_uvel> 
+
+<f_vvel                       >'mxxxx' </f_vvel>  
+<f_vvel cice_mode='prescribed'>'xxxxx'</f_vvel> 
+
+<f_frazil                       >'mxxxx' </f_frazil>  
+<f_frazil cice_mode='prescribed'>'xxxxx'</f_frazil> 
+
+<f_apondn                       >'mxxxx' </f_apondn>  
+<f_apondn cice_mode='prescribed'>'xxxxx'</f_apondn> 
+
+<f_faero_atm                       >'mxxxx' </f_faero_atm>  
+<f_faero_atm cice_mode='prescribed'>'xxxxx'</f_faero_atm> 
+
+<f_faero_ocn                       >'mxxxx' </f_faero_ocn>  
+<f_faero_ocn cice_mode='prescribed'>'xxxxx'</f_faero_ocn> 
+
+<f_aero                       >'mxxxx' </f_aero>  
+<f_aero cice_mode='prescribed'>'xxxxx'</f_aero> 
+
+<f_FY                     >'mdxxx'</f_FY>
+<f_aisnap                 >'mdxxx'</f_aisnap>
+<f_hisnap                 >'mdxxx'</f_hisnap>
+
+</namelist_defaults>

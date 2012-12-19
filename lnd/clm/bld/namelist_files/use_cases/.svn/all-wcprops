@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases
+END
+2000_control.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/2000_control.xml
+END
+pergro_pd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/pergro_pd.xml
+END
+20thC_glacierMEC_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/20thC_glacierMEC_transient.xml
+END
+2000-2100_rcp8.5_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/2000-2100_rcp8.5_transient.xml
+END
+stdurbpt_pd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/stdurbpt_pd.xml
+END
+2000_glacierMEC_control.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/2000_glacierMEC_control.xml
+END
+1850_control.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850_control.xml
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/README
+END
+1850-2100_rcp6_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp6_transient.xml
+END
+1850-2100_rcp2.6_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp2.6_transient.xml
+END
+1850-2100_rcp4.5_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp4.5_transient.xml
+END
+pergro0_pd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/pergro0_pd.xml
+END
+1850-2100_rcp8.5_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp8.5_transient.xml
+END
+20thC_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/20thC_transient.xml
+END
+1850_glacierMEC_control.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850_glacierMEC_control.xml
+END
+1850-2100_rcp6_glacierMEC_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp6_glacierMEC_transient.xml
+END
+1850-2100_rcp2.6_glacierMEC_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp2.6_glacierMEC_transient.xml
+END
+1850-2100_rcp4.5_glacierMEC_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp4.5_glacierMEC_transient.xml
+END
+1850-2100_rcp8.5_glacierMEC_transient.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/1850-2100_rcp8.5_glacierMEC_transient.xml
+END
+glacierMEC_pd.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/bld/namelist_files/use_cases/glacierMEC_pd.xml
+END

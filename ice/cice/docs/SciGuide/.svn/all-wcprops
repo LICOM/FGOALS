@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/SciGuide
+END
+ice_scidoc.tex
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/SciGuide/ice_scidoc.tex
+END
+supertabular.sty
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/SciGuide/supertabular.sty
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/SciGuide/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/SciGuide/README
+END
+natbib.sty
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/ice/cice/docs/SciGuide/natbib.sty
+END

@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys
+END
+BalanceCheckMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/BalanceCheckMod.F90
+END
+SurfaceRadiationMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/SurfaceRadiationMod.F90
+END
+SoilTemperatureMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/SoilTemperatureMod.F90
+END
+SnowHydrologyMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/SnowHydrologyMod.F90
+END
+UrbanInputMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/UrbanInputMod.F90
+END
+Biogeophysics1Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/Biogeophysics1Mod.F90
+END
+Biogeophysics2Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/Biogeophysics2Mod.F90
+END
+FracWetMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/FracWetMod.F90
+END
+UrbanInitMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/UrbanInitMod.F90
+END
+FrictionVelocityMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/FrictionVelocityMod.F90
+END
+TridiagonalMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/TridiagonalMod.F90
+END
+SurfaceAlbedoMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/SurfaceAlbedoMod.F90
+END
+Hydrology1Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/Hydrology1Mod.F90
+END
+Hydrology2Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/Hydrology2Mod.F90
+END
+BiogeophysicsLakeMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/BiogeophysicsLakeMod.F90
+END
+BiogeophysRestMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/BiogeophysRestMod.F90
+END
+SoilHydrologyMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/SoilHydrologyMod.F90
+END
+UrbanMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/UrbanMod.F90
+END
+QSatMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/QSatMod.F90
+END
+clm_driverInitMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/clm_driverInitMod.F90
+END
+HydrologyLakeMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/HydrologyLakeMod.F90
+END
+SNICARMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/SNICARMod.F90
+END
+BareGroundFluxesMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/BareGroundFluxesMod.F90
+END
+CanopyFluxesMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeophys/CanopyFluxesMod.F90
+END

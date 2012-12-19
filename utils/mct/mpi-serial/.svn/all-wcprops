@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial
+END
+time.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/time.c
+END
+recv.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/recv.c
+END
+mpif.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpif.h
+END
+listP.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/listP.h
+END
+listops.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/listops.h
+END
+mpiP.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpiP.h
+END
+list.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/list.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/README
+END
+mpif.real8double16.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpif.real8double16.h
+END
+handles.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/handles.c
+END
+pack.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/pack.c
+END
+list.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/list.h
+END
+mpi.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpi.c
+END
+make-mpif
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/make-mpif
+END
+fort.F90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/fort.F90
+END
+req.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/req.c
+END
+collective.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/collective.c
+END
+mpif.real4double8.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpif.real4double8.h
+END
+send.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/send.c
+END
+mpi.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpi.h
+END
+mpif.master.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpif.master.h
+END
+comm.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/comm.c
+END
+group.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/group.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/Makefile
+END
+protify.awk
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/protify.awk
+END
+mpif.real8double8.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/utils/mct/mpi-serial/mpif.real8double8.h
+END

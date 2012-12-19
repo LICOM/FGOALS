@@ -1,0 +1,6 @@
+-mode clm_stndln
+-use_mpiserial -smp
+-debug
+-rtm off
+-bgc cn
+-s

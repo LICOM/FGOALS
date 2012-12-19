@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts
+END
+getco2_historical.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/getco2_historical.ncl
+END
+cprnc.pl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/cprnc.pl
+END
+cprnc.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/cprnc.ncl
+END
+RMSbluefire.dat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/RMSbluefire.dat
+END
+RMSlahey.dat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/RMSlahey.dat
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/README
+END
+ndepregrid.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/ndepregrid.ncl
+END
+getregional_datasets.pl
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/getregional_datasets.pl
+END
+RMSjaguar.dat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/RMSjaguar.dat
+END
+getregional_datasets.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/getregional_datasets.ncl
+END
+RMSintel.dat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/RMSintel.dat
+END
+RMSintrepid.dat
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/RMSintrepid.dat
+END
+pergroPlot.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/pergroPlot.ncl
+END
+aerdepregrid.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/aerdepregrid.ncl
+END
+runDepositionRegrid.pl
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/runDepositionRegrid.pl
+END
+ndeplintInterp.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/ndeplintInterp.ncl
+END
+pftdyntest2raw.ncl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/tools/ncl_scripts/pftdyntest2raw.ncl
+END

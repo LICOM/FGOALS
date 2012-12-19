@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem
+END
+CNCStateUpdate2Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNCStateUpdate2Mod.F90
+END
+CASAPhenologyMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CASAPhenologyMod.F90
+END
+CNGapMortalityMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNGapMortalityMod.F90
+END
+CNC13StateUpdate2Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNC13StateUpdate2Mod.F90
+END
+CNGRespMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNGRespMod.F90
+END
+CropRestMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CropRestMod.F90
+END
+CNNStateUpdate1Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNNStateUpdate1Mod.F90
+END
+CNBalanceCheckMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNBalanceCheckMod.F90
+END
+CNNStateUpdate3Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNNStateUpdate3Mod.F90
+END
+CNFireMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNFireMod.F90
+END
+CNMRespMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNMRespMod.F90
+END
+CASAMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CASAMod.F90
+END
+CNPrecisionControlMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNPrecisionControlMod.F90
+END
+CNWoodProductsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNWoodProductsMod.F90
+END
+CNSummaryMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNSummaryMod.F90
+END
+DUSTMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/DUSTMod.F90
+END
+CNDVLightMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNDVLightMod.F90
+END
+CNPhenologyMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNPhenologyMod.F90
+END
+CNDecompMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNDecompMod.F90
+END
+CNCStateUpdate1Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNCStateUpdate1Mod.F90
+END
+STATICEcosysDynMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/STATICEcosysDynMod.F90
+END
+CNDVMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNDVMod.F90
+END
+CNCStateUpdate3Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNCStateUpdate3Mod.F90
+END
+CNC13StateUpdate1Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNC13StateUpdate1Mod.F90
+END
+CNC13StateUpdate3Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNC13StateUpdate3Mod.F90
+END
+CNrestMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNrestMod.F90
+END
+VOCEmissionMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/VOCEmissionMod.F90
+END
+CNDVEcosystemDynIniMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNDVEcosystemDynIniMod.F90
+END
+CNAnnualUpdateMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNAnnualUpdateMod.F90
+END
+CNNStateUpdate2Mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNNStateUpdate2Mod.F90
+END
+C13SummaryMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/C13SummaryMod.F90
+END
+CNNDynamicsMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNNDynamicsMod.F90
+END
+CNAllocationMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNAllocationMod.F90
+END
+CNC13FluxMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNC13FluxMod.F90
+END
+DryDepVelocity.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/DryDepVelocity.F90
+END
+CNEcosystemDynMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNEcosystemDynMod.F90
+END
+CNSetValueMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNSetValueMod.F90
+END
+CNVegStructUpdateMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNVegStructUpdateMod.F90
+END
+CNDVEstablishmentMod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/lnd/clm/src/biogeochem/CNDVEstablishmentMod.F90
+END

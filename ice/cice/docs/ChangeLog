@@ -1,0 +1,158 @@
+===============================================================
+Originator: dbailey
+Date: Thu Jun 2 2011
+Version: 4.0
+One-line Summary: u10 field
+CCSM Version compatible with: cesm1_0_rel06
+Changes made:
+
+The u10 field was not being sent in the ESMF driver.
+
+M       src/drivers/cpl_esmf/ice_comp_esmf.F90
+
+===============================================================
+Originator: dbailey
+Date: Thu May 19 2011
+Version: 4.0
+One-line Summary: 
+CCSM Version compatible with: cesm1_0_rel06
+Changes made:
+
+1. Remove sicthk completely from CICE MCT and ESMF drivers.
+2. New FV grid support.
+3. Updates to PIO.
+4. Now receive orbital parameters from driver (answer changing).
+5. Gregorian support added, but not working in this release.
+6. CPL indices moved to components.
+
+M       bld/build-namelist
+M       bld/namelist_files/namelist_definition.xml
+M       bld/namelist_files/namelist_defaults_cice.xml
+M       bld/generate_cice_decomp.pl
+M       src/source/ice_shortwave.F90
+M       src/drivers/cpl_share/CICE_InitMod.F90
+M       src/drivers/cpl_share/ice_pio.F90
+A  +    src/drivers/cpl_share/ice_cpl_indices.F90
+M       src/drivers/cpl_share/ice_prescribed_mod.F90
+M       src/drivers/cpl_mct/ice_comp_mct.F90
+M       src/drivers/cpl_esmf/ice_comp_esmf.F90
+M       src/drivers/cpl_esmf/ice_comp_mct.F90
+M       docs/UsersGuide/ice_usrdoc/node9.html
+A  +    docs/UsersGuide/ice_usrdoc/node42.html
+A  +    docs/UsersGuide/ice_usrdoc/node41.html
+
+===============================================================
+Originator: dbailey
+Date: Mon Nov 01 2010
+Version: 4.0
+One-line Summary: Bug fixes, low-res support, etc.
+CCSM Version compatible with: cesm1_0_rel02
+Changes made:
+
+This update includes a couple bug fixes for instantaneous output,
+binary initial files, and daily radiation diagnostics. These are
+all non-answer changing to the main code. These will change answers
+in some output history diagnostics. Support has been added for the
+low-resolution version, and 10m wind diagnostic (turned off currently).
+Also, sicthk is no longer passed to the coupler as it is no longer
+needed in CAM. This will change coupler diagnostics, but does not
+change the solution.
+
+M      UsersGuide/ice_setup.tex
+M      bld/config_files/definition.xml
+M      bld/namelist_files/namelist_definition.xml
+M      bld/namelist_files/namelist_defaults_cice.xml
+M      bld/generate_cice_decomp.pl
+M      src/source/ice_ocean.F90
+M      src/source/ice_flux.F90
+M      src/source/ice_distribution.F90
+M      src/source/ice_history_fields.F90
+M      src/source/ice_atmo.F90
+M      src/source/ice_history.F90
+M      src/drivers/cpl_share/CICE_InitMod.F90
+M      src/drivers/cpl_share/CICE_RunMod.F90
+M      src/drivers/cpl_share/ice_history_write.F90
+M      src/drivers/cpl_mct/ice_comp_mct.F90
+M      src/drivers/cpl_esmf/ice_comp_esmf.F90
+
+===============================================================
+Originator: dbailey
+Date: Mon Jun 14 2010
+Version: 4.0
+One-line Summary: Updated documentation and ChangeLog.
+CCSM Version compatible with: cesm1_0_rel01
+Changes made:
+
+M      UsersGuide/ice_setup.tex
+M      UsersGuide/ice_usrdoc/node7.html
+M      UsersGuide/ice_usrdoc/node9.html
+M      UsersGuide/ice_usrdoc/WARNINGS
+M      UsersGuide/ice_usrdoc/node10.html
+M      UsersGuide/ice_usrdoc/node20.html
+M      UsersGuide/ice_usrdoc/node12.html
+M      UsersGuide/ice_usrdoc/node30.html
+M      UsersGuide/ice_usrdoc/node22.html
+M      UsersGuide/ice_usrdoc/node40.html
+M      UsersGuide/ice_usrdoc/node14.html
+M      UsersGuide/ice_usrdoc/node32.html
+M      UsersGuide/ice_usrdoc/node24.html
+M      UsersGuide/ice_usrdoc/node16.html
+M      UsersGuide/ice_usrdoc/node34.html
+M      UsersGuide/ice_usrdoc/node26.html
+M      UsersGuide/ice_usrdoc/node36.html
+M      UsersGuide/ice_usrdoc/node18.html
+M      UsersGuide/ice_usrdoc/node28.html
+M      UsersGuide/ice_usrdoc/node38.html
+M      UsersGuide/ice_usrdoc/node2.html
+M      UsersGuide/ice_usrdoc/node4.html
+M      UsersGuide/ice_usrdoc/labels.pl
+M      UsersGuide/ice_usrdoc/node6.html
+M      UsersGuide/ice_usrdoc/node8.html
+M      UsersGuide/ice_usrdoc/ice_usrdoc.html
+M      UsersGuide/ice_usrdoc/images.log
+M      UsersGuide/ice_usrdoc/node11.html
+M      UsersGuide/ice_usrdoc/node21.html
+M      UsersGuide/ice_usrdoc/node31.html
+M      UsersGuide/ice_usrdoc/node13.html
+M      UsersGuide/ice_usrdoc/node23.html
+M      UsersGuide/ice_usrdoc/node15.html
+M      UsersGuide/ice_usrdoc/node33.html
+M      UsersGuide/ice_usrdoc/node25.html
+M      UsersGuide/ice_usrdoc/node17.html
+M      UsersGuide/ice_usrdoc/node35.html
+M      UsersGuide/ice_usrdoc/node27.html
+M      UsersGuide/ice_usrdoc/node19.html
+M      UsersGuide/ice_usrdoc/node37.html
+M      UsersGuide/ice_usrdoc/node29.html
+M      UsersGuide/ice_usrdoc/images.tex
+M      UsersGuide/ice_usrdoc/node39.html
+M      UsersGuide/ice_usrdoc/internals.pl
+M      UsersGuide/ice_usrdoc/node1.html
+M      UsersGuide/ice_usrdoc/index.html
+M      UsersGuide/ice_usrdoc/node3.html
+M      UsersGuide/ice_usrdoc/images.pdf
+M      UsersGuide/ice_usrdoc/node5.html
+M      UsersGuide/ice_nml_example.tex
+M      UsersGuide/ice_history.tex
+M      UsersGuide/ice_what_is_cice4.tex
+M      UsersGuide/ice_usrdoc.pdf
+M      UsersGuide/ice_stdout.tex
+M      UsersGuide/ice_restart.tex
+M      UsersGuide/ice_runtypes.tex
+M      UsersGuide/ice_change_ncat.tex
+M      UsersGuide/ice_nml_var.tex
+M      UsersGuide/ice_build.tex
+M      UsersGuide/ice_usrdoc.tex
+M      ChangeLog
+
+===============================================================
+cesm1_0_rel_00_cice4_0_20100611
+Originator: dbailey
+Date: Mon Jun 14 2010
+Version: 4.0
+One-line Summary: Start of CESM release branch for CICE.
+CCSM Version compatible with: cesm1_0_rel01
+Changes made:
+
+===============================================================
+
