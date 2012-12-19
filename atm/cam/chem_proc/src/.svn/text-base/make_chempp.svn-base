@@ -1,0 +1,10 @@
+#!/bin/csh
+
+set exenam=cam_chempp
+set objdir=OBJ
+
+rm -f ../bin/$exenam
+rm -f $objdir/*
+
+gmake SRCLIST=Base_Srclist_f SRCDIRS="$exenam" EXENAME=cam_chempp
+

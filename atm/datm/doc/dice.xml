@@ -1,0 +1,121 @@
+<chapter id="dice_c">
+<title></title>
+<sect1 id="dice">
+<title>Data Ice Model</title>
+
+<sect2 id="dice_modes">
+<title>Modes</title>
+
+<para> 
+The default science mode of the data model is the COPYALL mode.
+COPYALL mode will examine the fields found in all input data streams,
+if any input field names match the field names used internally,
+they are copied into the export array and passed directly to the coupler
+without any special user code.
+There are several other scientific modes supported by the model, they are listed below.
+The mode is selected by a character string set in the strdata namelist variable dataMode.
+</para>
+
+<variablelist>
+<varlistentry><term><option>dataMode = "NULL" </option></term><listitem><para>
+NULL mode turns off the data model as a provider of data to the coupler.
+The ice_present flag will be set to false
+and the coupler will assume no exchange of data to or from the data model.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>dataMode = "COPYALL" </option></term><listitem><para>
+COPYALL mode copies all fields directly from the input data streams
+Any required fields not found on an input stream will be set to zero.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>dataMode = "SSTDATA" </option></term><listitem><para>
+SSTDATA is a prognostic mode.  It requires data be sent to the ice model.  
+Ice fraction (extent) data is read from an input stream, atmosphere state
+variables are received from the coupler, and then an atmosphere-ice surface flux 
+is computed and sent to the coupler.  It is called "SSTDATA" mode because
+normally the ice fraction data is found in the same data files that provide
+SST data to the data ocean model.  They are normally found in the same file
+because the SST and ice fraction data are derived from the same observational
+data sets and are consistent with each other.
+</para></listitem></varlistentry>
+</variablelist>
+
+</sect2>
+<sect2 id="dice_namelist">
+<title>Namelist</title>
+
+<para>
+
+The data ice specific namelist input is as follows.  The namelist input
+filename is hardwired in the data model code to "dice_in".  The namelist group is
+called "dice_nml".  The variable formats are character string (char),
+integer (int), double precision real (r8), or logical (log) or one dimensional arrays
+of any of those things (array of ...).
+
+</para>
+
+<variablelist>
+
+<varlistentry><term><option>ice_in (char) </option></term><listitem><para>
+  sets the filename for the data ice strdata namelist.  this must be set.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>decomp (char)</option></term><listitem><para>
+  set the decomposition option for the data model.  valid options are placing the global array on the root task or a simple stride-one load balanced one-dimensional decomposition.  other decompositions may be added in the future.  valid values are ['root','1d'].  default='1d'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>flux_swpf (r8)</option></term><listitem><para>
+  this is the shortwave penetration factor as a fraction where 1.0 is 100% penetration.  used only in SSTDATA mode.  default=0.0
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>flux_Qmin (r8)</option></term><listitem><para>
+  this is the minimum bound on the melt rate in kg/s/m2.  used only in SSTDATA mode.  default=-300.0
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>flux_Qacc (log)</option></term><listitem><para>
+  this logical activates the water accumulation associated with the ocean potential to melt ice.  used only in SSTDATA mode.  default=false.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>flux_Qacc0 (r8)</option></term><listitem><para>
+  this is the initial water accumulation value on a startup.  used only in SSTDATA mode.  default=0.0
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>restfilm (char)</option></term><listitem><para>
+  restart filename for the data ice model data.  this is optional.  if this is unset, the restart filename will be read from the rpointer.ice file.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>restfils (char)</option></term><listitem><para>
+  restart filename for the data ice stream data.  this is optional.  if this is unset, the restart filename will be read from the rpointer.ice file.  default='unset'.
+</para></listitem></varlistentry>
+
+</variablelist>
+
+<para>
+
+The pre-defined internal field names in the data ice model are as follows.
+In general, the stream input file should translate the input variable names into
+these names for use within the data ice model.
+
+</para>
+
+</sect2>
+<sect2 id="dice_fields">
+<title>Fields</title>
+
+<screen>
+     (/"to              ","s               ","uo              ","vo              ", &
+       "dhdx            ","dhdy            ","q               ","z               ", &
+       "ua              ","va              ","ptem            ","tbot            ", &
+       "shum            ","dens            ","swndr           ","swvdr           ", &
+       "swndf           ","swvdf           ","lwdn            ","rain            ", &
+       "snow            ","t               ","tref            ","qref            ", &
+       "ifrac           ","avsdr           ","anidr           ","avsdf           ", &
+       "anidf           ","tauxa           ","tauya           ","lat             ", &
+       "sen             ","lwup            ","evap            ","swnet           ", &
+       "swpen           ","melth           ","meltw           ","salt            ", &
+       "tauxo           ","tauyo           " /)
+</screen>
+
+</sect2>
+</sect1>
+</chapter>

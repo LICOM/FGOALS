@@ -1,0 +1,303 @@
+===============================================================
+Tag name: cesm1_0_3_n00_cam5_1_01
+Originator(s): fischer
+Date: 31 May 2011
+One-line Summary: updated to trunk tag cam5_1_01
+
+Purpose of changes:
+
+. Enable 1/4 deg FV cam5
+
+. New homme dycor ne240np4 1850 ncdata file
+
+===============================================================
+===============================================================
+
+Tag name: cesm1_0_3_n01_cam5_0_57
+Originator(s): Francis Vitt
+Date: 19 May 2011
+One-line Summary: Added offline radiation driver functionality 
+
+Parallel Offline Radiation Tool (PORT)
+
+Purpose of changes:
+	
+ This provides the capability to preform offline radiation calculations.
+
+===============================================================
+===============================================================
+Tag name: cesm1_0_3_p00_cam5_0_57
+Originator(s): eaton, fischer
+Date: Thu May 19 13:36:14 MDT 2011 
+One-line Summary: Initial tag for cesm1_0_3 release.
+
+The previous release, cesm1_0_2, was based on the development tag
+cam5_0_22.  The changes to the cam trunk which will be released in
+cesm1_0_3 are summarized below.
+
+New features in CAM5.1
+======================
+
+. Final bug fixes and tuning of CAM-FV w/ cam5 physics on 1 and 2 deg
+  grids.
+
+. All new diagnostics that are being produced for the CESM AR5
+  contributions are available in this release.
+
+. Update the COSP implementation to work with the cam5 physics package.
+
+. The "CAM3.1" physics package has been restored.  Using the configure
+  argument "-phys cam3" now gives a physics package that matches what was
+  produced by the CAM3.1 model release.  This is mainly useful in an
+  aquaplanet configuration since the land component cannot be reverted to
+  CLM3.  To run an aquaplanet configuration that contains the
+  customizations required by the intercomparison experiment protocol use
+  the aquaplanet_cam3 use case (as an argument to build-namelist).
+
+. Some tuning has been done to allow running the bulk aerosols with the
+  cam5 physics package.  Either prescribed bulk aerosols (as used by the
+  cam4 physics package) or prognostic bulk aerosols (via -chem trop_bam)
+  can be used.  The motivation was to provide a less expensive cam5
+  configuration which may be useful when modal aerosols are not the focus.
+
+. The default for deposition velocity calculation is changed to be done in
+  CLM except when modal aerosols are active.  This changes answers (but not
+  climate) for all prognostic chemistry schemes affected by dry deposition.
+
+. Extend unstructured grid functionality to chemistry and cam5 physics
+  package (modal aerosols).  Because the modal aerosols are doing a dry
+  deposition calculation on the atm grid, a new dataset is required when
+  running SE on the cubed sphere grid (see namelist variable
+  drydep_srf_file).
+
+. Changes to chemistry code:
+  - Provide more intuitive data-timing namelist variables.  See, for
+    example, the new *_cycle_ry, *_fixed_ymd, *_fixed_tod variables.
+  - Update trop_mozart with latest MOZART4 mechanism.
+  - Restore lighting NOx production in super_fast_llnl.
+  - Give flexibility to the units of the emissions datasets.
+  - Use more up-to-date dataset for waccm_ghg forcing.
+  - Include CO2 reactions for WACCM to improve concentrations in upper regions
+  - Updates to dry deposition module.
+  - Provide an additional optional wet deposition method for gas phase
+    chemical species.
+  - Include short wavelength photolysis in tropospheric chemistry.
+  - New treatment of WACCM stratospheric aerosols.
+  - New chemistry package added : trop_strat_bam_v1.
+  - Adjustments to the trop_mozart chemistry mechanism.
+  - Provide dynamic creation of default deposition species lists 
+    namelist settings using master lists.
+  - Correction to the wet deposition lists of species for 
+    super_fast_llnl, and waccm_mozart.
+  - Correction to the configure options for the offline driver regression test.
+
+. Add new low resolution FV grid: 2.5x3.33.  The physics packages have not
+  been tuned at this resolution.
+
+. Change default for number of vertical remappings per physics timestep.
+  Was 1, but now set to 2 for 1/2 deg FV and finer grids.  This changes
+  answers for all high resolution (1/2 deg and finer) runs using FV dycore.
+
+. Allow subcycling in Eulerian dycore.  See namelist variable eul_nsplit.
+
+. Add ability to interpolate fields on the SE grid (cubed sphere) to a
+  rectangular grid for history output.  See namelist variables
+  interpolate_analysis, interp_nlat, interp_nlon, interp_gridtype, and
+  interp_type.  This is off by default.
+
+. Option for history output to be averaged over local time zones.  See
+  namelist variables lcltod_start and lcltod_stop.
+
+. Option for history output (columns) along a specified track.  See
+  namelist variables sathist_track_infile, sathist_fincl, sathist_mfilt,
+  and sathist_hfilename_spec. 
+
+. Option for history output of multiple single columns.  The default is for
+  single column specifications to be output as separate variables.  This
+  option allows all single columns specified in a history file to be
+  written as a single variable using the same format that is used to output
+  unstructured grid data.  The option is enabled by the new namelist
+  variable collect_column_output.  The reason for implementing this option
+  is for efficiency in writing single column output.
+
+. An option was added to the COSP simulator to allow it to be run on a
+  subset of the timesteps when the radiation code is run.  See the namelist
+  variable cosp_nradsteps.
+
+. Add argument to configure (-fc_type) to allow specifying which type of
+  Fortran compiler is being used when that compiler is being invoked via a
+  generic script (e.g., mpif90 or ftn).  This is only needed for CAM
+  standalone builds.
+
+. Add argument to build-namelist (-ntasks) to produce default FV
+  decomposition settings (npr_yz).  This functionality was previously
+  embedded in the CESM scripts and was not available to user's of CAM
+  standalone scripts.
+
+Code cleanup and refactoring:
+=============================
+
+. Modify code to consistently save and reuse the physics buffer indicies
+  rather than invoking a linear search for the indices wherever they are
+  needed.
+
+. Start refactoring modal_aer_opt module to make use of the rad_constituent
+  interfaces.  This will eventually provide a prescribed modal aerosol
+  capability and fully functioning diagnostic calculations for radiative
+  forcing.
+
+. Implement separate drivers for the cam5 macrophysics and microphysics.
+  The driver for the cam4 macro/micro physics remains in stratiform.F90.
+
+. Microphysics changes:
+  - Remove unnecessary passed variables and use statements for the CAM5 cloud 
+    microphysics (cldwat2m_micro.F90)
+  - Add functionality for a logical flag called 'sub_column' to be passed to 
+    the CAM5 microphysics that changes how it works, but with the flag set (false) 
+    to reproduce the standard code (cldwat2m_micro.F90)
+
+. Refactoring in cam history to allow for extra dimensions in output fields
+  beyond the current spatial/temporal ones.  Previously the fields in a
+  history file time sample only had (lon,lat,lev,time) or (ncol,lev,time)
+  dimensions.  The "addfld" calls allowed lev to be set to 1, plev or
+  plevp.  To work around this constraint in the past optional flags were
+  added to the addfld subroutine that allowed more values of lev, but this
+  workaround did not provide extra dimensions.  In cases where multiple
+  non-horizontal dimensions were needed, e.g., level and optical depth, or
+  level and subcolumn, the technique employed was to combine multiple
+  dimensions into a single mixed dimension.  We have eliminated the need to
+  do that (in the output field only -- internal data structures still
+  require this mixed dimension).  Optional arguments have been added to the
+  addfld subroutine which allow defining multiple dimensions rather than
+  just a single "lev" dimension.
+
+. Add new namelist groups to the dycores.  Continue to move namelist
+  variables out of the generic cam_inparm group.
+
+. The old ISCCP simulator has been removed.  The current ISCCP simulator is
+  available as part of the COSP package.
+
+Bugs fixed:
+===========
+
+. Bug fixes in cam5 micro/macro physics:
+  - A fix to immersion freezing (small changes)
+  - Fixing the diagnostic output FICE to trap for roundoff errors
+    (diagnostic only) 
+  - Bug fix for subgrid cloud water treatment in contact nucleation (small
+    changes) 
+  - Bug fix for size of snow particles used in radiation (they get smaller
+    by a factor of 3 and more reflective: some impact). 
+  - Fix to guarantee the in-stratus LWC to be within the specified range even
+    when the cloud fraction is very small (<  1.e-5 ) 
+  - Fix to prevent model crash by dividing by near zero cloud fraction in the
+    droplet activation routine
+    
+. Bug fixes in chemistry code:
+  - corrected vertically integrated wet deposition rates diagnostics
+  - corrected MASS and AREA output fields
+  - corrected chemical prod/loss rates diagnostics
+
+. State variables now output time-averaged by default when "budget_history"
+  is true.
+
+. Fix a bug in call to conv_water_4rad that would lead to erroneous results
+  with conv_water_in_rad=2 option if invoked.
+
+Known bugs:
+===========
+
+. trop_mam7 currently not working.  This is a side effect of a partial code
+  refactoring in modal_aer_opt.
+
+
+===============================================================
+===============================================================
+Tag name: cesm1_0_rel_03_cam5_0_22
+Originator(s): mvr
+Date: 11 November 2010
+One-line Summary: updated to trunk tag cam5_0_22; updated external definitions
+to the release tags of the other components
+
+Purpose of changes:
+
+. Initial implementation of the COSP simulator for use with cam4 physics
+  only. 
+
+. Fix for the FV div4 filter.  This filter is only turned on by default for
+  1/2 deg and higher resolution grids, so this change only affects answers
+  for those resolutions.
+
+. Set the lower boundary values of GHGs using the WACCM lower boundary file
+  for all prognostic GHG chemistry schemes.  This changes answers beyond
+  roundoff for WACCM runs and for trop_mozart.  It doesn't affect trop_mam3
+  or the superfast_chem schemes.
+
+. Fix to column pairing algorithm in phys_grid.  The bug would cause load
+  balance problems, but not affect answers.
+
+. Fix the prescribed GHG dataset for cam5 use case.  Enables historical run
+  to go through the end of 2005.  This changes answers beyond roundoff for
+  cam5 historical runs.
+
+. Include workaround for extremely slow compilations with the intel
+  compiler.
+
+. Tuning mods for Eulerian T31 resolution used in paleoclimate simulations.
+
+. Corrected the default settings for cam5 simulations at resolutions other
+  than 1.9x2.5.  This changes answers beyond roundoff for all cam5
+  simulations except those done at 1.9x2.5.
+
+===============================================================
+===============================================================
+
+Tag name: cesm1_0_rel_03_cam5_0_20
+Originator(s): mvr
+Date: 29 October 2010
+One-line Summary: updated to trunk tag cam5_0_20
+
+===============================================================
+===============================================================
+
+Tag name: cesm1_0_rel_03_cam5_0_13
+Originator(s): mvr
+Date: 26 August 2010
+One-line Summary: updated to trunk tag cam5_0_13; updated external definitions
+to the release tags of the other components
+
+Purpose of changes:
+
+. Add namelist specifier for which history file to write heat/moisture
+  budget terms to.
+
+. Separate aerosol activation code from microphysics code.  (code cleanup;
+  introduces roundoff diffs in cam5 on some platforms)
+
+. Fix FV offline driver for 2D decomp and WACCM configs; fix configure to
+  allow chem customization w/ trop_bam and *_ghg.
+
+. Rename of types for import/export states (code cleanup).
+
+. Fix memory leak with workaround for xlf compiler bug.
+
+. FV memory optimization; repro_sum update; spmd_utils and mod_comm
+  communication protocol updates.
+
+. Change FV filter defaults for high resolution grids (1/2 degree and
+  finer).  This changes answers in high res runs.
+
+===============================================================
+===============================================================
+
+Tag name: cesm1_0_rel_02_cam5_0_03
+Originator(s): mvr
+Date: 21 June 2010
+One-line Summary: updated to trunk tag cam5_0_03; updated external definitions
+to the release tags of the other components
+
+Purpose of changes:
+
+. create initial public release
+
+===============================================================

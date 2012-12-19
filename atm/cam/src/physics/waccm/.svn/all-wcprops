@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm
+END
+nlte_fomichev.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/nlte_fomichev.F90
+END
+iondrag.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/iondrag.F90
+END
+nlte_lw.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/nlte_lw.F90
+END
+radheat.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/radheat.F90
+END
+gw_drag.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/gw_drag.F90
+END
+gravity_waves_sources.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/gravity_waves_sources.F90
+END
+qbo.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/qbo.F90
+END
+waccm_forcing.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/waccm/waccm_forcing.F90
+END

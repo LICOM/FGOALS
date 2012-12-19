@@ -1,0 +1,143 @@
+<chapter id="strdata_c">
+<title></title>
+<sect1 id="strdata">
+<title>Stream Data</title>
+
+<sect2 id="strdata_namelist">
+<title>Namelist</title>
+
+<para>
+
+The <emphasis>strdata</emphasis> (short for "stream data") input is set via a fortran namelist called shr_strdata_nml.
+That namelist, the strdata datatype, and the methods are contained 
+in the share source code file, models/csm_share/shr/shr_strdata_mod.F90.
+In general, strdata input defines an array of input streams and operations
+to perform on those streams.  Therefore, many namelist inputs are arrays
+of character strings.  Different variable of the same index are associated.
+For instance, mapalgo(1) spatial interpolation will be performed between streams(1) 
+and the target domain.
+
+</para> <para>
+
+The following namelist are available with the strdata namelist.  These are
+defined in greater detail below.
+
+<simplelist type='vert'>
+<member><link linkend="str_datamode">dataMode</link> - component specific mode</member>
+<member><link linkend="str_domainfile">domainFile</link> - final domain</member>
+<member><link linkend="str_streams">streams</link> - input files</member>
+<member><link linkend="str_vectors">vectors</link> - paired vector field names</member>
+<member><link linkend="str_fillalgo">fillalgo</link> - fill algorithm</member>
+<member><link linkend="str_fillmask">fillmask</link> - fill mask</member>
+<member><link linkend="str_fillread">fillread</link> - fill mapping file to read</member>
+<member><link linkend="str_fillwrite">fillwrite</link> - fill mapping file to write</member>
+<member><link linkend="str_mapalgo">mapalgo</link> - spatial interpolation algorithm</member>
+<member><link linkend="str_mapmask">mapmask</link> - spatial interpolation mask</member>
+<member><link linkend="str_mapread">mapread</link> - spatial interpolation mapping file to read</member>
+<member><link linkend="str_mapwrite">mapwrite</link> - spatial interpolation mapping file to write </member>
+<member><link linkend="str_tintalgo">tintalgo</link> - time interpolation algorithm </member>
+<member><link linkend="str_taxmode">taxMode</link> - time interpolation mode</member>
+<member><link linkend="str_dtlimit">dtlimit</link> - delta time axis limit </member>
+<member><link linkend="str_io_type">io_type</link> - IO type</member>
+<member><link linkend="str_num_iotasks">num_iotasks</link> - number of IO tasks </member>
+<member><link linkend="str_io_root">io_root</link> - IO root processor</member>
+<member><link linkend="str_io_stride">io_stride</link> - IO processor stride</member>
+<member><link linkend="str_num_agg">num_agg</link> - IO number of aggregators</member>
+</simplelist>
+
+</para> <para>
+
+The strdata namelist options are as follows.  The namelist group is
+called "shr_strdata_nml".  The variable formats are character string (char),
+integer (int), double precision real (r8), or logical (log) or one dimensional arrays
+of any of those things (array of ...).
+
+</para>
+
+<variablelist>
+
+<varlistentry id="str_datamode"><term><option>dataMode (char)</option></term><listitem><para>
+  general method that operates on the data.  this is generally implemented in the data models but is set in the strdata method for convenience.  valid options are dependent on the data model and will be described elsewhere.  NULL is always a valid option and means no data will be generated.  default='NULL'
+</para></listitem></varlistentry>
+
+<varlistentry id="str_domainfile"><term><option>domainFile (char)</option></term><listitem><para>
+  spatial gridfile associated with the strdata.  grid information will be read from this file and that grid will serve as the target grid for all input data for this strdata input.  default="null".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_fillalgo"><term><option>fillalgo (array of char)</option></term><listitem><para> 
+  array of fill algorithms associated with the array of streams.  valid options are just copy (ie. no fill), special value, nearest neighbor, nearest neighbor in "i" direction, or nearest neighbor in "j" direction.  the valid fillalgo values are ['copy','spval','nn','nnoni','nnonj'].  default="nn".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_fillmask"><term><option>fillmask (array of char)</option></term><listitem><para>
+  plays no role is fill algorithm at the present time.  default="nomask".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_fillread"><term><option>fillread (array of char)</option></term><listitem><para>
+  array of filenames associated with the array of streams.  specifies the weights file to read instead of computing the weights on the fly for the fill operation.  if this is set, fillalgo and fillmask are ignored.  default="unset".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_fillwrite"><term><option>fillwrite (array of char)</option></term><listitem><para>
+  array of filenames associated with the array of streams.  specifies the weights file to generate after weights are computed on the fly for the fill operation.  this allows a user to save and reuse a set of weights later.  default="unset".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_dtlimit"><term><option>dtlimit (array of r8)</option></term><listitem><para>
+  array of delta time ratio limits placed on the time interpolation associated with the array of streams.  this real value causes the model to stop if the ratio of the running maximum delta time divided by the minimum delta time is greater than the dtlimit for that stream.  for instance, with daily data, the delta time should be exactly one day throughout the dataset and the computed maximum divided by minimum delta time should always be 1.0.  for monthly data, the delta time should be between 28 and 31 days and the maximum ratio should be about 1.1.  the running value of the delta time is computed as data is read and any wraparound or cycling is also included.  this input helps trap missing data or errors in cycling.  to turn off trapping, set the value to 1.0e30 or something similar.  default=1.5.
+</para></listitem></varlistentry>
+
+<varlistentry id="str_io_root"><term><option>io_root (int)</option></term><listitem><para>
+  specifies the rank of the root of set of iotasks when pio IO is active.  this value should be between 0 and the total number of tasks for the data model minus one, and the io_root+(num_iotasks-1)*(io_stride)+1 should be less than the total number of tasks for the data model.  this is unused with io_type='netcdf'.  default=0.
+</para></listitem></varlistentry>
+
+<varlistentry id="str_io_stride"><term><option>io_stride (int)</option></term><listitem><para>
+  specifies the stride of the iotasks across the global mpi ranks.  the io_root+(num_iotasks-1)*(io_stride)+1 should be less than the total number of tasks for the data model.  this is unused with io_type='netcdf'.  default=4.
+</para></listitem></varlistentry>
+
+<varlistentry id="str_io_type"><term><option>io_type (char)</option></term><listitem><para>
+  this specifies the IO implementation method.  valid options are standard netcdf, serial netcdf through the pio interface, or parallel netcdf through the pio interface.  the valid io_type values are ['netcdf','pio_netcdf','pio_pnetcdf'].  default='pio_netcdf'.
+</para></listitem></varlistentry>
+
+<varlistentry id="str_mapalgo"><term><option>mapalgo (array of char)</option></term><listitem><para>
+  array of fill algorithms associated with the array of streams.  valid options are copy by index, set to special value, nearest neighbor, nearest neighbor in "i" direction, nearest neighbor in "j" direction, or bilinear.  the valid mapalgo values are ['copy','spval','nn','nnoni','nnonj','bilinear'].  default="bilinear".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_mapmask"><term><option>mapmask (array of char)</option></term><listitem><para>
+  array of masking algorithms for mapping input data associated with the array of streams.  valid options are map only from valid src points, map only to valid destination points, ignore all masks, map only from valid src points to valid destination points.   the valid mapmask values are ['srcmask', 'dstmask', 'nomask', 'bothmask'].  default="dstmask".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_mapread"><term><option>mapread (array of char)</option></term><listitem><para>
+  array of filenames associated with the array of streams.  specifies the weights file to read instead of computing weights on the fly for the mapping (interpolation) operation.  if this is set, mapalgo and mapmask are ignored.  default="unset".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_mapwrite"><term><option>mapwrite (array of char)</option></term><listitem><para>
+  array of filenames associated with the array of streams.  specifies the weights file to generate after weights are computed on the fly for the mapping (interpolation) operation.  this allows a user to save and reuse a set of weights later.  default="unset".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_num_agg"><term><option>num_agg (int)</option></term><listitem><para>
+  this is needed only with pio binary IO which is currently not supported.
+</para></listitem></varlistentry>
+
+<varlistentry id="str_num_iotasks"><term><option>num_iotasks (int)</option></term><listitem><para>
+  specifies the number of mpi tasks that should be active with pio IO.  this should be no more than the total number of mpi tasks for the data model and can be as small as one.  this is inactive with io_type='netcdf'.  the io_root+(num_iotasks-1)*(io_stride)+1 should be less than the total number of tasks for the data model.  default=1.
+</para></listitem></varlistentry>
+
+<varlistentry id="str_streams"><term><option>streams (array of char)</option></term><listitem><para>
+  list of stream input files.   this string is actually parsed by a stream method and so the format is specified by the stream module.  this string consists of a "stream_input_filename year_align year_first year_last".  the stream_input_filename is a stream text input file and the format and options are described elsewhere.  year_align, year_first, and year_last provide information about the time axis of the file and how to relate the input time axis to the model time axis.  default="null".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_taxmode"><term><option>taxMode (array of char)</option></term><listitem><para>
+  array of time axis modes associated with the array of streams for handling data outside the specified stream time axis.  valid options are to cycle the data based on the first, last, and align settings associated with the stream dataset, to extend the first and last valid value indefinitely, or to limit the interpolated data to fall only between the least and greatest valid value of the time array.  the valid taxMode values are ['cycle','extend','limit'].  default="cycle".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_tintalgo"><term><option>tintalgo (array of char)</option></term><listitem><para>
+  array of time interpolation options associated with the array of streams.  valid options are lower bound, upper bound, nearest data, linear interpolation, or interpolation based upon the cosine of the zenith angle.  the valid tintalgo values are ['lower','upper','nearest','linear','coszen'].  default="linear".
+</para></listitem></varlistentry>
+
+<varlistentry id="str_vectors"><term><option>vectors (array of char)</option></term><listitem><para>
+  list of paired colon delimited field names that should be treated as vectors when carrying out spatial interpolation.  unlike other character arrays in this namelist, this array is completely decoupled from the list of streams.  this is a list of vector pairs that span all input streams where different fields of the vector pair could appear in different streams.  for example, vectors = 'u:v','taux:tauy'.  default="".
+</para></listitem></varlistentry>
+
+</variablelist>
+
+</sect2>
+</sect1>
+</chapter>

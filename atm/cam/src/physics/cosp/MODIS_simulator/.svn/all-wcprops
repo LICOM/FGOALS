@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/MODIS_simulator
+END
+modis_simulator.F90
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/MODIS_simulator/modis_simulator.F90
+END

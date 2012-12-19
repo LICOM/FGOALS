@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files
+END
+namelist_defaults_cam.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/namelist_defaults_cam.xml
+END
+namelist_definition.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/namelist_definition.xml
+END
+master_aer_wetdep_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/master_aer_wetdep_list.xml
+END
+master_gas_wetdep_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/master_gas_wetdep_list.xml
+END
+master_mam_dep_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/master_mam_dep_list.xml
+END
+master_drydep_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/master_drydep_list.xml
+END

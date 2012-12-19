@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+
+	<title>Community Climate System Model (CCSM)</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body>
+
+<!-- main navigation include -->
+	<!--#include virtual="/includes/head.html" -->
+	<!--#include virtual="/includes/tools.html" -->
+    
+    <div id="wrap"><!-- begin wrap -->
+    <div id="content"><!-- begin content -->
+
+	<!-- ######### BEGIN EDITABLE PAGE CONTENT ######### -->
+    
+
+			<div id="subheader"><!-- begin subheader -->
+			<!--#include virtual="/includes/ccsmsubheader.html" -->
+			</div><!-- end subheader -->
+				
+					<!-- begin column_research_main -->
+					<div id="column_research_main">
+                    
+                    <!-- begin research_subcolumn -->
+					<div id="research_subcolumn">
+					
+                    <h1>CCSM Research Tools: CCSM4 Data Models</h1>
+                    
+					<h3>General Overview</h3>
+
+			<p> The CCSM4 data models perform the basic
+                        function of reading external data, modifying
+                        that data, and then sending it to the driver
+                        via standard CCSM coupling interfaces. The
+                        driver and other models have no fundamental
+                        knowledge of whether another component is
+                        fully active or just a data model. In some
+                        cases, data models are prognostic and also
+                        receive and use some data sent by the driver
+                        to the data model. But in most cases, the data
+                        models are not running prognostically and have
+                        no need to receive any data from the
+                        driver. </p>
+			
+			<p> The CCSM4 data models
+                        have been parallelized and share significant
+                        amounts of source code. Methods for reading
+                        and interpolating data have been established
+                        and can easily be reused. There is a natural
+                        hierarchy in the system. The data model calls
+                        strdata methods which then call stream
+                        methods. There are inputs associated with the
+                        data model, strdata, and streams to configure
+                        the setup. The stream methods are responsible
+                        for managing the input data. The information
+                        is then passed up to the strdata methods where
+                        the data is read and interpolated in space and
+                        time. The interpolated data is passed up to
+                        the data model where final fields are derived,
+                        packed, and returned to the driver. </p>
+
+                    <h3>Documentation</h3>
+						<ul>
+                        <li>Data Model v8 User's Guide
+                            [<a href="/models/ccsm4.0/data8/book1.html">html</a>]
+                            [<a href="/models/ccsm4.0/data8/ug.pdf">pdf</a>] </li>
+                        </ul>
+ 
+					<!-- end research_subcolumn -->
+					</div>
+					
+					<!-- end column_research_main -->
+					</div>
+					
+					<!-- begin spotlight_subcolumn -->
+					<div id="spotlight_subcolumn">
+			  
+						<!--#include virtual="/csm/models/ccsm4.0/model.source.code.html" -->
+                        
+                        
+                        <p>&nbsp;</p>
+						
+			  
+					<!-- end spotlight_subcolumn -->
+					</div>
+		
+
+		
+		<!-- begin footer -->
+		<div id="footer">
+			
+			<!--#include virtual="/csm/includes/ccsmfooter.html" -->
+
+		<!-- end footer -->
+		</div>
+        
+        <br class="clearboth"/>
+		
+		<!-- end content -->
+		</div>
+
+<!-- end wrap -->
+</div>
+
+
+
+
+
+</body>
+
+</html>

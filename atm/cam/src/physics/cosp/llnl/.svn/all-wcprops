@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/llnl
+END
+pf_to_mr.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/llnl/pf_to_mr.f90
+END
+cosp_radar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/llnl/cosp_radar.F90
+END
+llnl_stats.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/llnl/llnl_stats.F90
+END
+prec_scops.f90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/llnl/prec_scops.f90
+END

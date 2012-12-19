@@ -1,0 +1,76 @@
+Tag name:  cprnc_110307c
+Originator(s):  jedwards
+Date: March 07, 2011
+One-line Summary: Corrected bug in handling unlimdim index
+	
+
+==============================================================
+Tag name:  cprnc_110307b
+Originator(s):  jedwards
+Date: March 07, 2011
+One-line Summary: Corrected bug when variable only exists on file 1
+	
+
+==============================================================
+Tag name:  cprnc_110307a
+Originator(s):  jedwards
+Date: March 06, 2011
+One-line Summary: corrected commit issues
+	 added file utils.F90 removed file prec.f90
+
+==============================================================
+Tag name:  cprnc_110307
+Originator(s):  jedwards
+Date: March 06, 2011
+One-line Summary: rewrite
+
+Generalize to handle arbitrary numbers of dimensions and variables 
+	with different dimensions but same names.   Remove unsupported
+	command line options, add option -d which can be used to subset
+	any dimension named in the file, for example -d lon:12:4 will
+	compare variables dimensioned by lon from 12 to 15.
+
+	Noted and corrected that some statistics did not take into
+	account missing values (notably rdmax)
+	
+
+
+==============================================================
+Tag name:  cprnc_081022
+Originator(s):  tcraig
+Date: Wed Oct 22, 2008
+One-line Summary: add diagnostics
+
+Add a one line diagnostic, diff_test:  "IDENTICAL" or "DIFFERENT"
+  to make it easier to quickly grep for a result.
+Remove final stop in code for more graceful exit
+
+==============================================================
+Tag name:  cprnc_080709
+Originator(s):  erik (KLUZEK ERIK 1326 CGD)
+Date: Wed Jul  9 14:33:46 MDT 2008
+One-line Summary: Add ifort support for Linux
+
+Add option to build with ifort on Linux.
+
+==============================================================
+Tag name:  cprnc_080324
+Originator(s):  tcraig
+Date: Mon Mar 24 17:21:31 MDT 2008
+One-line Summary: Fix bugs and improve output
+
+ - Fix bug report associated with bugz #724, the code
+   was not handling time samples properly.
+ - Update output to write full variable and dimension names,
+   add time index information for each variable, and change
+   location of "NDIFFS" output in variable diff block.
+
+Tested on blueice and bangkok with bugz #724 datasets and with 
+  ccsm4 cpl history files.
+
+==============================================================
+Tag name:  cprnc_070817
+Originator(s):  erik (KLUZEK ERIK 1326 CGD)
+Date: Fri Aug 17 15:24:50 MDT 2007
+One-line Summary: Initial checkin from version that Tony Craig created
+==============================================================

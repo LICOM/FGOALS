@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam
+END
+gases.f90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/gases.f90
+END
+array_lib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/array_lib.f90
+END
+format_input.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/format_input.f90
+END
+optics_lib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/optics_lib.f90
+END
+radar_simulator.f90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/radar_simulator.f90
+END
+atmos_lib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/atmos_lib.f90
+END
+dsd.f90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/dsd.f90
+END
+zeff.f90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/zeff.f90
+END
+radar_simulator_types.f90
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/radar_simulator_types.f90
+END
+load_hydrometeor_classes.f90
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/load_hydrometeor_classes.f90
+END
+math_lib.f90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/math_lib.f90
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/README
+END
+mrgrnk.f90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/quickbeam/mrgrnk.f90
+END

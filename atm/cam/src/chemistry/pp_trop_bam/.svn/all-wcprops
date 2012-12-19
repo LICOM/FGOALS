@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam
+END
+mo_lu_solve.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_lu_solve.F90
+END
+mo_setrxt.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_setrxt.F90
+END
+mo_adjrxt.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_adjrxt.F90
+END
+mo_imp_sol.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_imp_sol.F90
+END
+chem_mods.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/chem_mods.F90
+END
+mo_prod_loss.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_prod_loss.F90
+END
+mo_lin_matrix.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_lin_matrix.F90
+END
+mo_phtadj.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_phtadj.F90
+END
+m_rxt_id.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/m_rxt_id.F90
+END
+mo_nln_matrix.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_nln_matrix.F90
+END
+m_het_id.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/m_het_id.F90
+END
+mo_lu_factor.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_lu_factor.F90
+END
+mo_indprd.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_indprd.F90
+END
+mo_sim_dat.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/mo_sim_dat.F90
+END
+m_spc_id.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/m_spc_id.F90
+END
+chem_mech.doc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/chem_mech.doc
+END
+chem_mech.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/pp_trop_bam/chem_mech.in
+END

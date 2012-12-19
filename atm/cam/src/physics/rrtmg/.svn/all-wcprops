@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg
+END
+radconstants.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/radconstants.F90
+END
+ebert_curry.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ebert_curry.F90
+END
+oldcloud.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/oldcloud.F90
+END
+radlw.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/radlw.F90
+END
+radiation.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/radiation.F90
+END
+slingo.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/slingo.F90
+END
+cloud_diagnostics.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/cloud_diagnostics.F90
+END
+rad_solar_var.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/rad_solar_var.F90
+END
+cloud_rad_props.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/cloud_rad_props.F90
+END
+radsw.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/radsw.F90
+END

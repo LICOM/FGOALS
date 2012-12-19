@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom
+END
+ocn_filenames.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom/ocn_filenames.F90
+END
+ocn_spmd.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom/ocn_spmd.F90
+END
+sst_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom/sst_data.F90
+END
+ocn_types.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom/ocn_types.F90
+END
+ocn_time_manager.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom/ocn_time_manager.F90
+END
+ocn_comp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_dom/ocn_comp.F90
+END

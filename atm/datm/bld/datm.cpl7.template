@@ -1,0 +1,1047 @@
+#! /bin/csh -f
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#------------------------------------------------------------------------------
+#  determine input data files and resolution dependent variables            
+#------------------------------------------------------------------------------
+
+set DOMAINFILE = unset
+
+set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7
+
+if ( $GRID =~ 4x5_gx3v5        ) set DOMAINFILE = domain.lnd.4x5_gx3v5.060404.nc
+if ( $GRID =~ 4x5_gx3v7        ) set DOMAINFILE = domain.lnd.fv4x5_gx3v7.091218.nc
+if ( $GRID =~ 1.9x2.5_gx1v6    ) set DOMAINFILE = domain.lnd.fv1.9x2.5_gx1v6.090206.nc
+if ( $GRID =~ 1.9x2.5_tx1v1    ) set DOMAINFILE = domain.lnd.fv1.9x2.5_tx1v1_090713.nc
+if ( $GRID =~ 0.9x1.25_gx1v6   ) set DOMAINFILE = domain.lnd.fv0.9x1.25_gx1v6.090309.nc
+if ( $GRID =~ 0.9x1.25_tx0.1v2 ) set DOMAINFILE = domain.lnd.fv0.9x1.25_tx0.1v2_070928.nc
+if ( $GRID =~ 0.47x0.63_gx1v6  ) set DOMAINFILE = domain.lnd.fv0.47x0.63_gx1v6.090407.nc
+if ( $GRID =~ 0.47x0.63_tx0.1v2) set DOMAINFILE = domain.lnd.fv0.47x0.63_tx0.1v2_070929.nc
+if ( $GRID =~ 0.23x0.31_gx1v6  ) set DOMAINFILE = domain.lnd.fv0.23x0.31_gx1v6.100517.nc
+if ( $GRID =~ 0.23x0.31_tx0.1v2) set DOMAINFILE = domain.lnd.fv0.23x0.31_tx0.1v2_070929.nc
+
+if ( $GRID =~ T31_gx3v5        ) set DOMAINFILE = domain.lnd.T31_gx3v5.090206.nc
+if ( $GRID =~ T31_gx3v7        ) set DOMAINFILE = domain.lnd.T31_gx3v7.090928.nc
+if ( $GRID =~ T62_gx1v6        ) set DOMAINFILE = domain.lnd.T62_gx1v6.090320.nc
+if ( $GRID =~ T62_gx3v5        ) set DOMAINFILE = domain.lnd.T62_gx3v5.051111.nc
+if ( $GRID =~ T62_gx3v7        ) set DOMAINFILE = domain.lnd.T62_gx3v7.090911.nc
+if ( $GRID =~ T62_tx1v1        ) set DOMAINFILE = domain.lnd.T62_tx1v1.090122.nc
+if ( $GRID =~ T62_tx0.1v2      ) set DOMAINFILE = domain.lnd.T62_tx0.1v2_090623.nc
+
+if ( $GRID =~ wr50a_wr50a      ) set DOMAINFILE = domain.lnd.wr50a_wr50a.090310.nc
+if ( $GRID =~ ar9v1_ar9v1      ) set DOMAINFILE = domain.lnd.ar9v1_ar9v1.090521.nc
+if ( $GRID =~ ar9v2_ar9v2      ) set DOMAINFILE = domain.lnd.ar9v2_ar9v2.090521.nc
+if ( $GRID =~ wr50a_ar9v2      ) set DOMAINFILE = domain.lnd.wr50a_ar9v2.090614.nc
+
+if ( $ATM_GRID =~ $OCN_GRID ) then
+   if ( $ATM_GRID =~ 10x15     ) then
+                                 set DOMAINFILE = 'domain.lnd.fv10x15_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 4x5       ) then
+                                 set DOMAINFILE = 'domain.lnd.fv4x5_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 2.65x3.33 ) then
+                                 set DOMAINFILE = 'domain.lnd.fv2.65x3.33_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 2.5x3.33  ) then
+                                 set DOMAINFILE = 'domain.lnd.fv2.5x3.33_gx3v7.110223.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7
+   endif
+   if ( $ATM_GRID =~ 1.9x2.5   ) then
+                                 set DOMAINFILE = 'domain.lnd.fv1.9x2.5_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 0.9x1.25  ) then
+                                 set DOMAINFILE = 'domain.lnd.fv0.9x1.25_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 0.47x0.63 ) then
+                                 set DOMAINFILE = 'domain.lnd.fv0.47x0.63_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 0.23x0.31 ) then
+                                 set DOMAINFILE = 'domain.lnd.fv0.23x0.31_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+
+   if ( $ATM_GRID =~ 8x16      ) then
+                                 set DOMAINFILE = 'domain.lnd.T5_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 32x64     ) then
+                                 set DOMAINFILE = 'domain.lnd.T21_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 48x96     ) then
+                                 set DOMAINFILE = 'domain.lnd.T31_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 64x128    ) then
+                                 set DOMAINFILE = 'domain.lnd.T42_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+   if ( $ATM_GRID =~ 128x256   ) then
+                                 set DOMAINFILE = 'domain.lnd.T85_USGS.090106.nc'
+                                 set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   endif
+endif
+
+if ( $GRID =~ pt1_pt1  ) then
+
+   set DOMAINPATH = \$DIN_LOC_ROOT/atm/datm7/domain.clm
+   if ( $CLM_PT1_NAME =~ 1x1_brazil          ) set DOMAINFILE = 'domain.lnd.1x1pt-brazil_navy.090715.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_camdenNJ        ) set DOMAINFILE = 'domain.lnd.1x1pt-camdenNJ_navy.071220.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_tropicAtl       ) set DOMAINFILE = 'domain.lnd.1x1pt-tropicAtl_test.071010.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_asphaltjungleNJ ) set DOMAINFILE = 'domain.lnd.1x1pt-camdenNJ_navy.071220.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_mexicocityMEX   ) set DOMAINFILE = 'domain.lnd.1x1pt-mexicocityMEX_navy.090715.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_vancouverCAN    ) set DOMAINFILE = 'domain.lnd.1x1pt-vancouverCAN_navy.090715.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_urbanc_alpha    ) set DOMAINFILE = 'domain.lnd.1x1pt-urbanc_alpha_test.110201.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_numaIA          ) set DOMAINFILE = 'domain.lnd.1x1pt-numaIA_navy.110106.nc'
+   if ( $CLM_PT1_NAME =~ 1x1_smallvilleIA    ) set DOMAINFILE = 'domain.lnd.1x1pt-smallvilleIA_test.110106.nc'
+   if ( $CLM_PT1_NAME =~ 5x5_amazon          ) set DOMAINFILE = 'domain.lnd.1x1pt-smallvilleIA_test.110106.nc'
+
+endif
+
+
+set file_aero = "unset"
+set presaero  = .true.
+set stream_paero_txt = "presaero.stream.txt"
+
+if ($DATM_PRESAERO == 'none') then
+   set presaero = .false.
+   set stream_paero_txt = "null"
+   set year_first_aero = 0
+   set year_last_aero = 0
+   set year_align_aero = 0
+else if ($DATM_PRESAERO == 'pt1_pt1') then
+   if !( $GRID =~ *pt1*) then
+     echo "ERROR: for single point prescribed aero flag must have a single point grid"
+     echo "set GRID to pt1_pt1 and create the case again"
+     exit -1
+   endif
+   set path_aero       = lnd/clm2/snicardata/
+   set year_first_aero = 1
+   set year_last_aero  = 1
+   set year_align_aero = 1
+   if      ( $CLM_PT1_NAME =~ 1x1_brazil          ) then
+      set file_aero = aerosoldep_2000_mean_1x1_brazil_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_camdenNJ        ) then
+      set file_aero = aerosoldep_2000_mean_1x1_camdenNJ_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_tropicAtl       ) then 
+      set file_aero = aerosoldep_2000_mean_1x1_tropicAtl_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_asphaltjungleNJ ) then
+      set file_aero = aerosoldep_2000_mean_1x1_asphaltjungleNJ_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_mexicocityMEX   ) then
+      set file_aero = aerosoldep_2000_mean_1x1_mexicocityMEX_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_vancouverCAN    ) then
+      set file_aero = aerosoldep_2000_mean_1x1_vancouverCAN_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_urbanc_alpha    ) then
+       set file_aero = aerosoldep_2000_mean_1x1_urbanc_alpha_c090716.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_numaIA          ) then
+       set file_aero = aerosoldep_2000_mean_1x1_numaIA_c110124.nc
+   else if ( $CLM_PT1_NAME =~ 1x1_smallvilleIA    ) then
+       set file_aero = aerosoldep_2000_mean_1x1_smallvilleIA_c110124.nc
+   else if ( $CLM_PT1_NAME =~ 5x5_amazon          ) then
+       set file_aero = aerosoldep_2000_mean_5x5_amazon_c090716.nc
+   else if ( $?CLM_USRDAT_NAME  ) then
+       set file_aero       = aerosoldep_monthly_1849-2006_${CLM_USRDAT_NAME}.nc
+       set path_aero       = atm/cam/chem/trop_mozart_aero/aero
+       set year_last_aero  = 2000
+       set year_align_aero = 2000
+   else       
+     echo "ERROR: CPM_PT1_NAME is not a supported value = $CLM_PT1_NAME"
+     exit -1
+   endif
+else if ($DATM_PRESAERO == 'clim_1850') then
+   set file_aero = aerosoldep_monthly_1850_mean_1.9x2.5_c090421.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1
+   set year_last_aero  = 1
+   set year_align_aero = 1
+else if ($DATM_PRESAERO == 'clim_2000') then
+   set file_aero = aerosoldep_monthly_2000_mean_1.9x2.5_c090421.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1
+   set year_last_aero  = 1
+   set year_align_aero = 1
+else if ($DATM_PRESAERO == 'trans_1850-2000') then
+   set file_aero = aerosoldep_monthly_1849-2006_1.9x2.5_c090803.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1849
+   set year_last_aero  = 2006
+   set year_align_aero = 1849
+else if ($DATM_PRESAERO == 'rcp2.6') then
+   set file_aero = aerosoldep_rcp2.6_monthly_1849-2104_1.9x2.5_c100402.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1849
+   set year_last_aero  = 2104
+   set year_align_aero = 1849
+else if ($DATM_PRESAERO == 'rcp4.5') then
+   set file_aero = aerosoldep_rcp4.5_monthly_1849-2104_1.9x2.5_c100402.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1849
+   set year_last_aero  = 2104
+   set year_align_aero = 1849
+else if ($DATM_PRESAERO == 'rcp6.0') then
+   set file_aero = aerosoldep_rcp6.0_monthly_1849-2104_1.9x2.5_c100830.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1849
+   set year_last_aero  = 2104
+   set year_align_aero = 1849
+else if ($DATM_PRESAERO == 'rcp8.5') then
+   set file_aero = aerosoldep_rcp8.5_monthly_1849-2104_1.9x2.5_c100201.nc
+   set path_aero = atm/cam/chem/trop_mozart_aero/aero
+   set year_first_aero = 1849
+   set year_last_aero  = 2104
+   set year_align_aero = 1849
+else
+   echo "ERROR: unrecognized DATM_PRESAERO value = $DATM_PRESAERO"
+   exit -1
+endif
+
+if ( "$GRID" == "pt1_pt1" && "$DATM_PRESAERO" != "none" ) then
+   # IF CLM_USRDAT_NAME set -- use it to set the tenative aerosol file
+   if ( $?CLM_USRDAT_NAME  ) set file_aerop      = aerosoldep_monthly_1849-2006_${CLM_USRDAT_NAME}.nc
+   if ( $?CLM_USRDAT_NAME && $DATM_PRESAERO == 'rcp8.5' ) set file_aerop = aerosoldep_rcp8.5_monthly_1849-2104_${CLM_USRDAT_NAME}.nc
+   if ( $?CLM_USRDAT_NAME && $DATM_PRESAERO == 'rcp6'   ) set file_aerop = aerosoldep_rcp6_monthly_1849-2104_${CLM_USRDAT_NAME}.nc
+   if ( $?CLM_USRDAT_NAME && $DATM_PRESAERO == 'rcp4.5' ) set file_aerop = aerosoldep_rcp4.5_monthly_1849-2104_${CLM_USRDAT_NAME}.nc
+   if ( $?CLM_USRDAT_NAME && $DATM_PRESAERO == 'rcp2.6' ) set file_aerop = aerosoldep_rcp2.6_monthly_1849-2104_${CLM_USRDAT_NAME}.nc
+   # Now if aerosol file was set from above, see if it exists, and if so set aerosol file
+   if (   -f "$DIN_LOC_ROOT/$path_aero/$file_aerop"     ) set file_aero = $file_aerop
+   if ( ! -f "$DIN_LOC_ROOT/$path_aero/$file_aerop"     ) unset file_aerop
+   # If aerosol file was set from above, you may also override the years
+   if ( $DATM_PRESAERO == 'clim_1850' && "$?file_aerop" ) set year_first_aero = 1850
+   if ( $DATM_PRESAERO == 'clim_1850' && "$?file_aerop" ) set year_last_aero  = 1850
+   if ( $DATM_PRESAERO == 'clim_2000' && "$?file_aerop" ) set year_first_aero = 2000
+   if ( $DATM_PRESAERO == 'clim_2000' && "$?file_aerop" ) set year_last_aero  = 2000
+   # Now specifically check for the 1x1_tropicAtl test site
+   if ( $DATM_PRESAERO == 'clim_1850' && "$CLM_PT1_NAME"  == "1x1_tropicAtl" ) set file_aero = aerosoldep_monthly_1850_1x1_tropicAtl_c091026.nc
+   if ( $DATM_PRESAERO == 'clim_2000' && "$CLM_PT1_NAME"  == "1x1_tropicAtl" ) set file_aero = aerosoldep_monthly_1849-2006_1x1_tropicAtl_c091026.nc
+   if ( $DATM_PRESAERO == 'clim_2000' && "$CLM_PT1_NAME"  == "1x1_tropicAtl" ) set year_first_aero = 2000
+   if ( $DATM_PRESAERO == 'clim_2000' && "$CLM_PT1_NAME"  == "1x1_tropicAtl" ) set year_last_aero  = 2000
+   if ( $DATM_PRESAERO == 'trans_1850-2000' && "$CLM_PT1_NAME"  == "1x1_tropicAtl" ) set file_aero = aerosoldep_monthly_1849-2006_1x1_tropicAtl_c091026.nc
+endif
+
+if ( "$DATM_PRESAERO" != 'none' && "$file_aero" == "unset" ) then
+   echo "ERROR: bad DATM_PRESAERO value, input aerosol file NOT set"
+   echo "       DATM_PRESAERO=$DATM_PRESAERO"
+   exit -1
+endif
+
+# If CLM_USRDAT_NAME has been set and domain file NOT found -- use it
+if ( $?CLM_USRDAT_NAME  && $DOMAINFILE == "unset" ) then
+    set MASK = $OCN_GRID
+    if ( "$CLM_BLDNML_OPTS" == "-mask USGS"  ) set MASK="USGS"
+    if ( "$CLM_BLDNML_OPTS" == "-mask navy"  ) set MASK = "navy"
+    if ( "$CLM_BLDNML_OPTS" == "-mask gx1v6" ) set MASK = "gx1v6"
+    if ( "$CLM_BLDNML_OPTS" == "-mask gx3v7" ) set MASK = "gx3v7"
+    if ( $MASK              == "pt1"         ) set MASK = "gx1v6"
+    if ( $ATM_GRID          == "$MASK"       ) set MASK = "USGS"
+    if ( $CLM_USRDAT_NAME   == "UNSET"       ) echo "ERROR: CLM_USRDAT_NAME NOT set"
+    if ( $CLM_USRDAT_NAME   == "UNSET"       ) exit -1
+    set DOMAINFILE = "domain.lnd.${CLM_USRDAT_NAME}_${MASK}.nc"
+endif
+
+if ( $DOMAINFILE == "unset" ) then
+   echo "ERROR: unsupported grid = $GRID"
+   exit -1
+endif
+
+set bsopts = "-t datm.template.streams.xml "
+
+#==============================================================================
+# Create resolved prestage data script
+#==============================================================================
+
+cat >! $CASEBUILD/datm.buildnml.csh << EOF
+#! /bin/csh -f 
+
+set exedir = \$RUNDIR; cd \$exedir
+
+#------------------------------------------------------------------------------
+# specify input data files
+#------------------------------------------------------------------------------
+# If the user changes any input datasets - be sure they have unique filenames.  
+# Do not duplicate existing input file names. 
+# Note that streams namelist input has the form
+#      streams = 'stream1.txt year_align year_first year_last ',
+#                'stream2.txt year_align year_first year_last ',
+#                ...
+#                'streamN.txt year_align year_first year_last '
+# where
+# streamN.txt is the stream description file containing input stream details
+# year_first  is the first year of data that will be used 
+# year_last   is the last  year of data that will be used 
+# year_align  is the model year that will be aligned with data for year_first 
+#------------------------------------------------------------------------------
+
+set DOMAINPATH = $DOMAINPATH
+set DOMAINFILE = \$DOMAINPATH/$DOMAINFILE
+
+echo DOMAINFILE = \$DOMAINFILE >! \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----- TN460 mode -------------------------------------------------------------
+if ($DATM_MODE == "TN460") then
+
+set year_align = 1
+set year_start = 1
+set year_end   = 1
+
+set STREAM1TXT = nyf.giss.T62.stream.txt
+set STREAM2TXT = nyf.gxgxs.T62.stream.txt
+set STREAM3TXT = nyf.ncep.T62.stream.txt
+
+set iradsw = 1
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+set FFN = \$DIN_LOC_ROOT/atm/datm7/TN460/tn460nyf.correction_factors.T62.050923.nc
+echo FFN = \$FFN >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----
+if ($presaero == ".true.") then
+#----
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'TN460'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end',
+                    '$STREAM2TXT $year_align $year_start $year_end',
+                    '$STREAM3TXT $year_align $year_start $year_end',
+                    '$stream_paero_txt $year_align_aero $year_first_aero $year_last_aero'
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+   		    'nomask',
+		    'nomask'
+   tintalgo       = 'linear',
+                    'linear',
+                    'linear',
+                    'linear'
+  /
+EOF1
+
+EOF
+#----
+else
+#----
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'TN460'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end',
+                    '$STREAM2TXT $year_align $year_start $year_end',
+                    '$STREAM3TXT $year_align $year_start $year_end'
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask'
+   tintalgo       = 'linear',
+                    'linear',
+                    'linear'
+  /
+EOF1
+
+EOF
+#----
+endif
+#----
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+cat >! $STREAM1TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NYF.GISS  >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+EOF1
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+cat >! $STREAM2TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NYF.GXGXS  >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+EOF1
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+cat >! $STREAM3TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NYF.NCEP  >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+EOF1
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM1TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM2TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM3TXT >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----- CORE2_NYF mode -----------------------------------------------------------
+else if ($DATM_MODE == "CORE2_NYF") then
+
+set STREAM1TXT = nyf.giss.T62.stream.txt
+set STREAM2TXT = nyf.gxgxs.T62.stream.txt
+set STREAM3TXT = nyf.ncep.T62.stream.txt
+
+set year_align = 1
+set year_start = 1
+set year_end   = 1
+
+set iradsw = 1
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+set FFN = \$DIN_LOC_ROOT/atm/datm7/CORE2/COREv2.correction_factors.T62.121007.nc
+echo FFN = \$FFN >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----
+if ($presaero == ".true.") then
+#----
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CORE2'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ' ,
+                    '$STREAM2TXT $year_align $year_start $year_end ' ,
+                    '$STREAM3TXT $year_align $year_start $year_end ' ,
+                    '$stream_paero_txt $year_align_aero $year_first_aero $year_last_aero'
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask'
+   tintalgo       = 'linear',
+                    'linear',
+                    'linear',
+                    'linear'
+  /
+EOF1
+
+EOF
+#----
+else
+#----
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CORE2'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ' ,
+                    '$STREAM2TXT $year_align $year_start $year_end ' ,
+                    '$STREAM3TXT $year_align $year_start $year_end ' 
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask'
+   tintalgo       = 'linear',
+                    'linear',
+                    'linear'
+  /
+EOF1
+
+EOF
+#----
+endif
+#----
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM1TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NYF.GISS  >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM2TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NYF.GXGXS >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM3TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NYF.NCEP  >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM1TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM2TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM3TXT >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----- CORE2_IAF mode -----------------------------------------------------------
+else if ($DATM_MODE == "CORE2_IAF") then
+
+set STREAM1TXT  = gcgcs.prec.T62.stream.txt
+set STREAM2TXT  = giss.lwdn.T62.stream.txt
+set STREAM3TXT  = giss.swdn.T62.stream.txt
+set STREAM4TXT  = giss.swup.T62.stream.txt
+set STREAM5TXT  = ncep.dn10.T62.stream.txt
+set STREAM6TXT  = ncep.q_10.T62.stream.txt
+set STREAM7TXT  = ncep.slp_.T62.stream.txt
+set STREAM8TXT  = ncep.t_10.T62.stream.txt
+set STREAM9TXT  = ncep.u_10.T62.stream.txt
+set STREAM10TXT = ncep.v_10.T62.stream.txt
+
+set year_align = 1
+set year_start = 1948
+set year_end   = 2004
+
+set iradsw = 1
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+set FFN = \$DIN_LOC_ROOT/atm/datm7/CORE2/COREv2.correction_factors.T62.121007.nc
+echo FFN = \$FFN >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----
+if ($presaero == ".true.") then
+#----
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CORE2'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ',
+                    '$STREAM2TXT $year_align $year_start $year_end ',
+                    '$STREAM3TXT $year_align $year_start $year_end ',
+                    '$STREAM4TXT $year_align $year_start $year_end ',
+                    '$STREAM5TXT $year_align $year_start $year_end ',
+                    '$STREAM6TXT $year_align $year_start $year_end ',
+                    '$STREAM7TXT $year_align $year_start $year_end ',
+                    '$STREAM8TXT $year_align $year_start $year_end ',
+		    '$STREAM9TXT $year_align $year_start $year_end ',
+		    '$STREAM10TXT $year_align $year_start $year_end ',
+                    '$stream_paero_txt $year_align_aero $year_first_aero $year_last_aero'
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask'
+                    'nomask'
+   tintalgo       = 'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+		    'linear'
+  /
+EOF1
+
+EOF
+#----
+else
+#----
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CORE2'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ',
+                    '$STREAM2TXT $year_align $year_start $year_end ',
+                    '$STREAM3TXT $year_align $year_start $year_end ',
+                    '$STREAM4TXT $year_align $year_start $year_end ',
+                    '$STREAM5TXT $year_align $year_start $year_end ',
+                    '$STREAM6TXT $year_align $year_start $year_end ',
+                    '$STREAM7TXT $year_align $year_start $year_end ',
+                    '$STREAM8TXT $year_align $year_start $year_end ',
+		    '$STREAM9TXT $year_align $year_start $year_end ',
+		    '$STREAM10TXT $year_align $year_start $year_end '
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask'
+   tintalgo       = 'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear',
+                    'linear'
+  /
+EOF1
+
+EOF
+endif
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM1TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s GCGCS.PREC >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM2TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s GISS.LWDN >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM3TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s GISS.SWDN >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM4TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s GISS.SWUP >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM5TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NCEP.DN10 >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM6TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NCEP.Q_10 >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM7TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NCEP.SLP_ >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM8TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NCEP.T_10 >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM9TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NCEP.U_10 >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM10TXT << EOF1
+EOF
+$UTILROOT/Tools/build_streams $bsopts -s NCEP.V_10 >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM1TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM2TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM4TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM3TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM5TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM6TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM7TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM8TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM9TXT  >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM10TXT >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----- CLM_QIAN mode ----------------------------------------------------------
+else if ($DATM_MODE == "CLM_QIAN" ) then
+
+if ( "$DATM_PRESAERO" == "none" ) echo "ERROR: DATM_PRESEARO can NOT be none for this DATM_MODE"
+if ( "$DATM_PRESAERO" == "none" ) exit 2
+
+set year_align = $DATM_CLMNCEP_YR_ALIGN
+set year_start = $DATM_CLMNCEP_YR_START
+set year_end   = $DATM_CLMNCEP_YR_END
+
+set STREAM1TXT = "clm_qian.T62.stream.Solar.txt"
+set STREAM2TXT = "clm_qian.T62.stream.Precip.txt"
+set STREAM3TXT = "clm_qian.T62.stream.TPQW.txt"
+
+set iradsw = 1
+
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+set FFN  = "unused "   
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CLMNCEP'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ',
+                    '$STREAM2TXT $year_align $year_start $year_end ',
+                    '$STREAM3TXT $year_align $year_start $year_end ',
+                    '$stream_paero_txt $year_align_aero $year_first_aero $year_last_aero'
+   vectors        = 'null'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask',
+                    'nomask'
+   tintalgo       = 'coszen',
+                    'nearest',
+                    'linear',
+                    'linear'
+  /
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM1TXT << EOF1
+EOF
+set bs1opts = "$bsopts -s CLM_QIAN.Solar -b $DATM_CLMNCEP_YR_START -e $DATM_CLMNCEP_YR_END "
+$UTILROOT/Tools/build_streams $bs1opts -p \$DIN_LOC_ROOT_CLMQIAN/Solar6Hrly >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM2TXT << EOF1
+EOF
+set bs2opts = "$bsopts -s CLM_QIAN.Precip -b $DATM_CLMNCEP_YR_START -e $DATM_CLMNCEP_YR_END "
+$UTILROOT/Tools/build_streams $bs2opts -p \$DIN_LOC_ROOT_CLMQIAN/Precip6Hrly >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM3TXT << EOF1
+EOF
+set bs3opts = "$bsopts -s CLM_QIAN.TPQW -b $DATM_CLMNCEP_YR_START -e $DATM_CLMNCEP_YR_END "
+$UTILROOT/Tools/build_streams $bs3opts -p \$DIN_LOC_ROOT_CLMQIAN/TmpPrsHumWnd3Hrly >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM1TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM2TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM3TXT >> \$CASEBUILD/datm.input_data_list
+EOF
+
+#----- CLM1PT   mode ----------------------------------------------------------
+else if ($DATM_MODE == "CLM1PT" ) then
+
+# Error checking
+if ( "$GRID"          != "pt1_pt1" ) echo "ERROR: CLM1PT and GRID NE pt1_pt1"
+if ( "$GRID"          != "pt1_pt1" ) exit 3
+if ( "$CLM_PT1_NAME"  == "UNSET"   ) echo "ERROR: CLM1PT and CLM_PT1_NAME NOT set"
+if ( "$CLM_PT1_NAME"  == "UNSET"   ) exit 3
+if ( "$DATM_PRESAERO" == "none"    ) echo "ERROR: DATM_PRESEARO can NOT be none for this DATM_MODE"
+if ( "$DATM_PRESAERO" == "none"    ) exit 3
+
+# Starting year
+set year_start = $DATM_CLMNCEP_YR_START
+if ( $CLM_PT1_NAME =~ 1x1_mexicocityMEX   ) set year_start = 1993
+if ( $CLM_PT1_NAME =~ 1x1_vancouverCAN    ) set year_start = 1992
+if ( $CLM_PT1_NAME =~ 1x1_urbanc_alpha    ) set year_start = 0001
+
+# Ending year
+set year_end   = $DATM_CLMNCEP_YR_END
+if ( $CLM_PT1_NAME =~ 1x1_mexicocityMEX   ) set year_end  = 1993
+if ( $CLM_PT1_NAME =~ 1x1_vancouverCAN    ) set year_end  = 1992
+if ( $CLM_PT1_NAME =~ 1x1_urbanc_alpha    ) set year_end  = 0002
+
+set year_align = $DATM_CLMNCEP_YR_ALIGN
+
+set STREAM1TXT = "clm1PT.$CLM_PT1_NAME.stream.txt"
+
+set iradsw = 1
+
+#---
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+set FFN  = "unused "   
+
+EOF
+#---
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CLMNCEP'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ',
+                    '$stream_paero_txt $year_align_aero $year_first_aero $year_last_aero'
+   vectors        = 'null','null'
+   mapmask        = 'nomask','nomask'
+   mapalgo        = 'nn','nn'
+   tintalgo       = 'nearest','linear'
+   taxmode        = 'extend','cycle'
+  /
+! Set time-interpolation to nearest for forcing data as available hourly or half-hourly
+! Set time axis mode to extend so the first and last valid values are used indefinately.
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM1TXT << EOF1
+EOF
+set bs1opts = "$bsopts -s CLM1PT -b $year_start -e $year_end "
+set bs1opts = "$bs1opts -res $CLM_PT1_NAME "
+if ( $?CLM_USRDAT_NAME ) then
+   if ( "$CLM_USRDAT_NAME" != "UNSET" ) set bs1opts = "$bs1opts -do ${DOMAINFILE:t} -dp $DOMAINPATH -c $CLM_USRDAT_NAME"
+endif
+$UTILROOT/Tools/build_streams $bs1opts >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+
+### do we want to list these or not?
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM1TXT >> \$CASEBUILD/datm.input_data_list
+EOF
+
+#----- CPLHIST 3-hourly time-averaging mode ----------------------------------------------------------
+else if ($DATM_MODE == "CPLHIST3HrWx" ) then
+
+if ( "$DATM_PRESAERO" == "none"    ) echo "ERROR: DATM_PRESEARO can NOT be none for this DATM_MODE"
+if ( "$DATM_PRESAERO" == "none"    ) exit 3
+
+set year_align = $DATM_CPL_YR_ALIGN
+set year_start = $DATM_CPL_YR_START
+set year_end   = $DATM_CPL_YR_END
+set case       = $DATM_CPL_CASE
+# Top directory of where the MOAR data is location
+# Data on bluefire is under: /glade/data01/CMIP5/CCSM/csm/
+set datapath   = "/glade/data01/CMIP5/CCSM/csm/%c/cpl/hist"
+
+set STREAM1TXT = "CPLHIST.3Hrly.f09in.stream.Solar.txt"
+set STREAM2TXT = "CPLHIST.3Hrly.f09in.stream.Precip.txt"
+set STREAM3TXT = "CPLHIST.3Hrly.f09in.stream.Other.txt"
+
+set iradsw     = 1
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+set FFN        = "unused "   
+
+cat >! datm_atm_in << EOF1
+ &shr_strdata_nml
+   dataMode       = 'CPLHIST'
+   domainFile     = '\$DOMAINFILE'
+   streams        = '$STREAM1TXT $year_align $year_start $year_end ',
+                    '$STREAM2TXT $year_align $year_start $year_end ',
+                    '$STREAM3TXT $year_align $year_start $year_end ',
+                    '$stream_paero_txt $year_align_aero $year_first_aero $year_last_aero'
+   vectors        = 'u:v'
+   mapmask        = 'nomask',
+                    'nomask',
+                    'nomask',
+		    'nomask'
+   tintalgo       = 'coszen',
+                    'nearest',
+                    'linear',
+		    'linear'
+  /
+EOF1
+
+EOF
+
+set bs0opts = "$bsopts -p $datapath -c $case -b $year_start -e $year_end "
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM1TXT << EOF1
+EOF
+set bs1opts = "$bs0opts -s CPLHIST3Hrly.Solar"
+$UTILROOT/Tools/build_streams $bs1opts >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM2TXT << EOF1
+EOF
+set bs2opts = "$bs0opts -s CPLHIST3Hrly.Precip"
+$UTILROOT/Tools/build_streams $bs2opts >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+cat >! $STREAM3TXT << EOF1
+EOF
+set bs3opts = "$bs0opts -s CPLHIST3Hrly.nonSolarNonPrecip"
+$UTILROOT/Tools/build_streams $bs3opts >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM1TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM2TXT >> \$CASEBUILD/datm.input_data_list
+\$CASETOOLS/listfilesin_streams -input_data_list -t $STREAM3TXT >> \$CASEBUILD/datm.input_data_list
+
+EOF
+
+#----- INVALID mode -----------------------------------------------------------
+else 
+  echo "ERROR: unrecognized DATM_MODE = \$DATM_MODE "
+  exit -1
+endif
+
+#==============================================================================
+# Create prescribed aero streams if appropriate
+#==============================================================================
+
+if ($presaero == ".true.") then
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+
+cat >! $stream_paero_txt << EOF1
+EOF
+set bs4opts = "$bsopts -s presaero -b $year_first_aero -e $year_last_aero "
+$UTILROOT/Tools/build_streams $bs4opts -p \$DIN_LOC_ROOT/$path_aero -c $file_aero -dp \$DIN_LOC_ROOT/$path_aero -do $file_aero >> $CASEBUILD/datm.buildnml.csh || exit 3
+cat >> $CASEBUILD/datm.buildnml.csh << EOF 
+EOF1
+
+EOF
+endif
+
+if ($presaero == ".true.") then
+cat >> $CASEBUILD/datm.buildnml.csh <<EOF
+
+\$CASETOOLS/listfilesin_streams -input_data_list -t $stream_paero_txt >> \$CASEBUILD/datm.input_data_list
+
+EOF
+endif
+
+#==============================================================================
+# Create remaining resolved namelist
+#==============================================================================
+
+cat >> $CASEBUILD/datm.buildnml.csh << EOF
+cat >! datm_in << EOF1
+  &datm_nml
+    atm_in = 'datm_atm_in'
+    decomp = '1d'
+    factorFn = '\$FFN'
+    iradsw   = $iradsw
+    presaero = $presaero
+  /
+EOF1
+
+EOF
+
+#==============================================================================
+#  Create script to build executable
+#==============================================================================
+
+cat >! $CASEBUILD/datm.buildexe.csh << EOF
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/atm/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+#------------------------------------------------------------------------------
+# Filepath: List of source code directories (in order of importance).
+#------------------------------------------------------------------------------
+
+\cat >! Filepath << EOF1
+\$CASEROOT/SourceMods/src.datm
+\$CODEROOT/atm/datm
+\$CODEROOT/atm/datm/cpl_\$comp
+EOF1
+
+#------------------------------------------------------------------------------
+# run make
+#------------------------------------------------------------------------------
+
+gmake complib -j \$GMAKE_J MODEL=datm COMPLIB=\$LIBROOT/libatm.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF
+
+#==============================================================================
+# end of script
+#==============================================================================

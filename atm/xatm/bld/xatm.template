@@ -1,0 +1,57 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+
+#-------------------------------------------------------------------------------
+# setup
+#-------------------------------------------------------------------------------
+
+set NX = $ATM_NX
+set NY = $ATM_NY
+
+# ---------------------------------------------------------------------------
+#  Create resolved namelist 
+# ---------------------------------------------------------------------------
+
+cat >! $CASEBUILD/xatm.buildnml.csh << EOF1
+#! /bin/csh -f 
+
+set exedir = \$RUNDIR; cd \$exedir
+
+cat >! xatm_in << EOF
+$NX                  !  i-direction global dimension
+$NY                  !  j-direction global dimension
+1                    !  decomp_type  1=1d-by-lat, 2=1d-by-lon, 3=2d, 4=2d evensquare, 11=segmented
+0                    !  num of pes for i (type 3 only)
+0                    !  length of segments (type 4 only)
+24                   !  ncpl  number of communications w/coupler per day
+0.0                  !  simul time proxy (secs): time between cpl comms
+EOF
+
+EOF1
+
+# ---------------------------------------------------------------------------
+#  Create script to build dead model
+# ---------------------------------------------------------------------------
+
+cat >! $CASEBUILD/xatm.buildexe.csh << EOF2
+#! /bin/csh -f 
+
+set objdir = \$OBJROOT/atm/obj; cd \$objdir
+set comp = 'unknown'
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+#------------------------------------------------------------------------------
+# Build the library
+#------------------------------------------------------------------------------
+cat >! Filepath << EOF
+\$CASEROOT/SourceMods/src.xatm
+\$CODEROOT/atm/xatm
+\$CODEROOT/atm/xatm/cpl_\$comp
+EOF
+
+gmake complib -j \$GMAKE_J MODEL=xatm COMPLIB=\$LIBROOT/libatm.a -f \$CASETOOLS/Makefile MACFILE=\$CASEROOT/Macros.\$MACH || exit 2
+
+EOF2
+

@@ -1,0 +1,48 @@
+&camexp
+ mfilt=1,1,1,1,1,1
+ ndens=1,1,1,1,1,1
+ nhtfrq=3,3,3,3,3,3
+ start_ymd = 10101
+  rad_diag_1='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_sulf:/fs/cgd/csm/inputdata/atm/cam/physprops/sulfate_rrtmg_c080918.nc'
+
+  rad_diag_2='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_dust1:/fs/cgd/csm/inputdata/atm/cam/physprops/dust1_rrtmg_c080918.nc'
+
+  rad_diag_3='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_dust2:/fs/cgd/csm/inputdata/atm/cam/physprops/dust2_rrtmg_c080918.nc'
+
+  rad_diag_4='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_dust3:/fs/cgd/csm/inputdata/atm/cam/physprops/dust3_rrtmg_c080918.nc'
+
+  rad_diag_5='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_dust4:/fs/cgd/csm/inputdata/atm/cam/physprops/dust4_rrtmg_c080918.nc'
+
+  rad_diag_6='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_bcar1:/fs/cgd/csm/inputdata/atm/cam/physprops/bcpho_rrtmg_c080918.nc'
+
+  rad_diag_7='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_bcar2:/fs/cgd/csm/inputdata/atm/cam/physprops/bcphi_rrtmg_c080918.nc'
+
+  rad_diag_8='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_ocar1:/fs/cgd/csm/inputdata/atm/cam/physprops/ocpho_rrtmg_c080918.nc'
+
+  rad_diag_9='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_ocar2:/fs/cgd/csm/inputdata/atm/cam/physprops/ocphi_rrtmg_c080918.nc'
+
+  rad_diag_10='P_Q:H2O','D_O2:O2','D_CO2:CO2','D_ozone:O3','D_N2O:N2O','D_CH4:CH4',
+ 'D_CFC11:CFC11','D_CFC12:CFC12',
+ 'D_sslt1:/fs/cgd/csm/inputdata/atm/cam/physprops/seasalt1_rrtmg_c080918.nc',
+ 'D_sslt2:/fs/cgd/csm/inputdata/atm/cam/physprops/seasalt2_rrtmg_c080918.nc',
+ 'D_sslt3:/fs/cgd/csm/inputdata/atm/cam/physprops/seasalt3_rrtmg_c080918.nc',
+ 'D_sslt4:/fs/cgd/csm/inputdata/atm/cam/physprops/seasalt4_rrtmg_c080918.nc' 
+ /  

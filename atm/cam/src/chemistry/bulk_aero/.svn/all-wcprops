@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero
+END
+progseasalts_intr.F90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/progseasalts_intr.F90
+END
+drydep_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/drydep_mod.F90
+END
+dust_sediment_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/dust_sediment_mod.F90
+END
+wetdep.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/wetdep.F90
+END
+dust_intr.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/dust_intr.F90
+END
+aerosol_intr.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/aerosol_intr.F90
+END
+sulchem.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/bulk_aero/sulchem.F90
+END

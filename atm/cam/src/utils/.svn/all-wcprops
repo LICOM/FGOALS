@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils
+END
+spmd_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/spmd_utils.F90
+END
+xpavg_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/xpavg_mod.F90
+END
+quicksort.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/quicksort.F90
+END
+repro_sum_x86.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/repro_sum_x86.c
+END
+string_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/string_utils.F90
+END
+cam_pio_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_pio_utils.F90
+END
+time_manager.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/time_manager.F90
+END
+abortutils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/abortutils.F90
+END
+repro_sum_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/repro_sum_mod.F90
+END
+namelist_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/namelist_utils.F90
+END
+error_function.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/error_function.F90
+END
+sgexx.F90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/sgexx.F90
+END
+marsaglia.F90
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/marsaglia.F90
+END
+fft99.F90
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/fft99.F90
+END

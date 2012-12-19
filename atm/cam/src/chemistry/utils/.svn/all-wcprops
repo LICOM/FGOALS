@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils
+END
+prescribed_aero.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/prescribed_aero.F90
+END
+aerodep_flx.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/aerodep_flx.F90
+END
+prescribed_ozone.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/prescribed_ozone.F90
+END
+mo_regrider.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/mo_regrider.F90
+END
+mo_msis_ubc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/mo_msis_ubc.F90
+END
+horizontal_interpolate.F90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/horizontal_interpolate.F90
+END
+mo_flbc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/mo_flbc.F90
+END
+prescribed_ghg.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/prescribed_ghg.F90
+END
+mo_constants.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/mo_constants.F90
+END
+mo_util.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/mo_util.F90
+END
+solar_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/solar_data.F90
+END
+aircraft_emit.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/aircraft_emit.F90
+END
+tracer_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/tracer_data.F90
+END
+prescribed_volcaero.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/prescribed_volcaero.F90
+END
+mo_solar_parms.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/mo_solar_parms.F90
+END
+time_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/time_utils.F90
+END
+msise00.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/msise00.F90
+END
+m_types.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/utils/m_types.F90
+END

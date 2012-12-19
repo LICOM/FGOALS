@@ -1,0 +1,176 @@
+<chapter id="dlnd_c">
+<title></title>
+<sect1 id="dlnd">
+<title>Data Land Model</title>
+
+<sect2 id="dlnd_modes">
+<title>Modes</title>
+
+<para> 
+
+The land model is unique because it supports land data, runoff data, and now snow data 
+(<emphasis>lnd, rof,</emphasis> and <emphasis>sno</emphasis>) 
+almost as if they were three separate components, 
+but they are in fact running in one component model through one interface.  
+The land data is associated with the main land model.  
+The runoff data is associated with the runoff model that runs inside the land model 
+and is normally on a different grid than the land data.  
+The snow data is associated with snow accumulation code (for glacial formation) inside the land model 
+and is normally on a different grid than the land data.  
+The snow data is new and currently unused but it's a place holder for coupling 
+with a future land-ice component in CCSM.  
+Each of these models, land, runoff, and snow need to have their own strdata input 
+because they are distinct sets of fields on distinct grids with their own modes.  
+In the data model, the land, runoff, and snow modes are treated completely 
+independently as if there were three models.
+
+</para> <para>
+For all three "models", land, runoff, and snow,
+the default science mode of the data model is the COPYALL mode.
+COPYALL mode will examine the fields found in all input data streams,
+if any input field names match the field names used internally,
+they are copied into the export array and passed directly to the coupler
+without any special user code.
+
+</para>
+
+<sect3 id="dlnd_mode_land">
+<title>Land Modes</title>
+<para>
+These apply to land data associated with the main land model.  
+</para> 
+
+<variablelist>
+<varlistentry><term><option>dataMode = "NULL" </option></term><listitem><para>
+NULL mode turns off the data model as a provider of land data to the coupler.
+The lnd_present flag will be set to false
+and the coupler will assume no exchange of land data to or from the data model.
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "COPYALL" </option></term><listitem><para>
+COPYALL mode copies all fields directly from the input data streams
+Any required fields not found on an input stream will be set to zero.
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "CPLHIST" </option></term><listitem><para>
+Same as COPYALL mode.
+</para></listitem></varlistentry>
+</variablelist>
+
+</sect3>
+<sect3 id="dlnd_nml_runoff">
+<title>Runoff Modes</title>
+
+<para>
+These apply to runoff data associated with the runoff model embedded in the land model.  
+</para> 
+
+<variablelist>
+<varlistentry><term><option>dataMode = "NULL" </option></term><listitem><para>
+NULL mode turns off the data model as a provider of runoff data to the coupler.
+The rof_present flag will be set to false
+and the coupler will assume no exchange of runoff data from the data model.
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "COPYALL" </option></term><listitem><para>
+COPYALL mode copies all fields directly from the input data streams
+Any required fields not found on an input stream will be set to zero.
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "CPLHIST" </option></term><listitem><para>
+Same as COPYALL mode.
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "RX1" </option></term><listitem><para>
+Same as COPYALL mode.
+</para></listitem></varlistentry>
+</variablelist>
+
+</sect3>
+<sect3 id="dlnd_nml_snow">
+<title>Snow Modes</title>
+
+<para>
+These apply to snow data associated with the snow accumulation model embedded in the land model.  
+The snow data is new and currently unused but it's a place holder for coupling 
+with a future land-ice component in CCSM.  
+</para> 
+
+<variablelist>
+<varlistentry><term><option>dataMode = "NULL" </option></term><listitem><para>
+NULL mode turns off the data model as a provider of snow data to the coupler.
+The sno_present flag will be set to false
+and the coupler will assume no exchange of snow data to or from the data model.
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "COPYALL" </option></term><listitem><para>
+COPYALL mode copies all fields directly from the input data streams
+Any required fields not found on an input stream will be set to zero.
+</para></listitem></varlistentry>
+</variablelist>
+</sect3>
+</sect2>
+<sect2 id="dlnd_namelist">
+<title>Namelist</title>
+
+<para>
+The data land specific namelist input is as follows.  The namelist input
+filename is hardwired in the data model code to "dlnd_in".  The namelist group is
+called "dlnd_nml".  The variable formats are character string (char),
+integer (int), double precision real (r8), or logical (log) or one dimensional arrays
+of any of those things (array of ...).
+</para>
+
+<variablelist>
+
+<varlistentry><term><option>lnd_in (char) </option></term><listitem><para>
+  sets the filename for the land strdata namelist.  this must be set.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>rof_in (char) </option></term><listitem><para>
+  sets the filename for the runoff strdata namelist.  this must be set.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>sno_in (char) </option></term><listitem><para>
+  sets the filename for the sno strdata namelist.  this must be set.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>decomp (char)</option></term><listitem><para>
+  set the decomposition option for the data model.  valid options are placing the global array on the root task or a simple stride-one load balanced one-dimensional decomposition.  other decompositions may be added in the future.  valid values are ['root','1d'].  default='1d'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>restfilm (char)</option></term><listitem><para>
+  restart filename for the lnd model data.  this is optional.  if this is unset, the restart filename will be read from the rpointer.lnd file.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>restfilsl (char)</option></term><listitem><para>
+  restart filename for the lnd stream data.  this is optional.  if this is unset, the restart filename will be read from the rpointer.lnd file.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>restfilsr (char)</option></term><listitem><para>
+  restart filename for the runoff stream data.  this is optional.  if this is unset, the restart filename will be read from the rpointer.lnd file.  default='unset'.
+</para></listitem></varlistentry>
+
+<varlistentry><term><option>restfilss (char)</option></term><listitem><para>
+  restart filename for the sno stream data.  this is optional.  if this is unset, the restart filename will be read from the rpointer.lnd file.  default='unset'.
+</para></listitem></varlistentry>
+
+</variablelist>
+
+
+<para>
+The pre-defined internal field names in the data land model are as follows.
+In general, the stream input file should translate the input variable names into
+these names for use within the data land model.
+</para>
+
+</sect2>
+<sect2 id="dlnd_fields">
+<title>Fields</title>
+
+<screen>
+     (/ "roff        ","ioff        ", &
+        "t           ","tref        ","qref        ","avsdr       ","anidr       ", &
+        "avsdf       ","anidf       ","snowh       ","taux        ","tauy        ", &
+        "lat         ","sen         ","lwup        ","evap        ","swnet       ", &
+        "lfrac       ","fv          ","ram1        ", &
+        "flddst1     ","flxdst2     ","flxdst3     ","flxdst4     "  /)
+</screen>
+
+</sect2>
+</sect1>
+</chapter>

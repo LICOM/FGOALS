@@ -1,0 +1,311 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp
+END
+rmod_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/rmod_code.f
+END
+sub_scan.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/sub_scan.f
+END
+sol_cls.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/sol_cls.f
+END
+make_names.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/make_names.f
+END
+rxt_names.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/rxt_names.f
+END
+num_ctl.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/num_ctl.f
+END
+make_lu_slv.f
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/make_lu_slv.f
+END
+sp_utils.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/sp_utils.f
+END
+het_names.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/het_names.f
+END
+tokens.f
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/tokens.f
+END
+chm_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/chm_hdr.f
+END
+srfflx.f
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/srfflx.f
+END
+pl_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/pl_code.f
+END
+symbol.f
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/symbol.f
+END
+ipd_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/ipd_code.f
+END
+mass_diags.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/mass_diags.f
+END
+make_map.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/make_map.f
+END
+rate_tab.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/rate_tab.f
+END
+rate_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/rate_code.f
+END
+exe_opts.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/exe_opts.f
+END
+hist_out.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/hist_out.f
+END
+files_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/files_hdr.f
+END
+slt_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/slt_hdr.f
+END
+spat_dim.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/spat_dim.f
+END
+sparse_pat.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/sparse_pat.f
+END
+ver_opts.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/ver_opts.f
+END
+mak_grp_vmr.f
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/mak_grp_vmr.f
+END
+hist_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/hist_hdr.f
+END
+mozpp.mods.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/mozpp.mods.f
+END
+usrsubs.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/usrsubs.f
+END
+padj_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/padj_code.f
+END
+jcl.f
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/jcl.f
+END
+radj_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/radj_code.f
+END
+chem.f
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/chem.f
+END
+eqrep.f
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/eqrep.f
+END
+job_ctl.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/job_ctl.f
+END
+lin_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/lin_code.f
+END
+make_sim_dat.f
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/make_sim_dat.f
+END
+hist_inp.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/hist_inp.f
+END
+cls_map.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/cls_map.f
+END
+params_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/params_hdr.f
+END
+mozpp.subs.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/mozpp.subs.f
+END
+nln_code.f
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/nln_code.f
+END
+bndy_conds.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/bndy_conds.f
+END
+prd_map.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/prd_map.f
+END
+make_lu_fac.f
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/make_lu_fac.f
+END
+res_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/res_hdr.f
+END
+outp.f
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/outp.f
+END
+mozpp.main.f
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/mozpp.main.f
+END
+ver_hdr.f
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/ver_hdr.f
+END
+alloc.f
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/chem_proc/src/cam_chempp/alloc.f
+END

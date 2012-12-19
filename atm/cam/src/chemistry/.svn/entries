@@ -1,0 +1,76 @@
+10
+
+dir
+36
+https://svn-ccsm-release.cgd.ucar.edu/model_versions/cesm1_0_3/models/atm/cam/src/chemistry
+https://svn-ccsm-release.cgd.ucar.edu
+
+
+
+2011-06-10T18:18:09.176859Z
+35
+fischer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6ec7379f-1bbc-4938-b9b9-58fa9e6a5fe1
+
+pp_trop_mozart
+dir
+
+pp_waccm_mozart
+dir
+
+pp_trop_strat_bam_v1
+dir
+
+pp_waccm_mozart_v1
+dir
+
+pp_super_fast_llnl
+dir
+
+pp_none
+dir
+
+utils
+dir
+
+pp_trop_mam3
+dir
+
+pp_trop_bam
+dir
+
+modal_aero
+dir
+
+bulk_aero
+dir
+
+pp_trop_mam7
+dir
+
+pp_trop_ghg
+dir
+
+pp_super_fast_llnl_mam3
+dir
+
+mozart
+dir
+
+pp_waccm_ghg
+dir
+

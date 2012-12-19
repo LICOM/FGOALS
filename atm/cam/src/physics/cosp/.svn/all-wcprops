@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp
+END
+cosp_stats.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_stats.F90
+END
+cosp_simulator.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_simulator.F90
+END
+cosp_isccp_simulator.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_isccp_simulator.F90
+END
+cosp_utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_utils.F90
+END
+cosp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp.F90
+END
+Makefile.cospinline.in
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/Makefile.cospinline.in
+END
+cosp_types.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_types.F90
+END
+cosp_misr_simulator.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_misr_simulator.F90
+END
+cosp_defs.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_defs.h
+END
+cosp_modis_simulator.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_modis_simulator.F90
+END
+cosp_lidar.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_lidar.F90
+END
+cosp_constants.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/cosp_constants.F90
+END

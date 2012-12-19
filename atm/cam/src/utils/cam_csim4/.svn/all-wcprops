@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4
+END
+ice_spmd.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_spmd.F90
+END
+ice_filenames.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_filenames.F90
+END
+ice_constants.F
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_constants.F
+END
+ice_ocn_flux.F
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_ocn_flux.F
+END
+ice_types.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_types.F90
+END
+ice_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_data.F90
+END
+ice_tstm.F
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_tstm.F
+END
+ice_dh.F
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_dh.F
+END
+print_coverage.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/print_coverage.F90
+END
+ice_time_manager.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_time_manager.F90
+END
+ice_srf.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_srf.F90
+END
+ice_kinds_mod.F
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_kinds_mod.F
+END
+ice_diagnostics.F
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_diagnostics.F
+END
+ice_comp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_comp.F90
+END
+albice.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/albice.F90
+END
+ice_sfc_flux.F
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/utils/cam_csim4/ice_sfc_flux.F
+END

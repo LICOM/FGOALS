@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv
+END
+pmgrid.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/pmgrid.F90
+END
+mean_module.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/mean_module.F90
+END
+comspe.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/comspe.F90
+END
+fill_module.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/fill_module.F90
+END
+benergy.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/benergy.F90
+END
+d2a3dikj.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/d2a3dikj.F90
+END
+tp_core.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/tp_core.F90
+END
+pfixer.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/pfixer.F90
+END
+epvd.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/epvd.F90
+END
+par_xsum.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/par_xsum.F90
+END
+pft_module.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/pft_module.F90
+END
+dyn_grid.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dyn_grid.F90
+END
+interp_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/interp_mod.F90
+END
+initcom.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/initcom.F90
+END
+dp_coupling.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dp_coupling.F90
+END
+dryairm.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dryairm.F90
+END
+inidat.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/inidat.F90
+END
+dyn_comp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dyn_comp.F90
+END
+diag_module.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/diag_module.F90
+END
+pkez.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/pkez.F90
+END
+p_d_adjust.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/p_d_adjust.F90
+END
+mapz_module.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/mapz_module.F90
+END
+commap.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/commap.F90
+END
+spmd_dyn.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/spmd_dyn.F90
+END
+comsta.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/comsta.h
+END
+trac2d.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/trac2d.F90
+END
+inital.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/inital.F90
+END
+advect_tend.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/advect_tend.F90
+END
+dycore.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dycore.F90
+END
+dyn_internal_state.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dyn_internal_state.F90
+END
+ctem.F90
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/ctem.F90
+END
+d2a3dijk.F90
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/d2a3dijk.F90
+END
+trunc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/trunc.F90
+END
+FVperf_module.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/FVperf_module.F90
+END
+cd_core.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/cd_core.F90
+END
+sw_core.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/sw_core.F90
+END
+dynamics_vars.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/dynamics_vars.F90
+END
+diag_dynvar_ic.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/diag_dynvar_ic.F90
+END
+uv3s_update.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/uv3s_update.F90
+END
+par_vecsum.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/par_vecsum.F90
+END
+geopk.F90
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/geopk.F90
+END
+te_map.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/te_map.F90
+END
+stepon.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/stepon.F90
+END
+fv_prints.F90
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/fv_prints.F90
+END
+fv_control_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/fv_control_mod.F90
+END
+restart_dynamics.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/restart_dynamics.F90
+END
+metdata.F90
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/fv/metdata.F90
+END

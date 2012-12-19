@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share
+END
+params_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/params_mod.F90
+END
+filter_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/filter_mod.F90
+END
+diffusion_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/diffusion_mod.F90
+END
+mass_matrix_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/mass_matrix_mod.F90
+END
+prim_advance_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/prim_advance_mod.F90
+END
+cg_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/cg_mod.F90
+END
+interface.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/interface.h
+END
+parallel_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/parallel_mod.F90
+END
+reduction_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/reduction_mod.F90
+END
+schedule_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/schedule_mod.F90
+END
+spacecurve_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/spacecurve_mod.F90
+END
+derivative_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/derivative_mod.F90
+END
+prim_si_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/prim_si_mod.F90
+END
+domain_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/domain_mod.F90
+END
+gridgraph_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/gridgraph_mod.F90
+END
+prim_state_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/prim_state_mod.F90
+END
+metagraph_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/metagraph_mod.F90
+END
+dimensions_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/dimensions_mod.F90
+END
+quadrature_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/quadrature_mod.F90
+END
+coordinate_systems_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/coordinate_systems_mod.F90
+END
+cube_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/cube_mod.F90
+END
+global_norms_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/global_norms_mod.F90
+END
+control_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/control_mod.F90
+END
+physics_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/physics_mod.F90
+END
+prim_driver_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/prim_driver_mod.F90
+END
+interpolate_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/interpolate_mod.F90
+END
+linear_algebra_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/linear_algebra_mod.F90
+END
+element_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/element_mod.F90
+END
+viscosity_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/viscosity_mod.F90
+END
+prim_si_ref_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/prim_si_ref_mod.F90
+END
+time_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/time_mod.F90
+END
+hybvcoord_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/hybvcoord_mod.F90
+END
+prim_advection_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/prim_advection_mod.F90
+END
+directions.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/directions.F90
+END
+edge_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/edge_mod.F90
+END
+ll_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/ll_mod.F90
+END
+thread_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/thread_mod.F90
+END
+dof_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/dof_mod.F90
+END
+physical_constants.F90
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/physical_constants.F90
+END
+kinds.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/kinds.F90
+END
+solver_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/solver_mod.F90
+END
+timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/timer.h
+END
+namelist_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/namelist_mod.F90
+END
+perfmodel_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/perfmodel_mod.F90
+END
+bndry_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/bndry_mod.F90
+END
+metis_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/metis_mod.F90
+END
+hybrid_mod.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/dynamics/homme/share/hybrid_mod.F90
+END

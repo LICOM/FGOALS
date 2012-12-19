@@ -1,0 +1,197 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw
+END
+rrsw_kg22.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg22.f90
+END
+rrsw_vsn.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_vsn.f90
+END
+rrsw_kg23.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg23.f90
+END
+rrsw_kg24.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg24.f90
+END
+rrsw_kg25.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg25.f90
+END
+rrsw_kg26.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg26.f90
+END
+rrtmg_sw_init.f90
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_init.f90
+END
+rrsw_kg27.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg27.f90
+END
+rrsw_kg28.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg28.f90
+END
+rrsw_kg29.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg29.f90
+END
+rrsw_tbl.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_tbl.f90
+END
+rrtmg_sw_reftra.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_reftra.f90
+END
+rrtmg_sw_setcoef.f90
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_setcoef.f90
+END
+rrtmg_sw_k_g.f90
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_k_g.f90
+END
+rrsw_aer.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_aer.f90
+END
+rrtmg_sw_taumol.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_taumol.f90
+END
+rrsw_kg16.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg16.f90
+END
+rrsw_kg17.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg17.f90
+END
+rrtmg_sw_cldprop.f90
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_cldprop.f90
+END
+rrsw_wvn.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_wvn.f90
+END
+rrsw_kg18.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg18.f90
+END
+rrsw_kg19.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg19.f90
+END
+rrsw_ref.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_ref.f90
+END
+rrtmg_sw_rad.f90
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_rad.f90
+END
+rrsw_con.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_con.f90
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/README
+END
+parrrsw.f90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/parrrsw.f90
+END
+rrtmg_sw_spcvrt.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_spcvrt.f90
+END
+rrtmg_sw_vrtqdr.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrtmg_sw_vrtqdr.f90
+END
+rrsw_cld.f90
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_cld.f90
+END
+rrsw_kg20.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg20.f90
+END
+rrsw_kg21.f90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_sw/rrsw_kg21.f90
+END

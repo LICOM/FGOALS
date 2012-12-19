@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/MISR_simulator
+END
+MISR_simulator.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/cosp/MISR_simulator/MISR_simulator.f90
+END

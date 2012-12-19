@@ -1,0 +1,569 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart
+END
+chlorine_loading_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/chlorine_loading_data.F90
+END
+mo_aero_settling.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_aero_settling.F90
+END
+mo_ghg_chem.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_ghg_chem.F90
+END
+mo_wavelen.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_wavelen.F90
+END
+mo_mean_mass.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_mean_mass.F90
+END
+mo_airglow.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_airglow.F90
+END
+mo_jlong.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_jlong.F90
+END
+mo_setext.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setext.F90
+END
+mo_airmas.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_airmas.F90
+END
+mo_gas_phase_chemdr.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_gas_phase_chemdr.F90
+END
+charge_neutrality.F90
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/charge_neutrality.F90
+END
+mo_photoin.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_photoin.F90
+END
+mo_setaer.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setaer.F90
+END
+mo_lightning.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_lightning.F90
+END
+mo_tgcm_ubc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_tgcm_ubc.F90
+END
+mo_trislv.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_trislv.F90
+END
+spedata.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/spedata.F90
+END
+mo_setair.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setair.F90
+END
+mo_tracname.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_tracname.F90
+END
+mo_waveall.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_waveall.F90
+END
+mo_seto2.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_seto2.F90
+END
+clybry_fam.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/clybry_fam.F90
+END
+lin_strat_chem.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/lin_strat_chem.F90
+END
+mo_schu.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_schu.F90
+END
+mo_rtlink.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_rtlink.F90
+END
+upper_bc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/upper_bc.F90
+END
+wei96.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/wei96.F90
+END
+mo_jshort.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_jshort.F90
+END
+mo_exp_sol.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_exp_sol.F90
+END
+mo_sulf.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_sulf.F90
+END
+mo_cph.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_cph.F90
+END
+mo_strato_rates.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_strato_rates.F90
+END
+mo_chemini.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_chemini.F90
+END
+tracer_cnst.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/tracer_cnst.F90
+END
+mo_chm_diags.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_chm_diags.F90
+END
+tracer_srcs.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/tracer_srcs.F90
+END
+mo_lymana.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_lymana.F90
+END
+set_cp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/set_cp.F90
+END
+mo_setz.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setz.F90
+END
+mo_calcoe.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_calcoe.F90
+END
+mo_aerosols.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_aerosols.F90
+END
+mo_zadj.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_zadj.F90
+END
+mo_aurora.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_aurora.F90
+END
+mo_airplane.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_airplane.F90
+END
+mo_extfrc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_extfrc.F90
+END
+mo_pchem.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_pchem.F90
+END
+gas_wetdep_opts.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/gas_wetdep_opts.F90
+END
+mo_ps2str.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_ps2str.F90
+END
+mo_apex.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_apex.F90
+END
+mo_heatnirco2.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_heatnirco2.F90
+END
+llnl_O1D_to_2OH_adj.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/llnl_O1D_to_2OH_adj.F90
+END
+mo_fstrat.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_fstrat.F90
+END
+mo_snoe.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_snoe.F90
+END
+mo_sphers.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_sphers.F90
+END
+mo_sad.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_sad.F90
+END
+mo_setinv.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setinv.F90
+END
+euvac.F90
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/euvac.F90
+END
+chemistry.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/chemistry.F90
+END
+mo_setozo.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setozo.F90
+END
+mo_drydep.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_drydep.F90
+END
+mo_photo.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_photo.F90
+END
+linoz_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/linoz_data.F90
+END
+mo_sethet.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_sethet.F90
+END
+cfc11star.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/cfc11star.F90
+END
+efield.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/efield.F90
+END
+mo_setsoa.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setsoa.F90
+END
+apex_subs.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/apex_subs.F90
+END
+mz_aerosols_intr.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mz_aerosols_intr.F90
+END
+mo_neu_wetdep.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_neu_wetdep.F90
+END
+mo_waccm_hrates.F90
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_waccm_hrates.F90
+END
+mo_mass_xforms.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_mass_xforms.F90
+END
+mo_tuv_inti.F90
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_tuv_inti.F90
+END
+short_lived_species.F90
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/short_lived_species.F90
+END
+mo_strato_sad.F90
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_strato_sad.F90
+END
+mo_waveo3.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_waveo3.F90
+END
+mo_usrrxt.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_usrrxt.F90
+END
+mo_jeuv.F90
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_jeuv.F90
+END
+mag_parms.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mag_parms.F90
+END
+spehox.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/spehox.F90
+END
+exbdrift.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/exbdrift.F90
+END
+mo_setcld.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setcld.F90
+END
+mo_xsections.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_xsections.F90
+END
+mo_inter.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_inter.F90
+END
+m_sad_data.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/m_sad_data.F90
+END
+mo_wavelab.F90
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_wavelab.F90
+END
+mo_negtrc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_negtrc.F90
+END
+mo_solarproton.F90
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_solarproton.F90
+END
+mo_synoz.F90
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_synoz.F90
+END
+mo_params.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_params.F90
+END
+mo_chem_utls.F90
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_chem_utls.F90
+END
+mo_srf_emissions.F90
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_srf_emissions.F90
+END
+sv_decomp.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/sv_decomp.F90
+END
+mo_setsox.F90
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_setsox.F90
+END
+mo_jpl.F90
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/chemistry/mozart/mo_jpl.F90
+END

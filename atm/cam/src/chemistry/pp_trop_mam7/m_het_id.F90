@@ -1,0 +1,40 @@
+      module m_het_id
+      implicit none
+      integer, parameter :: hid_H2O2 = 1
+      integer, parameter :: hid_H2SO4 = 2
+      integer, parameter :: hid_SO2 = 3
+      integer, parameter :: hid_DMS = 4
+      integer, parameter :: hid_NH3 = 5
+      integer, parameter :: hid_SOAG = 6
+      integer, parameter :: hid_so4_a1 = 7
+      integer, parameter :: hid_nh4_a1 = 8
+      integer, parameter :: hid_pom_a1 = 9
+      integer, parameter :: hid_soa_a1 = 10
+      integer, parameter :: hid_bc_a1 = 11
+      integer, parameter :: hid_ncl_a1 = 12
+      integer, parameter :: hid_num_a1 = 13
+      integer, parameter :: hid_so4_a2 = 14
+      integer, parameter :: hid_nh4_a2 = 15
+      integer, parameter :: hid_soa_a2 = 16
+      integer, parameter :: hid_ncl_a2 = 17
+      integer, parameter :: hid_num_a2 = 18
+      integer, parameter :: hid_pom_a3 = 19
+      integer, parameter :: hid_bc_a3 = 20
+      integer, parameter :: hid_num_a3 = 21
+      integer, parameter :: hid_ncl_a4 = 22
+      integer, parameter :: hid_so4_a4 = 23
+      integer, parameter :: hid_nh4_a4 = 24
+      integer, parameter :: hid_num_a4 = 25
+      integer, parameter :: hid_dst_a5 = 26
+      integer, parameter :: hid_so4_a5 = 27
+      integer, parameter :: hid_nh4_a5 = 28
+      integer, parameter :: hid_num_a5 = 29
+      integer, parameter :: hid_ncl_a6 = 30
+      integer, parameter :: hid_so4_a6 = 31
+      integer, parameter :: hid_nh4_a6 = 32
+      integer, parameter :: hid_num_a6 = 33
+      integer, parameter :: hid_dst_a7 = 34
+      integer, parameter :: hid_so4_a7 = 35
+      integer, parameter :: hid_nh4_a7 = 36
+      integer, parameter :: hid_num_a7 = 37
+      end module m_het_id

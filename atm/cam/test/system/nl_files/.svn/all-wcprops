@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files
+END
+off1.9x2.5
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/off1.9x2.5
+END
+fvvp_lb2
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fvvp_lb2
+END
+fcase
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fcase
+END
+scmarm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/scmarm
+END
+ghgrmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/ghgrmp
+END
+outfrq3s
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/outfrq3s
+END
+aqua
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/aqua
+END
+user_nl_cam
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/user_nl_cam
+END
+aqpgro
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/aqpgro
+END
+rad_diag
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/rad_diag
+END
+adia
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/adia
+END
+outfrq24h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/outfrq24h
+END
+fv1d_lb2
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fv1d_lb2
+END
+idphys
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/idphys
+END
+co2rmp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/co2rmp
+END
+volc
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/volc
+END
+fv1d_4tsk
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fv1d_4tsk
+END
+fv2d_4tsk
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fv2d_4tsk
+END
+scm_b4b_o1
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/scm_b4b_o1
+END
+scm_prep
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/scm_prep
+END
+no_ttrac
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/no_ttrac
+END
+fv1d_8tsk
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fv1d_8tsk
+END
+fv2d_8tsk
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fv2d_8tsk
+END
+ttrac_lb1
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/ttrac_lb1
+END
+ttrac_lb2
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/ttrac_lb2
+END
+ttrac
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/ttrac
+END
+ttrac_lb3
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/ttrac_lb3
+END
+fvvp_lb0
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/fvvp_lb0
+END
+outfrq1m
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/outfrq1m
+END
+sat_hist
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/test/system/nl_files/sat_hist
+END

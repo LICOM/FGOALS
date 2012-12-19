@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica
+END
+rrtmg_lw_rtrnmc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/rrtmg_lw_rtrnmc.f90
+END
+rrtmg_lw_rad.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/rrtmg_lw_rad.f90
+END
+mcica_subcol_gen_sw.f90
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/mcica_subcol_gen_sw.f90
+END
+mcica_random_numbers.f90
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/mcica_random_numbers.f90
+END
+rrtmg_sw_cldprmc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/rrtmg_sw_cldprmc.f90
+END
+rrtmg_sw_rad.f90
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/rrtmg_sw_rad.f90
+END
+mcica_subcol_gen_lw.f90
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/mcica_subcol_gen_lw.f90
+END
+rrtmg_sw_spcvmc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/rrtmg_sw_spcvmc.f90
+END
+rrtmg_lw_cldprmc.f90
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/src/physics/rrtmg/ext/rrtmg_mcica/rrtmg_lw_cldprmc.f90
+END

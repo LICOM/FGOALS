@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases
+END
+sd_waccm_geos5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/sd_waccm_geos5.xml
+END
+cam3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/cam3.xml
+END
+cam4_bam_radpsv_geos5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/cam4_bam_radpsv_geos5.xml
+END
+1850_cam4_trop_bam.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850_cam4_trop_bam.xml
+END
+sd_waccm_tslt_geos5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/sd_waccm_tslt_geos5.xml
+END
+2005_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2005_cam4.xml
+END
+aquaplanet_cam3.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/aquaplanet_cam3.xml
+END
+aquaplanet_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/aquaplanet_cam4.xml
+END
+aquaplanet_cam5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/aquaplanet_cam5.xml
+END
+2005-2100_cam4_rcp85v2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2005-2100_cam4_rcp85v2.xml
+END
+waccm_refb1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_refb1.xml
+END
+2005-2100_cam4_rcp60.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2005-2100_cam4_rcp60.xml
+END
+waccm_sc_2000_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_sc_2000_cam4.xml
+END
+1850-2005_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850-2005_cam4.xml
+END
+2000_cam4_trop_chem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2000_cam4_trop_chem.xml
+END
+1850-2005_cam5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850-2005_cam5.xml
+END
+2005-2100_cam4_rcp26.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2005-2100_cam4_rcp26.xml
+END
+2005-2100_cam4_rcp45.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2005-2100_cam4_rcp45.xml
+END
+2005-2100_cam4_rcp85.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2005-2100_cam4_rcp85.xml
+END
+waccm_2000_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_2000_cam4.xml
+END
+waccm_1850-2005_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_1850-2005_cam4.xml
+END
+1850-2005_cam4_bgc.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850-2005_cam4_bgc.xml
+END
+waccm_2005-2100_cam4_rcp26.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_2005-2100_cam4_rcp26.xml
+END
+cam4_trop_strat_chem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/cam4_trop_strat_chem.xml
+END
+cam4_chem_radpsv_geos5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/cam4_chem_radpsv_geos5.xml
+END
+1850-2005_cam4_super_fast_llnl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850-2005_cam4_super_fast_llnl.xml
+END
+1850_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850_cam4.xml
+END
+2000_cam4_super_fast_llnl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/2000_cam4_super_fast_llnl.xml
+END
+waccm_2005-2100_cam4_rcp45.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_2005-2100_cam4_rcp45.xml
+END
+1850_cam5.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850_cam5.xml
+END
+waccm_1955-2005_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_1955-2005_cam4.xml
+END
+waccm_2005-2100_cam4_rcp85.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_2005-2100_cam4_rcp85.xml
+END
+waccm_1974-2005_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_1974-2005_cam4.xml
+END
+waccm_1850_cam4.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/waccm_1850_cam4.xml
+END
+1850_cam4_super_fast_llnl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850_cam4_super_fast_llnl.xml
+END
+1850_cam4_2xco2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850_cam4_2xco2.xml
+END
+1850_cam5_super_fast_llnl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/bld/namelist_files/use_cases/1850_cam5_super_fast_llnl.xml
+END

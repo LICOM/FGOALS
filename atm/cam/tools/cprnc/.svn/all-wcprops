@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc
+END
+filestruct.F90
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/filestruct.F90
+END
+Depends
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/Depends
+END
+compare_vars_mod.F90.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/compare_vars_mod.F90.in
+END
+cprnc.F90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/cprnc.F90
+END
+genf90.pl
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/genf90.pl
+END
+prec.F90
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/prec.F90
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/ChangeLog
+END
+test.csh
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/test.csh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/Makefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/README
+END
+utils.F90
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/utils.F90
+END
+dtypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/!svn/ver/35/model_versions/cesm1_0_3/models/atm/cam/tools/cprnc/dtypes.h
+END

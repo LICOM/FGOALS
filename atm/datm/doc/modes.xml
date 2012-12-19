@@ -1,0 +1,68 @@
+<chapter id="mode_c">
+<title></title>
+<sect1 id="modes">
+<title>Science Modes</title>
+
+<sect2 id="modes_overview">
+<title>Overview </title>
+
+<para> 
+When the data models run, the user must specify which <emphasis>science mode</emphasis> 
+they will run in. 
+Each data model has a fixed set of fields that it must send to the coupler, 
+but it is the choice of mode that specifies how that set of fields is to be computed.
+Each mode activates various assumptions about 
+what input fields are available from the input data streams,
+what input fields are available from the the coupler,
+and how to use this input data to compute the output fields sent to the coupler.
+</para> <para> 
+In general, a mode might specify...
+<itemizedlist>
+<listitem><para> that fields be set to a time invariant constant (so that no input data is needed) </para></listitem>
+<listitem><para> that fields be taken directly from a input data files (the input streams) </para></listitem>
+<listitem><para> that fields be computed using data read in from input files </para></listitem>
+<listitem><para> that fields be computed using from data received from the coupler </para></listitem>
+<listitem><para> some combination of the above. </para></listitem>
+</itemizedlist>
+</para><para> 
+If a science mode is chosen that is not consistent with the input data provided,
+the model may abort (perhaps with a "missing data" error message), or the model may send
+erroneous data to the coupler (for example, if a mode assumes an input stream has
+temperature in Kelvin on it, but it really has temperature in Celsius).
+Such an error is unlikely unless a user has edited the run scripts 
+to specify either non-standard input data or a non-standard science mode.  
+When editing the run scripts to use non-standard stream data or modes,
+users must be careful that the input data is consistent with the science mode
+and should verify that the data model is providing data to the coupler as expected.
+</para>
+</sect2>
+
+
+<sect2 id="modes_common">
+<title>Modes Common to all Models </title>
+<para> 
+Each data model, datm, dice, dlnd, and docn, have their own set of valid modes
+which are listed in the later chapters that are specific to those models.
+</para><para> 
+The mode is a character string that is set in the strdata namelist variable dataMode.
+</para><para> 
+Two modes are common to all data models: COPYALL and NULL.
+</para>
+<variablelist>
+<varlistentry><term><option>dataMode = "COPYALL"</option> </term><listitem><para>
+The default mode is COPYALL -- the model will assume <emphasis>all</emphasis> 
+the data that must be sent to the coupler will be found in the input data streams,
+and that this data can be sent to the coupler, unaltered, except for spatial and
+temporal interpolation. 
+</para></listitem></varlistentry>
+<varlistentry><term><option>dataMode = "NULL"</option> </term><listitem><para>
+NULL mode turns off the data model as a provider of data to the coupler.
+The model_present flag (eg. atm_present) will be set to false and the coupler will assume no
+exchange of data to or from the data model.
+</para></listitem></varlistentry>
+</variablelist>
+
+
+</sect2>
+</sect1>
+</chapter>

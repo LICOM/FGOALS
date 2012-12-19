@@ -1,0 +1,201 @@
+#! /bin/csh -f
+
+if !(-d $CASEBUILD) mkdir $CASEBUILD
+if !(-d $CASEBUILD/camconf) mkdir $CASEBUILD/camconf
+
+#--------------------------------------------------------------------
+# Create "ccsm_namelist" file in camconf/ directory
+#--------------------------------------------------------------------
+
+# --- set initial or hybrid datasets
+set nrevsn_nml      = ' '
+set nrevsn_dom_nml  = ' '
+if ($RUN_TYPE == 'branch') then
+  set nrevsn_nml      = ${RUNDIR}/${RUN_REFCASE}.cam2.r.${RUN_REFDATE}-00000.nc
+  set nrevsn_dom_nml  = ${RUNDIR}/${RUN_REFCASE}.camdom.r.${RUN_REFDATE}-00000
+endif
+
+# Determine dtime (needed below)
+@ cam_dtime = ( 3600 * 24 ) / $ATM_NCPL
+
+if ($COMP_OCN == camdom ) then
+cat >! $CASEBUILD/camconf/ccsm_namelist << EOF1
+ &dom_inparm
+ dom_branch_file= '$nrevsn_dom_nml'
+ /
+EOF1
+endif
+
+cat >> $CASEBUILD/camconf/ccsm_namelist << EOF1
+ &cam_inparm
+ dtime          =  $cam_dtime
+ cam_branch_file= '$nrevsn_nml'
+ co2vmr         = ${CCSM_CO2_PPMV}e-6
+EOF1
+
+if ($RUN_TYPE == 'hybrid') then
+cat >> $CASEBUILD/camconf/ccsm_namelist << EOF1
+ ncdata  = '${RUN_REFCASE}.cam2.i.${RUN_REFDATE}-00000.nc'
+EOF1
+endif
+
+cat >> $CASEBUILD/camconf/ccsm_namelist << EOF1
+/
+EOF1
+
+# Allow the user to supply namelist values by putting them in the file
+# $CASEROOT/user_nl_cam.  The file should contain
+# a valid namelist, just like any file that supplies user input to
+# build-namelist via the -infile argument.
+if (-f $CASEROOT/user_nl_cam) then
+   cat $CASEROOT/user_nl_cam >> $CASEBUILD/camconf/ccsm_namelist || exit -1
+endif
+
+#--------------------------------------------------------------------
+# Invoke cam configure and build-namelist utility
+# output will go in CASEBUILD/camconf
+#--------------------------------------------------------------------
+
+cd $CASEBUILD/camconf || exit -1
+
+# invoke configure
+#-----------------------------------
+set ocn = "-ocn none"
+if ($COMP_OCN == camdom) set ocn = "-ocn dom"
+
+# Some settings for single column mode.
+set scm = ""
+set scmb = ""
+if ($PTS_MODE == 'TRUE') then
+   set scm = "-scam -nosmp"
+   set scmb = "scmlon=$PTS_LON scmlat=$PTS_LAT"
+   set spmd = "-nospmd"
+else
+   if ($USE_MPISERIAL == 'TRUE') then
+     set spmd = "-nospmd"
+   else
+     set spmd = "-spmd"
+   endif
+endif
+
+$CODEROOT/atm/cam/bld/configure -s -ccsm_seq -ice none $ocn $spmd $scm -dyn $CAM_DYCORE -res $ATM_GRID \
+    $CAM_CONFIG_OPTS || exit -1
+
+# Determine number of levels (needed below)
+set nlevs = `perl -ane 'foreach $i (@F) {if ($i =~ m/^-DPLEV=(.+)/ ) {print "$1 \n"}}' < CCSM_cppdefs`
+
+# invoke build_namelist
+#-----------------------------------
+# following logic may need tweaking to account for configurations where start year is important
+if ($RUN_STARTDATE =~ *-01-01* || $RUN_STARTDATE =~ *-09-01*) then
+    set ignore = "-ignore_ic_year"
+else
+    set ignore = "-ignore_ic_date"
+endif
+
+if ($CAM_NML_USE_CASE == UNSET) then
+    set usecase = " "
+else
+    set usecase = "-use_case $CAM_NML_USE_CASE"
+endif
+
+#build-namelist needs start date in different format
+set yyyymmdd = `echo $RUN_STARTDATE | sed s/-//g `
+
+if ($CAM_DYCORE == 'fv') then
+   $CODEROOT/atm/cam/bld/build-namelist $ignore -s -infile ccsm_namelist -csmdata \$DIN_LOC_ROOT $usecase \
+       -inputdata $CASEBUILD/cam.input_data_list -namelist "&atm npr_yz=991,992,992,991 start_ymd=$yyyymmdd $CAM_NAMELIST_OPTS $scmb /" || exit -1
+
+   # replace the string '991,992,992,991' by '$npr_y,$npr_z,$npr_z,$npr_y' in 
+   # the cam.buildnml.csh script.  The decomp will be generate based on the values
+   # of NTASKS_ATM and ATM_NY at the time that that script is executed.
+   perl -pi -e 's/npr_yz\s*=\s*991,992,992,991/npr_yz\t\t= \$npr_y,\$npr_z,\$npr_z,\$npr_y/' atm_in
+
+else
+   $CODEROOT/atm/cam/bld/build-namelist $ignore -s -infile ccsm_namelist -csmdata \$DIN_LOC_ROOT $usecase \
+        -inputdata $CASEBUILD/cam.input_data_list -namelist "&atm start_ymd=$yyyymmdd $CAM_NAMELIST_OPTS $scmb /"|| exit -1
+endif
+
+#--------------------------------------------------------------------
+# create script to generate namelist
+#--------------------------------------------------------------------
+
+cat >! $CASEBUILD/cam.buildnml.csh << EOF1
+#! /bin/csh -f 
+
+#******************************************************************#
+#                  WARNING:                                        #
+# - CAM and CLM namelist variable dtime must have same values      #
+# - If the user changes any input datasets - be sure to give it a  #
+#   unique filename. Do not duplicate any existing input files     #
+#******************************************************************#
+
+set exedir = \$RUNDIR; cd \$exedir
+
+EOF1
+
+if ($CAM_DYCORE == fv) then
+cat >> $CASEBUILD/cam.buildnml.csh << EOF1
+# --- 2d decomp based on at least 3 lons, lat, and levels/pe
+
+@ ntasks   = \$NTASKS_ATM
+@ nlats    = \$ATM_NY
+@ maxnpr_z = $nlevs 
+
+set done = 0
+@ npr_z = 0
+while (\$done == "0")
+  @ npr_z = \$npr_z + 1
+  @ npr_y = \$ntasks / \$npr_z
+  @ mydec = \$npr_y * \$npr_z
+  @ nlatppe = \$nlats / \$npr_y
+  if (\$mydec == \$ntasks && \$nlatppe >= 3) set done = 1
+  if (\$npr_z > \$maxnpr_z) set done = 1
+end
+if (\$npr_z > \$maxnpr_z) then
+  echo "ERROR: number of cam pes/tasks not possible: \$ntasks"
+  exit 2
+endif
+
+EOF1
+endif
+
+cat >> $CASEBUILD/cam.buildnml.csh << EOF1
+cat >! atm_in << EOF
+EOF1
+cat atm_in >> $CASEBUILD/cam.buildnml.csh || exit -1
+cat >> $CASEBUILD/cam.buildnml.csh << EOF1
+
+EOF
+EOF1
+
+rm atm_in
+
+#--------------------------------------------------------------------
+# create script to generate executable
+#--------------------------------------------------------------------
+
+cat >! $CASEBUILD/cam.buildexe.csh << EOF2
+#! /bin/csh -f
+
+set objdir = \$OBJROOT/atm/obj; cd \$objdir
+
+set comp = "unknown"
+if (\$COMP_INTERFACE == 'MCT' ) set comp = mct
+if (\$COMP_INTERFACE == 'ESMF') set comp = esmf
+
+\cat >! .tmp << EOF; cmp -s .tmp Filepath || mv -f .tmp Filepath 
+EOF2
+
+cat $CASEBUILD/camconf/Filepath >> $CASEBUILD/cam.buildexe.csh
+
+cat >> $CASEBUILD/cam.buildexe.csh << EOF2
+EOF
+
+set camdefs = "`cat \$CASEBUILD/camconf/CCSM_cppdefs`"
+gmake complib -j \$GMAKE_J MODEL=cam COMPLIB=\$LIBROOT/libatm.a MACFILE=\$CASEROOT/Macros.\$MACH USER_CPPDEFS="\$camdefs" -f \$CASETOOLS/Makefile || exit 2
+
+wait
+
+EOF2
+
